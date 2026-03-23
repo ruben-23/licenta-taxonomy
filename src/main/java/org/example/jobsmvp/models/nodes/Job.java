@@ -40,4 +40,7 @@ public class Job {
 
     @Relationship(type = "REQUIRES", direction = Relationship.Direction.OUTGOING)
     private List<Requires> requiredTechnologies;
+
+    @Property("text_embedding")
+    private List<Double> textEmbedding;
 }

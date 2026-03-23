@@ -1,0 +1,17 @@
+{
+  "job_id" : "1OGVYeVGLGfN5usBAAAAAA==",
+  "employer_name" : "Adela Technologies",
+  "employer_website" : "https://www.adelatech.com",
+  "job_title" : "AWS Serverless API + AngularJS SaaS Developer",
+  "job_description" : "Adela Technologies is a fast-growing, cloud-focused managed service provider based out of the Washington DC metro area. We support clients in various industries, such as non-profit, energy, education, healthcare, and the federal government. Our work in these various industries allows us to provide customized support solutions for any organization.\n\nWe believe in challenging the status quo and encouraging creativity and innovation. We pride ourselves on our company culture and transparency. We believe every employee is equally valuable and vital to executing our company vision.\n\nOur team has expertise building DevSecOps platforms that help simplify the integration efforts, automation, and security controls required for software teams to focus more on building software and less on infrastructure, security, and automation.\n\nWe need a developer to use an existing framework (AWS SaaS factory reference solution) to integrate with the following infrastructure APIs:\nAWS EKS/ECS\nKubernetes\nPrisma Cloud\nSonarqube\nJFrog Artifactory\nRancher\nOpenShift 4.X\nand others…\n\nWe need someone with AWS serverless, AngularJS, and API integration, single-sign on and multi-tenant environment experience. Please provide a link to your public repo with example projects.\n\nExamples of other SaaS factory/AWS SaaS framework deployments would be helpful.\nDeliverables include:\nArchitecture Documentation\nRegular Updates to Agile tasks/milestones\nSource Code Commits to development and QA environment\nIntegrated Unit Tests for various API endpoints and functionality\n\nJob Category: Cloud ArchitectureEngineeringSoftware\n\nJob Type: FreelancePart Time\n\nJob Location: RemoteWashington DC Metro",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Washington",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

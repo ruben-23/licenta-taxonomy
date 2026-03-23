@@ -1,0 +1,17 @@
+{
+  "job_id" : "rpZuXgzEOIaE2p2dAAAAAA==",
+  "employer_name" : "Jobs via Dice",
+  "employer_website" : null,
+  "job_title" : "Android Developer",
+  "job_description" : "Dice is the leading career destination for tech experts at every stage of their careers. Our client, Peritus Inc., is seeking the following. Apply via Dice today!\n• 6+ years’ experience in software development with expert level expertise in multiple programming languages and methodologies.\n• 5+ years hands-on experience with Android native application development languages, frameworks and tools (e.g., Kotlin, Java)\n• Undergraduate degree or equivalent experience/certification\n• Proficient understanding of Android Architecture components (Jetpack Compose, Data Binding, etc)\n• Strong architectural mindset and experience working with MVVM/MVI design patterns\n• Expertise in multithreading techniques and hands on experience with Coroutines or RxJava.\n• Solid understanding of caching mechanisms, data management and storage solutions (Room, SQLite, etc.)\n• Excellent knowledge of working with dynamic data using services (e.g., JSON, REST APIs, GQL, etc.)",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Bethesda",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-03-13T19:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

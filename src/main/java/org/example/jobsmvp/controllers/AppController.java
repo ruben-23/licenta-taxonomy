@@ -1,5 +1,7 @@
 package org.example.jobsmvp.controllers;
 
+import lombok.AllArgsConstructor;
+import org.example.jobsmvp.ingestion.orchestrator.IngestionPipelineOrchestrator;
 import org.example.jobsmvp.models.nodes.Job;
 import org.example.jobsmvp.repositories.*;
 import org.example.jobsmvp.services.*;
@@ -11,19 +13,14 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
+@AllArgsConstructor
 public class AppController {
 
     private final RecommendationService recommendationService;
     private final CompanyRepository companyRepository;
     private final JobRepository jobRepository;
     private final StudentRepository studentRepository;
-
-    public AppController(RecommendationService recommendationService, CompanyRepository compRepo, JobRepository jobRepo, StudentRepository studentRepo) {
-        this.recommendationService = recommendationService;
-        this.companyRepository = compRepo;
-        this.jobRepository = jobRepo;
-        this.studentRepository = studentRepo;
-    }
+    private final IngestionPipelineOrchestrator ingestionOrchestrator;
 
     @GetMapping("/companies")
     public ResponseEntity<?> getCompanies(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
@@ -34,7 +31,7 @@ public class AppController {
     public ResponseEntity<?> getJobsByCompany(@PathVariable String id) {
         System.out.println("Getting jobs for company with id: " + id);
         List<Job> jobs = jobRepository.findJobsByCompany(id);
-        System.out.println(jobs);
+//        System.out.println(jobs);
         return ResponseEntity.ok(jobs);
     }
 
@@ -105,4 +102,15 @@ public class AppController {
             return ResponseEntity.internalServerError().body(Map.of("error", errorMsg));
         }
     }
+
+    @GetMapping("/ingestion")
+    public ResponseEntity<Void> startIngestion(){
+        System.out.println("Starting ingestion...");
+
+        IngestionPipelineOrchestrator.PipelineResult result = ingestionOrchestrator.run("developer", -1);
+        System.out.println(result.toString());
+
+        return ResponseEntity.ok().build();
+    }
+
 }

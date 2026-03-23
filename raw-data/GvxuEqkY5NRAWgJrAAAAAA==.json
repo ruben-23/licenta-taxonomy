@@ -1,0 +1,17 @@
+{
+  "job_id" : "GvxuEqkY5NRAWgJrAAAAAA==",
+  "employer_name" : "Softthink Solutions Inc",
+  "employer_website" : null,
+  "job_title" : "Senior Full Stack Java Developer / Integration SME",
+  "job_description" : "Job Title\nSenior Full Stack Java Developer / Integration SME\nLocation: Remote / Hybrid (Federal)\nWork Authorization: Citizen\n\nJob Summary\nWe are seeking a Senior Full Stack Java Developer / Integration SME to support a federal IRS modernization program. The role involves developing and supporting enterprise integration platforms, microservices, and cloud-native applications used in mission-critical tax processing systems.\nThe ideal candidate will have strong experience with Java, Spring Boot, React, messaging systems, Kubernetes, and CI/CD pipelines, along with experience building scalable enterprise solutions.\n\nKey Responsibilities:\nDevelop and maintain Java/Spring Boot microservices and REST APIs\nBuild frontend components using React\nIntegrate applications using Kafka, IBM MQ, or ActiveMQ\nDeploy and manage containerized applications using Docker and Kubernetes\nImplement and maintain CI/CD pipelines and DevOps automation\nMonitor system performance and troubleshoot production issues\nEnsure secure coding practices and system reliability\n\nRequired Skills:\n• Java, Spring Boot\n• ReactJS\n• REST APIs / Microservices\n• Kafka, IBM MQ, or ActiveMQ\n• Docker, Kubernetes\n• Git / CI/CD pipelines\n\nPreferred:\nExperience with Oracle, PostgreSQL, or DB2\nExperience with webMethods or other ESB platforms\nExperience with AWS or cloud environments\nKnowledge of DevSecOps and API security (OAuth2/OpenID)\n\nRequirements:\n8+ years of software development experience\nAbility to obtain and maintain federal background clearance.\n\nFlexible work from home options available.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Lanham",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-03-10T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

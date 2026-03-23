@@ -1,0 +1,17 @@
+{
+  "job_id" : "b9mGaOziHHnk8Zs0AAAAAA==",
+  "employer_name" : "Career Soft Solutions Inc",
+  "employer_website" : null,
+  "job_title" : ".Net Full Stack Developer",
+  "job_description" : "Job Title: .NET Full Stack Developer\n\nDuration: 12+ Months (Possible Extension)\n\nLocation: Arlington, VA (Hybrid)\n\nPosition Overview\n\nOur Banking and Wealth Management client is seeking a .NET Full Stack Developer to design, develop, and support enterprise-grade applications used by financial advisors, portfolio managers, and wealth management operations teams.\n\nThe ideal candidate will have strong experience in .NET backend development, modern frontend frameworks, and building scalable APIs, with the ability to work in Agile teams delivering high-performance financial platforms.\n\nKey Responsibilities\n• Design, develop, and maintain full-stack applications supporting wealth management platforms.\n• Build scalable backend services and RESTful APIs using .NET / .NET Core.\n• Develop responsive frontend applications using Angular or React.\n• Integrate applications with financial data systems.\n• Ensure adherence to secure coding practices and financial industry compliance standards.\n• Troubleshoot production issues and optimize application performance.\n• Participate in Agile ceremonies including sprint planning, stand-ups, and retrospectives.\n• Contribute to DevOps practices including CI/CD pipelines and automated deployments.\n\nRequired Skills\n• 3–7 years of experience in full stack software development\n• Strong experience in C#, .NET, and .NET Core\n• Experience building RESTful APIs and microservices\n• Hands-on experience with frontend frameworks (Angular / React / JavaScript / TypeScript)\n• Strong experience with SQL databases (SQL Server preferred)\n• Experience working with enterprise application architectures\n• Knowledge of Agile development methodologies\n• Experience with Git-based source control systems\n• Strong problem-solving and analytical skills\n• Excellent communication and collaboration abilities",
+  "job_employment_type" : "Contractor",
+  "job_city" : "Arlington",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-03-12T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : 55,
+  "job_max_salary" : 65,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

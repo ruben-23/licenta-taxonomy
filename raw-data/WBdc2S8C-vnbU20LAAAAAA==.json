@@ -1,0 +1,17 @@
+{
+  "job_id" : "WBdc2S8C-vnbU20LAAAAAA==",
+  "employer_name" : "Cyber Security Innovations",
+  "employer_website" : "https://www.csinnovations.net",
+  "job_title" : "Full Stack Developer",
+  "job_description" : "Cyber Security Innovations (CSI) is seeking a Full Stack Developer with with strong expertise in backend development using Java and Spring framework, combined with frontend proficiency in ReactJS. The developer should have hands-on experience in containerized application development and deployment using Docker and Kubernetes, along with familiarity in messaging systems (AMQ, IBM MQ, Apache Kafka) and data grid technologies for high performance, distributed applications. Developer should also be well versed in DevOps tools and CI/CD pipelines for automated build, test, and deployment processes.\n\nThe minimum technical skillset requirements for the IT Specialists are listed below:\n• webMethods Suite:Integration Server, Universal Messaging, My webMethods Server, Optimize for Infrastructure.\n• Programming Languages: Java, Flow, JavaScript.\n• Frameworks: Spring, Spring Boot, Spring Cloud, Spring-WS.\n• Frontend: React.\n• APIs/Protocols: AMQP, HTTPS, REST, SOAP, JDBC, JMS, TLS,OpenTelemetry.\n• Messaging Systems: Red Hat AMQ (ActiveMQ), IBM MQ, Apache Kafka.\n• CI/CD Automation Platforms (e.g., GitHub Actions or other IRS-approved tools).\n• Containerization & Orchestration: Docker/OCI, Kubernetes, Helm, or equivalent tooling.\n• Data Grid Technologies: Red Hat Data Grid (Infinispan).\n• Database: Oracle Exadata, PostgreSQL, IBM Db2.\n• DevOps: Experience with fully automated CI/CD pipelines.\n• Version Control: Git, GitHub.\n• Monitoring & Logging: Prometheus, Grafana, AppDynamics, Splunk, Fluent Bit.\n• Architecture: Experience with production-grade, cloud-native microservices architecture and Kubernetes-based container orchestration.\n• Cloud Platforms: Familiarity with AWS and other cloud environments.\n• Security: Knowledge of API gateways and security standards (OAuth 2.0/OpenID Connect), TLS cipher suites, secure coding practices, automated security scanning, dependency vulnerability management, and enforcement of enterprise DevSecOps controls.\n\nCyber Security Innovations (CSI) is an equal opportunity employer committed to diversity and inclusion in the workplace. We prohibit discrimination and harassment of any kind based on race, color, sex, religion, sexual orientation, national origin, disability, genetic information, pregnancy, or any other protected characteristic as outlined by federal, state, or local laws. As a veteran-friendly employer, we encourage military veterans to apply.\n\nThis policy applies to all employment practices within our organization, including hiring, recruiting, promotion, termination, layoff, recall, leave of absence, compensation, benefits, training, and apprenticeship. CSI makes hiring decisions based solely on qualifications, merit, and business needs at the time.\n\nCSI participates in the E-Verify Employment Verification Program.\n\nSalary: $135000 - $155000 per year\n\nJob Posted by ApplicantPro",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Hyattsville",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-03-03T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

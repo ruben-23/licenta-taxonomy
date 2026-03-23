@@ -4,6 +4,8 @@ import org.example.jobsmvp.models.Graph;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.neo4j.repository.query.Query;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 public interface GraphRepository extends Neo4jRepository<Graph, Long> {
@@ -30,11 +32,23 @@ public interface GraphRepository extends Neo4jRepository<Graph, Long> {
     @Query("""
         CREATE VECTOR INDEX student_embeddings ON :Student(embedding) WITH CONFIG {"dimension": 128, "metric": "cos", "capacity": 1000}
     """)
+    @Transactional(propagation = Propagation.NOT_SUPPORTED) // <-- disables transaction
     void createStudentVectorIndex();
 
     @Query("""
         CREATE VECTOR INDEX job_embeddings ON :Job(embedding) WITH CONFIG {"dimension": 128, "metric": "cos", "capacity": 1000}
     """)
+    @Transactional(propagation = Propagation.NOT_SUPPORTED) // <-- disables transaction
     void createJobVectorIndex();
+
+    /**
+     * Creates a vector index for Technology nodes.
+     */
+    @Query("""
+        CREATE VECTOR INDEX tech_embeddings ON :Technology(text_embedding) 
+        WITH CONFIG {"dimension": 768, "metric": "cos", "capacity": 1000}
+    """)
+    @Transactional(propagation = Propagation.NOT_SUPPORTED) // <-- disables transaction
+    void createTechnologyVectorIndex();
 
 }

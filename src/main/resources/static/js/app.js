@@ -406,6 +406,61 @@ async function findJobsByEmbedding(studentId, studentName) {
 }
 
 
+// ==========================================
+// DATA INGESTION
+// ==========================================
+async function ingestJobs() {
+    // Re-select to ensure we have the element in scope
+    const contentArea = document.getElementById('main-content');
+    const ingestBtn = document.getElementById('ingest-btn');
+
+    // Safety check: if the element doesn't exist, stop the error
+    if (!contentArea) {
+        console.error("Could not find the main-content div!");
+        return;
+    }
+
+    const originalText = ingestBtn ? ingestBtn.innerText : "Ingest Jobs";
+
+    if (ingestBtn) {
+        ingestBtn.disabled = true;
+        ingestBtn.innerText = "Ingesting...";
+    }
+
+    contentArea.innerHTML = `
+        <h2>📥 Job Ingestion in Progress</h2>
+        <p>The ETL pipeline is running. Please wait...</p>
+        <div class="loader"></div> 
+    `;
+
+    try {
+        const res = await fetch('/api/ingestion', { method: 'GET' });
+
+        if (!res.ok) throw new Error(`Server returned ${res.status}`);
+
+        contentArea.innerHTML = `
+            <div class="card" style="border-left: 5px solid #059669;">
+                <h2 style="color: #059669;">✅ Ingestion Complete</h2>
+                <p>The pipeline has finished executing successfully.</p>
+                <button class="btn-action" onclick="loadCompanyWorkflow(0)">View Companies</button>
+            </div>
+        `;
+    } catch (err) {
+        contentArea.innerHTML = `
+            <div class="card" style="border-left: 5px solid #dc2626;">
+                <h2 style="color: #dc2626;">❌ Ingestion Failed</h2>
+                <p><strong>Error:</strong> ${err.message}</p>
+                <button class="btn-secondary" onclick="ingestJobs()">Try Again</button>
+            </div>
+        `;
+    } finally {
+        if (ingestBtn) {
+            ingestBtn.disabled = false;
+            ingestBtn.innerText = originalText;
+        }
+    }
+}
+
 
 function closeModal() {
     modal.classList.add('hidden');

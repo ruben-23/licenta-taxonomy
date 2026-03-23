@@ -1,0 +1,17 @@
+{
+  "job_id" : "Zm9F1z4eyLSdSAG2AAAAAA==",
+  "employer_name" : "Bow Wave LLC",
+  "employer_website" : "https://www.bowwavellc.com",
+  "job_title" : ".NET Full Stack Developer - Senior - Top Secret required to apply - Wash DC - Wash DC + Hybrid",
+  "job_description" : "As a .NET Full Stack Developer, you will play a critical role in the development and maintenance of web applications and services. You will be responsible for designing, coding, testing, and deploying high-quality software solutions using the .NET framework and associated technologies. Your expertise in both front-end and back-end development will be essential in creating seamless and efficient user experiences. You will collaborate closely with cross-functional teams, including designers, product managers, and other developers, to deliver robust and scalable applications.\n\nIn this role, you will engage in the full software development lifecycle, from concept and design to testing and deployment. You will be expected to write clean, maintainable, and efficient code, and to adhere to best practices and coding standards. Your ability to troubleshoot and resolve complex technical issues will be crucial in ensuring the reliability and performance of our applications. Additionally, you will participate in code reviews, provide constructive feedback, and contribute to the continuous improvement of our development processes.\n\nQualifications:\n• Bachelor's Degree\n• Minimum 8 years experience\n\nResponsibilities:\n• Experienced with ASP.NET framework, SQL Server and design/ architectural patterns (e.g. Model-View-Controller (MVC)\n• Experienced with .NET languages (e.g. C#, Visual Basic .NET) and HTML5/CSS3\n• Familiarity or experience with architecture styles/APIs (REST, RPC)\n• Develop and maintain web applications using the .NET framework and related technologies.\n• Design and implement both front-end and back-end components of the application.\n• Ensure the performance, quality, and responsiveness of applications.\n• Collaborate with cross-functional teams to define, design, and ship new features.\n• Write clean, scalable, and maintainable code following best practices.\n• Conduct thorough testing of applications, including unit, integration, and system testing.\n• Troubleshoot and resolve technical issues and bugs.\n• Participate in code reviews and provide feedback to peers.\n\nPreferred Skills:\n• Experience with front-end frameworks such as React, or Vue.js.\n• Familiarity with cloud platforms like Azure.\n• Knowledge of database design and development, including SQL and NoSQL databases.\n• Understanding of DevOps practices and tools, such as CI/CD pipelines, Docker, and Kubernetes.\n• Relevant certifications in .NET development or cloud technologies.\n• Experience working in an Agile/Scrum development environment.\n• Strong problem-solving skills and attention to detail.\n• Excellent communication and collaboration skills.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Washington",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : 125000,
+  "job_max_salary" : 140000,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

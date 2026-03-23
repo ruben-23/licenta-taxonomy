@@ -1,11 +1,15 @@
 package org.example.jobsmvp.models.relationships;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.example.jobsmvp.models.nodes.Technology;
 import org.springframework.data.neo4j.core.schema.*;
 import lombok.Data;
 
 @RelationshipProperties
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Requires {
     @Id @GeneratedValue
     private String id;
@@ -17,4 +21,11 @@ public class Requires {
 
     @TargetNode
     private Technology technology;
+
+
+    public Requires(Technology technology, String importance, Integer minProficiency) {
+        this.technology = technology;
+        this.importance = importance;
+        this.minProficiency = minProficiency;
+    }
 }

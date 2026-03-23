@@ -4,6 +4,7 @@ import lombok.Data;
 import org.example.jobsmvp.models.relationships.Posts;
 import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.Node;
+import org.springframework.data.neo4j.core.schema.Property;
 import org.springframework.data.neo4j.core.schema.Relationship;
 import java.util.List;
 
@@ -20,5 +21,8 @@ public class Company {
 
     @Relationship(type = "POSTS", direction = Relationship.Direction.OUTGOING)
     private List<Posts> jobs;
+
+    @Property("text_embedding")
+    private List<Double> textEmbedding;
 
 }
