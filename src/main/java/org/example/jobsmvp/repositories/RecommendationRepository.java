@@ -23,25 +23,20 @@ public interface RecommendationRepository extends Neo4jRepository<Job, String> {
     @Query("""
         // --- STAGE 1: VECTOR RECALL ---
         MATCH (j:Job {job_id: $jobId})
-        CALL vector_search.search('student_embeddings', $limit, j.embedding) YIELD node AS s, similarity
+        CALL db.index.vector.queryNodes('student_embeddings', $limit, j.embedding) YIELD node AS s, score AS similarity
         
         // --- STAGE 2: GRAPH FILTERING (RELAXED CONSTRAINTS) ---
-        // Find mandatory requirements and check if the student knows them
         OPTIONAL MATCH (j)-[req:REQUIRES {importance: 'Mandatory'}]->(req_t:Technology)
         OPTIONAL MATCH (s)-[k:KNOWS]->(req_t) WHERE k.proficiency_level >= req.min_proficiency
         
-        // Count total mandatory tech vs matched mandatory tech
         WITH s, j, similarity, 
              count(req_t) AS total_mandatory, 
              count(k) AS matched_mandatory
              
-        // RULE: If there are no mandatory requirements, pass. 
-        // Otherwise, they must match AT LEAST ONE mandatory requirement.
         WHERE total_mandatory = 0 OR matched_mandatory >= 1
         
         // --- STAGE 3: CONTEXT & EXPLAINABILITY ---
-        CALL {
-            WITH s, j
+        CALL (s, j) {
             OPTIONAL MATCH (j)-[req_all:REQUIRES]->(t:Technology)
             OPTIONAL MATCH (s)-[k_all:KNOWS]->(t) WHERE k_all.proficiency_level >= req_all.min_proficiency
             
@@ -67,7 +62,7 @@ public interface RecommendationRepository extends Neo4jRepository<Job, String> {
     @Query("""
         // --- STAGE 1: VECTOR RECALL ---
         MATCH (s:Student {student_id: $studentId})
-        CALL vector_search.search('job_embeddings', $limit, s.embedding) YIELD node AS j, similarity
+        CALL db.index.vector.queryNodes('job_embeddings', $limit, s.embedding) YIELD node AS j, score AS similarity
         
         // --- STAGE 2: GRAPH FILTERING (RELAXED CONSTRAINTS) ---
         OPTIONAL MATCH (j)-[req:REQUIRES {importance: 'Mandatory'}]->(req_t:Technology)
@@ -82,8 +77,7 @@ public interface RecommendationRepository extends Neo4jRepository<Job, String> {
         // --- STAGE 3: CONTEXT & EXPLAINABILITY ---
         OPTIONAL MATCH (c:Company)-[:POSTS]->(j)
         
-        CALL {
-            WITH s, j
+        CALL(s, j) {
             OPTIONAL MATCH (j)-[req_all:REQUIRES]->(t:Technology)
             OPTIONAL MATCH (s)-[k_all:KNOWS]->(t) WHERE k_all.proficiency_level >= req_all.min_proficiency
             
@@ -105,6 +99,4 @@ public interface RecommendationRepository extends Neo4jRepository<Job, String> {
         ORDER BY similarityScore DESC
     """)
     List<JobRecommendationProjection> recommendJobsForStudent(@Param("studentId") String studentId, @Param("limit") int limit);
-
-
 }

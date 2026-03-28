@@ -151,8 +151,8 @@ if __name__ == "__main__":
 
     # 2. Conexiunea pentru Memgraph
     URI = "bolt://localhost:7687"
-    USER = "" 
-    PASSWORD = ""
+    USER = "neo4j"
+    PASSWORD = "Test1234"
 
     # 3. Inserarea datelor
     try:

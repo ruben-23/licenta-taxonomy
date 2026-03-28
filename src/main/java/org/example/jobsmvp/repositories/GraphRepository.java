@@ -1,54 +1,80 @@
 package org.example.jobsmvp.repositories;
 
+
 import org.example.jobsmvp.models.Graph;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.neo4j.repository.query.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-
 @Repository
 public interface GraphRepository extends Neo4jRepository<Graph, Long> {
 
-    /**
-     * Triggers the Memgraph MAGE Node2Vec algorithm across the entire graph.
-     * * Parameters:
-     * - is_directed: False (walks traverse edges in both directions)
-     * - p: 1.0 (Return hyperparameter)
-     * - q: 1.0 (Inout hyperparameter)
-     * - num_walks: 10 (Walks per node)
-     * - walk_length: 80 (Steps per walk)
-     * - vector_size: 128 (Dimensions of the resulting embedding array)
-     * * @return The total number of nodes that received an embedding.
-     */
+    // --- STEP 1: Project the graph into memory ---
     @Query("""
-        CALL node2vec.set_embeddings(False, 1.0, 1.0, 10, 80, 128) 
-        YIELD node 
-        RETURN count(node)
+        CALL gds.graph.project(
+            'myNode2VecGraph',
+            '*',
+            { ALL_RELS: { type: '*', orientation: 'UNDIRECTED' } }
+        ) YIELD nodeCount, relationshipCount
+        RETURN nodeCount
     """)
-    Long generateNode2VecEmbeddings();
+    Long createGraphProjection();
+
+    // --- STEP 2: Run the algorithm on the projected graph ---
+    @Query("""
+        CALL gds.node2vec.write('myNode2VecGraph', {
+            embeddingDimension: 128,
+            walkLength: 80,
+            walksPerNode: 10,
+            inOutFactor: 1.0,
+            returnFactor: 1.0,
+            writeProperty: 'embedding'
+        })
+        YIELD nodePropertiesWritten
+        RETURN nodePropertiesWritten
+    """)
+    Long writeNode2VecEmbeddings();
+
+    // --- STEP 3: Drop the graph from memory ---
+    @Query("""
+        CALL gds.graph.drop('myNode2VecGraph', false) YIELD graphName
+        RETURN 1
+    """)
+    Long dropGraphProjection();
 
 
+    // --- VECTOR INDEXES  ---
     @Query("""
-        CREATE VECTOR INDEX student_embeddings ON :Student(embedding) WITH CONFIG {"dimension": 128, "metric": "cos", "capacity": 1000}
+        CREATE VECTOR INDEX student_embeddings IF NOT EXISTS 
+        FOR (s:Student) ON (s.embedding) 
+        OPTIONS {indexConfig: {
+            `vector.dimensions`: 128, 
+            `vector.similarity_function`: 'cosine'
+        }}
     """)
-    @Transactional(propagation = Propagation.NOT_SUPPORTED) // <-- disables transaction
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
     void createStudentVectorIndex();
 
     @Query("""
-        CREATE VECTOR INDEX job_embeddings ON :Job(embedding) WITH CONFIG {"dimension": 128, "metric": "cos", "capacity": 1000}
+        CREATE VECTOR INDEX job_embeddings IF NOT EXISTS 
+        FOR (j:Job) ON (j.embedding) 
+        OPTIONS {indexConfig: {
+            `vector.dimensions`: 128, 
+            `vector.similarity_function`: 'cosine'
+        }}
     """)
-    @Transactional(propagation = Propagation.NOT_SUPPORTED) // <-- disables transaction
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
     void createJobVectorIndex();
 
-    /**
-     * Creates a vector index for Technology nodes.
-     */
     @Query("""
-        CREATE VECTOR INDEX tech_embeddings ON :Technology(text_embedding) 
-        WITH CONFIG {"dimension": 768, "metric": "cos", "capacity": 1000}
+        CREATE VECTOR INDEX tech_embeddings IF NOT EXISTS 
+        FOR (t:Technology) ON (t.text_embedding) 
+        OPTIONS {indexConfig: {
+            `vector.dimensions`: 768, 
+            `vector.similarity_function`: 'cosine'
+        }}
     """)
-    @Transactional(propagation = Propagation.NOT_SUPPORTED) // <-- disables transaction
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
     void createTechnologyVectorIndex();
-
 }
