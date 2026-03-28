@@ -9,16 +9,20 @@ import java.util.Optional;
 
 public interface TechnologyRepository extends Neo4jRepository<Technology, String> {
 
+    /**
+     * Brute-force cosine similarity using Neo4j's native vector math function.
+     */
     @Query("""
         MATCH (t:Technology)
         WHERE t.text_embedding IS NOT NULL
-        WITH t, vector_search.cosine_similarity($embedding, t.text_embedding) AS score
+        WITH t, vector.similarity.cosine($embedding, t.text_embedding) AS score
         WHERE score >= $threshold
         RETURN t ORDER BY score DESC LIMIT 1
         """)
     Technology findSimilarTechnology(@Param("embedding") List<Float> embedding, @Param("threshold") double threshold);
 
     Technology findByName(String name);
+
     /**
      * Case-insensitive Technology lookup — used by EntityNormalizationService.
      */
@@ -32,11 +36,12 @@ public interface TechnologyRepository extends Neo4jRepository<Technology, String
     @Query("MATCH (t:Technology) RETURN t")
     List<Technology> findAllTechnologies();
 
-
+    /**
+     * Index-backed vector search
+     */
     @Query("""
-        CALL vector_search.search('tech_embeddings', 1, $queryVector) 
-        YIELD node, similarity
-        WITH node AS t, similarity
+        CALL db.index.vector.queryNodes('tech_embeddings', 1, $queryVector) 
+        YIELD node AS t, score AS similarity
         WHERE similarity >= $threshold
         RETURN t
     """)
@@ -44,6 +49,4 @@ public interface TechnologyRepository extends Neo4jRepository<Technology, String
             @Param("queryVector") double[] queryVector,
             @Param("threshold") double threshold
     );
-
-
 }
