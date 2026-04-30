@@ -11,10 +11,7 @@ public class RestClientConfig {
     private static final String BASE_URL = "https://jsearch.p.rapidapi.com";
 
     @Bean
-    public RestClient restClient() {
-        return RestClient.builder()
-                .baseUrl(BASE_URL)
-                .defaultHeader("Content-Type", MediaType.APPLICATION_JSON_VALUE)
-                .build();
+    public RestClient.Builder restClient() {
+        return RestClient.builder();
     }
 }
