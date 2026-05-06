@@ -32,28 +32,28 @@ public class JobsMvpApplication {
 			}
 
 			// 2. Generate Node2Vec embeddings
-			try {
-				System.out.println("Generating Node2Vec embeddings...");
-
-				// Step 0: Clean up any old graph projection that might be stuck in memory
-				graphRepository.dropGraphProjection();
-
-				// Step 1: Project the graph into GDS memory
-				Long projectedNodes = graphRepository.createGraphProjection();
-				System.out.println("Projected " + projectedNodes + " nodes into GDS memory.");
-
-				// Step 2: Run the algorithm and write properties back to the database
-				Long nodesProcessed = graphRepository.writeNode2VecEmbeddings();
-				System.out.println("Embeddings generated and written for " + nodesProcessed + " nodes.");
-
-				// Step 3: Drop the graph from memory
-				graphRepository.dropGraphProjection();
-				System.out.println("Cleaned up GDS memory.");
-
-			} catch (Exception e) {
-				System.err.println("Failed to generate embeddings.");
-				e.printStackTrace();
-			}
+//			try {
+//				System.out.println("Generating Node2Vec embeddings...");
+//
+//				// Step 0: Clean up any old graph projection that might be stuck in memory
+//				graphRepository.dropGraphProjection();
+//
+//				// Step 1: Project the graph into GDS memory
+//				Long projectedNodes = graphRepository.createGraphProjection();
+//				System.out.println("Projected " + projectedNodes + " nodes into GDS memory.");
+//
+//				// Step 2: Run the algorithm and write properties back to the database
+//				Long nodesProcessed = graphRepository.writeNode2VecEmbeddings();
+//				System.out.println("Embeddings generated and written for " + nodesProcessed + " nodes.");
+//
+//				// Step 3: Drop the graph from memory
+//				graphRepository.dropGraphProjection();
+//				System.out.println("Cleaned up GDS memory.");
+//
+//			} catch (Exception e) {
+//				System.err.println("Failed to generate embeddings.");
+//				e.printStackTrace();
+//			}
 		};
 	}
 

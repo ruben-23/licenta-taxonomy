@@ -18,5 +18,5 @@ public class Course {
     private String provider;
 
     @Relationship(type = "COVERS", direction = Relationship.Direction.OUTGOING)
-    private List<Technology> covers;
+    private List<Skill> covers;
 }

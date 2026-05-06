@@ -1,6 +1,6 @@
 package org.example.jobsmvp.models.relationships;
 
-import org.example.jobsmvp.models.nodes.Technology;
+import org.example.jobsmvp.models.nodes.Skill;
 import org.springframework.data.neo4j.core.schema.*;
 import lombok.Data;
 
@@ -17,5 +17,5 @@ public class Knows {
     private Double yearsOfExperience;
 
     @TargetNode
-    private Technology technology;
+    private Skill technology;
 }

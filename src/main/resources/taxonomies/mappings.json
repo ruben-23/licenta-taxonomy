@@ -1,0 +1,487 @@
+{
+  "name": "Delta-Skill Taxonomy Mapping",
+  "jobFamilies": [
+    {
+      "name": "Software Engineering & Architecture",
+      "coreOccupations": [
+        {
+          "name": "Software Developer",
+          "sharedSkills": [
+            "Git",
+            "Agile methodology",
+            "Problem solving",
+            "Communication skills",
+            "Collaboration",
+            "Teamwork",
+            "Adaptability",
+            "CI/CD pipelines",
+            "Test-driven development (TDD)"
+          ],
+          "specializedRoles": [
+            {
+              "name": "Software Architect",
+              "additionalSkills": [
+                "Domain-Driven Design (DDD)",
+                "Microservices architecture",
+                "TOGAF (The Open Group Architecture Framework)",
+                "Technical leadership"
+              ]
+            },
+            {
+              "name": "Embedded Systems Developer",
+              "additionalSkills": [
+                "C++",
+                "Rust",
+                "Linux OS"
+              ]
+            },
+            {
+              "name": "Mobile Application Developer",
+              "additionalSkills": [
+                "Flutter",
+                "Swift",
+                "Objective-C",
+                "Dart",
+                "Kotlin"
+              ]
+            },
+            {
+              "name": "Full Stack Developer",
+              "additionalSkills": [
+                "JavaScript",
+                "TypeScript",
+                "Node.js",
+                "React",
+                "Web services",
+                "REST APIs"
+              ]
+            },
+            {
+              "name": "QA Automation Engineer",
+              "additionalSkills": [
+                "BDD (Behavior-Driven Development)",
+                "Python",
+                "Java"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Back-End Developer",
+          "sharedSkills": [
+            "Git",
+            "Agile methodology",
+            "Problem solving",
+            "Communication skills",
+            "Collaboration",
+            "Teamwork",
+            "Adaptability",
+            "SQL",
+            "Web services",
+            "REST APIs",
+            "Docker",
+            "Serverless Architecture"
+          ],
+          "specializedRoles": [
+            {
+              "name": "Java Developer",
+              "additionalSkills": [
+                "Java",
+                "Spring Boot",
+                "Hibernate",
+                "Spring Cloud"
+              ]
+            },
+            {
+              "name": "Python Developer",
+              "additionalSkills": [
+                "Python",
+                "Django",
+                "FastAPI",
+                "Celery"
+              ]
+            },
+            {
+              "name": "API Developer",
+              "additionalSkills": [
+                "GraphQL",
+                "Apollo GraphQL",
+                "gRPC"
+              ]
+            },
+            {
+              "name": "Microservices Engineer",
+              "additionalSkills": [
+                "Go (Golang)",
+                "Event-Driven Architecture",
+                "Apache Kafka"
+              ]
+            },
+            {
+              "name": "Cloud Backend Software Engineer",
+              "additionalSkills": [
+                "Azure",
+                "Amazon Web Services (AWS)",
+                "Google Cloud Platform (GCP)",
+                "Pulumi",
+                "Kubernetes"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Front-End Developer",
+          "sharedSkills": [
+            "Git",
+            "Agile methodology",
+            "Problem solving",
+            "Communication skills",
+            "Collaboration",
+            "Teamwork",
+            "Adaptability",
+            "JavaScript",
+            "TypeScript",
+            "Tailwind CSS",
+            "Vite",
+            "Vercel"
+          ],
+          "specializedRoles": [
+            {
+              "name": "UI Developer",
+              "additionalSkills": [
+                "React",
+                "Vue.js",
+                "Svelte",
+                "Next.js",
+                "Angular"
+              ]
+            },
+            {
+              "name": "Web Accessibility Specialist",
+              "additionalSkills": [
+                "Accessible Rich Internet Applications(ARIA) Standards"
+              ]
+            },
+            {
+              "name": "JavaScript Developer",
+              "additionalSkills": [
+                "Node.js",
+                "Redux",
+                "NestJS"
+              ]
+            },
+            {
+              "name": "Technical Web Designer",
+              "additionalSkills": [
+                "Framer",
+                "Lottie",
+                "Three.js"
+              ]
+            },
+            {
+              "name": "UX/UI Prototyper",
+              "additionalSkills": [
+                "A/B Testing",
+                "Framer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure, Cloud & Security Operations",
+      "coreOccupations": [
+        {
+          "name": "DevOps Engineer",
+          "sharedSkills": [
+            "Linux OS",
+            "Git",
+            "Problem solving",
+            "ITIL",
+            "Stakeholder Management",
+            "CI/CD pipelines",
+            "Docker",
+            "Kubernetes",
+            "Azure",
+            "Amazon Web Services (AWS)",
+            "Google Cloud Platform (GCP)",
+            "Terraform (IaC)",
+            "GitHub Actions"
+          ],
+          "specializedRoles": [
+            {
+              "name": "Site Reliability Engineer (SRE)",
+              "additionalSkills": [
+                "Chaos Engineering",
+                "Datadog",
+                "Prometheus",
+                "Grafana"
+              ]
+            },
+            {
+              "name": "Release Manager",
+              "additionalSkills": [
+                "GitLab CI",
+                "Jenkins",
+                "ArgoCD",
+                "Bitbucket"
+              ]
+            },
+            {
+              "name": "Cloud Infrastructure Engineer",
+              "additionalSkills": [
+                "Crossplane",
+                "Pulumi",
+                "Helm"
+              ]
+            },
+            {
+              "name": "DevSecOps Engineer",
+              "additionalSkills": [
+                "OWASP Top 10",
+                "Information Security",
+                "Cybersecurity",
+                "SonarQube",
+                "HashiCorp Vault"
+              ]
+            },
+            {
+              "name": "Platform Engineer",
+              "additionalSkills": [
+                "Kubernetes",
+                "Ansible",
+                "VMware"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "System Administrator",
+          "sharedSkills": [
+            "Linux OS",
+            "Git",
+            "Problem solving",
+            "ITIL",
+            "Stakeholder Management",
+            "Windows Server OS",
+            "Shell Scripting",
+            "Bash",
+            "PowerShell",
+            "Time management"
+          ],
+          "specializedRoles": [
+            {
+              "name": "Network Administrator",
+              "additionalSkills": [
+                "Wireshark",
+                "Nginx"
+              ]
+            },
+            {
+              "name": "IT Security Administrator",
+              "additionalSkills": [
+                "SELinux",
+                "Zero Trust Architecture",
+                "Splunk"
+              ]
+            },
+            {
+              "name": "Linux System Administrator",
+              "additionalSkills": [
+                "Shell Scripting",
+                "Bash",
+                "SELinux"
+              ]
+            },
+            {
+              "name": "Windows System Administrator",
+              "additionalSkills": [
+                "Hyper-V",
+                "SCCM (System Center Configuration Manager)"
+              ]
+            },
+            {
+              "name": "Cloud Administrator",
+              "additionalSkills": [
+                "Azure",
+                "Amazon Web Services (AWS)",
+                "Google Cloud Platform (GCP)",
+                "FinOps"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Data, Analytics & Artificial Intelligence",
+      "coreOccupations": [
+        {
+          "name": "Database Administrator (DBA)",
+          "sharedSkills": [
+            "SQL",
+            "Python",
+            "Data Modeling",
+            "Warehousing",
+            "Analytical thinking",
+            "Linux OS",
+            "Data Governance",
+            "ETL processes"
+          ],
+          "specializedRoles": [
+            {
+              "name": "Data Warehouse Developer",
+              "additionalSkills": [
+                "Snowflake",
+                "BigQuery",
+                "dbt (Data Build Tool)",
+                "Hadoop"
+              ]
+            },
+            {
+              "name": "Database Architect",
+              "additionalSkills": [
+                "Data Modeling",
+                "Warehousing",
+                "Domain-Driven Design (DDD)"
+              ]
+            },
+            {
+              "name": "NoSQL Database Administrator",
+              "additionalSkills": [
+                "Neo4j",
+                "Elasticsearch"
+              ]
+            },
+            {
+              "name": "Cloud Database Engineer",
+              "additionalSkills": [
+                "Azure",
+                "Amazon Web Services (AWS)",
+                "Google Cloud Platform (GCP)"
+              ]
+            },
+            {
+              "name": "Data Migration Specialist",
+              "additionalSkills": [
+                "Talend",
+                "Apache Kafka"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Data Scientist",
+          "sharedSkills": [
+            "SQL",
+            "Python",
+            "Data Modeling",
+            "Warehousing",
+            "Analytical thinking",
+            "R",
+            "Pandas",
+            "Scikit-learn",
+            "CRISP-DM (Cross-Industry Standard Process for Data Mining)"
+          ],
+          "specializedRoles": [
+            {
+              "name": "Data Analyst",
+              "additionalSkills": [
+                "Tableau",
+                "PowerBI",
+                "Qlik Sense",
+                "Looker"
+              ]
+            },
+            {
+              "name": "Quantitative Analyst",
+              "additionalSkills": [
+                "MATLAB",
+                "Analytical thinking"
+              ]
+            },
+            {
+              "name": "Predictive Modeler",
+              "additionalSkills": [
+                "XGBoost",
+                "Machine Learning",
+                "Deep Learning",
+                "Apache Spark"
+              ]
+            },
+            {
+              "name": "NLP Scientist",
+              "additionalSkills": [
+                "Natural Language Processing (NLP)",
+                "Hugging Face"
+              ]
+            },
+            {
+              "name": "Computer Vision Scientist",
+              "additionalSkills": [
+                "PyTorch",
+                "TensorFlow"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Machine Learning (ML) Engineer",
+          "sharedSkills": [
+            "SQL",
+            "Python",
+            "Data Modeling",
+            "Warehousing",
+            "Analytical thinking",
+            "Machine Learning",
+            "Deep Learning",
+            "Docker",
+            "CI/CD pipelines"
+          ],
+          "specializedRoles": [
+            {
+              "name": "Deep Learning Engineer",
+              "additionalSkills": [
+                "PyTorch",
+                "TensorFlow",
+                "Keras",
+                "CUDA"
+              ]
+            },
+            {
+              "name": "AI Architect",
+              "additionalSkills": [
+                "TOGAF (The Open Group Architecture Framework)",
+                "Technical leadership"
+              ]
+            },
+            {
+              "name": "MLOps Engineer",
+              "additionalSkills": [
+                "MLflow",
+                "Kubeflow",
+                "CI/CD pipelines"
+              ]
+            },
+            {
+              "name": "Large Language Model (LLM) Engineer",
+              "additionalSkills": [
+                "LangChain",
+                "Hugging Face",
+                "Vector Databases",
+                "Auto-GPT"
+              ]
+            },
+            {
+              "name": "Reinforcement Learning Engineer",
+              "additionalSkills": [
+                "OpenAI Gym"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

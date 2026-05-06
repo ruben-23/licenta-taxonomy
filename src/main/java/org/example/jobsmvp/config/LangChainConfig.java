@@ -4,6 +4,7 @@ import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.model.embedding.EmbeddingModel;
 import dev.langchain4j.model.googleai.GoogleAiEmbeddingModel;
 import dev.langchain4j.model.googleai.GoogleAiGeminiChatModel;
+import dev.langchain4j.model.ollama.OllamaEmbeddingModel;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,6 +29,14 @@ public class LangChainConfig {
     @Value("${langchain4j.google-ai-gemini.chat-model.temperature:0.0}")
     private double chatModelTemperature;
 
+    @Value("${langchain4j.ollama.base-url:http://localhost:11434}")
+    private String ollamaBaseUrl;
+
+    @Value("${langchain4j.ollama.embedding-model.model-name:nomic-embed-text}")
+    private String ollamaEmbeddingModelName;
+
+
+
     @Bean
     public ChatModel chatModel() {
         return GoogleAiGeminiChatModel.builder()
@@ -39,12 +48,21 @@ public class LangChainConfig {
                 .build();
     }
 
+//    @Bean
+//    public EmbeddingModel embeddingModel() {
+//        return GoogleAiEmbeddingModel.builder()
+//                .apiKey(geminiAiApiKey)
+//                .modelName(embeddingModelName)
+//                .outputDimensionality(768)
+//                .timeout(Duration.ofSeconds(60))
+//                .build();
+//    }
+
     @Bean
     public EmbeddingModel embeddingModel() {
-        return GoogleAiEmbeddingModel.builder()
-                .apiKey(geminiAiApiKey)
-                .modelName(embeddingModelName)
-                .outputDimensionality(768)
+        return OllamaEmbeddingModel.builder()
+                .baseUrl(ollamaBaseUrl)
+                .modelName(ollamaEmbeddingModelName)
                 .timeout(Duration.ofSeconds(60))
                 .build();
     }

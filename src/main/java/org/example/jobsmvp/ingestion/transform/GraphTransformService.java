@@ -1,67 +1,83 @@
+
+
 package org.example.jobsmvp.ingestion.transform;
 
 import dev.langchain4j.data.embedding.Embedding;
-import org.example.jobsmvp.ingestion.deduplication.DeduplicationService;
+import dev.langchain4j.model.embedding.EmbeddingModel;
 import org.example.jobsmvp.ingestion.extraction.ExtractedEntities;
 import org.example.jobsmvp.ingestion.normalization.EntityNormalizationService;
+import org.example.jobsmvp.ingestion.normalization.OccupationNormalizationService;
 import org.example.jobsmvp.ingestion.source.RawJobDto;
 import org.example.jobsmvp.models.nodes.Company;
 import org.example.jobsmvp.models.nodes.Job;
-import org.example.jobsmvp.models.nodes.Technology;
+import org.example.jobsmvp.models.nodes.Occupation;
+import org.example.jobsmvp.models.nodes.Skill;
 import org.example.jobsmvp.models.relationships.Posts;
 import org.example.jobsmvp.models.relationships.Requires;
-import dev.langchain4j.model.embedding.EmbeddingModel;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
-
 /**
- * Converts raw job data + extracted entities into graph-ready node and relationship objects.
+ * Converts raw job data + extracted entities into graph-ready node and
+ * relationship objects.
  *
- * Does NOT write to the database — output is handed to {@link org.example.jobsmvp.ingestion.graph.GraphIngestionService}.
+ * Does NOT write to the database — output is handed to
+ * {@link org.example.jobsmvp.ingestion.graph.GraphIngestionService}.
+ *
+ * Changes from previous version:
+ *  - Technology → Skill (node + relationships)
+ *  - normaliseTechnologies() → normaliseSkills() with merged technical + soft skills
+ *  - resolveOccupation() wired in; Occupation added to the bundle
+ *  - ExtractedEntities accessors updated (technicalSkills, softSkills, occupation)
  */
 @Service
 public class GraphTransformService {
 
     private final EntityNormalizationService normalizationService;
-    private final DeduplicationService deduplicationService;
+    private final OccupationNormalizationService occupationNormalizationService;
     private final EmbeddingModel embeddingModel;
 
     public GraphTransformService(
             EntityNormalizationService normalizationService,
-            DeduplicationService deduplicationService,
+            OccupationNormalizationService occupationNormalizationService,
             EmbeddingModel embeddingModel
     ) {
-        this.normalizationService = normalizationService;
-        this.deduplicationService = deduplicationService;
-        this.embeddingModel = embeddingModel;
+        this.normalizationService            = normalizationService;
+        this.occupationNormalizationService  = occupationNormalizationService;
+        this.embeddingModel                  = embeddingModel;
     }
 
     /**
-     * Builds a {@link JobGraphBundle} containing all nodes and edges for a single job posting.
+     * Builds a {@link JobGraphBundle} containing all nodes and edges for a
+     * single job posting.
      *
-     * @param raw        original API DTO
-     * @param entities   LLM-extracted entities
+     * @param raw         original API DTO
+     * @param entities    LLM-extracted entities
      * @param cleanedDesc preprocessed description (used for embedding)
      * @return bundle ready for graph persistence
      */
     public JobGraphBundle transform(RawJobDto raw, ExtractedEntities entities, String cleanedDesc) {
-        Company company  = buildCompany(raw, entities);
-        Job     job      = buildJob(raw, entities, cleanedDesc);
-        Posts   postsRel = buildPostsRelationship();
+        Company    company    = buildCompany(raw, entities);
+        Job        job        = buildJob(raw, entities, cleanedDesc);
+        Posts      postsRel   = buildPostsRelationship();
+        Occupation occupation = resolveOccupation(entities);
 
-        List<Technology> technologies = normalizationService.normaliseTechnologies(
-                entities.technologies()
-        );
+        // Merge technical skills and soft skills into one normalisation pass
+        List<String> allRawSkills = new ArrayList<>();
+        if (entities.technicalSkills() != null) allRawSkills.addAll(entities.technicalSkills());
+        if (entities.softSkills()      != null) allRawSkills.addAll(entities.softSkills());
 
-        List<Requires> requiresRels = buildRequiresRelationships(entities, technologies);
+        List<Skill>   skills      = normalizationService.normaliseSkills(allRawSkills);
+        List<Requires> requiresRels = buildRequiresRelationships(skills);
 
-        return new JobGraphBundle(company, job, postsRel, technologies, requiresRels);
+        return new JobGraphBundle(company, job, postsRel, occupation, skills, requiresRels);
     }
 
-    // ── Company ─────────────────────────────────────────────────────────────
+    // ── Company ──────────────────────────────────────────────────────────────
 
     private Company buildCompany(RawJobDto raw, ExtractedEntities entities) {
         String name = firstNonNull(
@@ -77,21 +93,16 @@ public class GraphTransformService {
         company.setName(name);
         company.setIndustry(entities.industry());
         company.setSize(entities.companySize());
-
-        // Convert List<Float> to List<Double>
-        List<Double> doubleEmbedding = textEmbedding.vectorAsList()
-                .stream()
-                .map(Float::doubleValue)
-                .toList();
-
-        company.setTextEmbedding(doubleEmbedding);
+        company.setTextEmbedding(
+                textEmbedding.vectorAsList().stream().map(Float::doubleValue).toList()
+        );
         return company;
     }
 
-    // ── Job ─────────────────────────────────────────────────────────────────
+    // ── Job ──────────────────────────────────────────────────────────────────
 
     private Job buildJob(RawJobDto raw, ExtractedEntities entities, String cleanedDesc) {
-        String title = firstNonNull(entities.jobTitle(), raw.jobTitle(), "Unknown Role");
+        String title      = firstNonNull(entities.jobTitle(), raw.jobTitle(), "Unknown Role");
         String embedInput = title + " " + cleanedDesc;
         Embedding textEmbedding = embeddingModel.embed(
                 embedInput.length() > 2000 ? embedInput.substring(0, 2000) : embedInput
@@ -109,11 +120,22 @@ public class GraphTransformService {
         job.setCurrency(firstNonNull(entities.currency(), raw.jobSalaryCurrency()));
         job.setPostedDate(raw.jobPostedAt());
         job.setExpiresAt(raw.jobExpiresAt());
-//        job.setTextEmbedding(textEmbedding.vectorAsList());
         return job;
     }
 
-    // ── Relationships ────────────────────────────────────────────────────────
+    // ── Occupation ───────────────────────────────────────────────────────────
+
+    /**
+     * Resolves the extracted occupation string against the taxonomy.
+     * Falls back to the raw job title if no occupation was extracted.
+     */
+    private Occupation resolveOccupation(ExtractedEntities entities) {
+        String rawOccupation = firstNonNull(entities.occupation(), entities.jobTitle());
+        Optional<Occupation> resolved = occupationNormalizationService.resolveOccupation(rawOccupation);
+        return resolved.orElse(null);
+    }
+
+    // ── Relationships ─────────────────────────────────────────────────────────
 
     private Posts buildPostsRelationship() {
         Posts posts = new Posts();
@@ -121,8 +143,8 @@ public class GraphTransformService {
         return posts;
     }
 
-    private List<Requires> buildRequiresRelationships(ExtractedEntities entities, List<Technology> techs) {
-        return techs.stream().map(tech -> {
+    private List<Requires> buildRequiresRelationships(List<Skill> skills) {
+        return skills.stream().map(skill -> {
             Requires req = new Requires();
             req.setImportance("required");
             req.setMinProficiency(1);
@@ -130,7 +152,7 @@ public class GraphTransformService {
         }).toList();
     }
 
-    // ── Utilities ────────────────────────────────────────────────────────────
+    // ── Utilities ─────────────────────────────────────────────────────────────
 
     private static String firstNonNull(String... values) {
         for (String v : values) {
@@ -158,11 +180,5 @@ public class GraphTransformService {
         if (raw.jobMinSalary() == null) return raw.jobMaxSalary();
         if (raw.jobMaxSalary() == null) return raw.jobMinSalary();
         return (raw.jobMinSalary() + raw.jobMaxSalary()) / 2;
-    }
-
-    private static double[] toDoubleArray(float[] f) {
-        double[] d = new double[f.length];
-        for (int i = 0; i < f.length; i++) d[i] = f[i];
-        return d;
     }
 }

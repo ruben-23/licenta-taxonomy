@@ -1,13 +1,13 @@
 package org.example.jobsmvp.repositories;
 
-import org.example.jobsmvp.models.nodes.Technology;
+import org.example.jobsmvp.models.nodes.Skill;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.neo4j.repository.query.Query;
 import org.springframework.data.repository.query.Param;
 import java.util.List;
 import java.util.Optional;
 
-public interface TechnologyRepository extends Neo4jRepository<Technology, String> {
+public interface TechnologyRepository extends Neo4jRepository<Skill, String> {
 
     /**
      * Brute-force cosine similarity using Neo4j's native vector math function.
@@ -19,22 +19,22 @@ public interface TechnologyRepository extends Neo4jRepository<Technology, String
         WHERE score >= $threshold
         RETURN t ORDER BY score DESC LIMIT 1
         """)
-    Technology findSimilarTechnology(@Param("embedding") List<Float> embedding, @Param("threshold") double threshold);
+    Skill findSimilarTechnology(@Param("embedding") List<Float> embedding, @Param("threshold") double threshold);
 
-    Technology findByName(String name);
+    Skill findByName(String name);
 
     /**
      * Case-insensitive Technology lookup — used by EntityNormalizationService.
      */
     @Query("MATCH (t:Technology) WHERE toLower(t.name) = toLower($name) RETURN t LIMIT 1")
-    Optional<Technology> findTechnologyByNameIgnoreCase(@Param("name") String name);
+    Optional<Skill> findTechnologyByNameIgnoreCase(@Param("name") String name);
 
     /**
      * Returns all Technology nodes for embedding similarity matching.
      * Result is cached in-memory inside EntityNormalizationService per run.
      */
     @Query("MATCH (t:Technology) RETURN t")
-    List<Technology> findAllTechnologies();
+    List<Skill> findAllTechnologies();
 
     /**
      * Index-backed vector search
@@ -45,7 +45,7 @@ public interface TechnologyRepository extends Neo4jRepository<Technology, String
         WHERE similarity >= $threshold
         RETURN t
     """)
-    Optional<Technology> findMostSimilarTechnology(
+    Optional<Skill> findMostSimilarTechnology(
             @Param("queryVector") double[] queryVector,
             @Param("threshold") double threshold
     );

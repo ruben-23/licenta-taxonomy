@@ -20,5 +20,5 @@ public class Project {
     private String githubLink;
 
     @Relationship(type = "BUILT_WITH", direction = Relationship.Direction.OUTGOING)
-    private List<Technology> builtWith;
+    private List<Skill> builtWith;
 }

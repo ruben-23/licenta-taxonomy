@@ -19,5 +19,5 @@ public class Diploma {
 
 
     @Relationship(type = "CERTIFIES", direction = Relationship.Direction.OUTGOING)
-    private List<Technology> certifies;
+    private List<Skill> certifies;
 }

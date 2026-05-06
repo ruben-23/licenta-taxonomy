@@ -1,0 +1,124 @@
+{
+  "name": "Occupations Taxonomy",
+  "layer": 0,
+  "type": "Root Node",
+  "children": [
+    {
+      "name": "Software Engineering & Architecture",
+      "layer": 1,
+      "type": "Job Family",
+      "children": [
+        {
+          "name": "Software Developer",
+          "layer": 2,
+          "type": "Core Occupation",
+          "children": [
+            { "name": "Software Architect", "layer": 3, "type": "Specialized Role" },
+            { "name": "Embedded Systems Developer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Mobile Application Developer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Full Stack Developer", "layer": 3, "type": "Specialized Role" },
+            { "name": "QA Automation Engineer", "layer": 3, "type": "Specialized Role" }
+          ]
+        },
+        {
+          "name": "Back-End Developer",
+          "layer": 2,
+          "type": "Core Occupation",
+          "children": [
+            { "name": "Java Developer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Python Developer", "layer": 3, "type": "Specialized Role" },
+            { "name": "API Developer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Microservices Engineer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Cloud Backend Software Engineer", "layer": 3, "type": "Specialized Role" }
+          ]
+        },
+        {
+          "name": "Front-End Developer",
+          "layer": 2,
+          "type": "Core Occupation",
+          "children": [
+            { "name": "UI Developer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Web Accessibility Specialist", "layer": 3, "type": "Specialized Role" },
+            { "name": "JavaScript Developer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Technical Web Designer", "layer": 3, "type": "Specialized Role" },
+            { "name": "UX/UI Prototyper", "layer": 3, "type": "Specialized Role" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure, Cloud & Security Operations",
+      "layer": 1,
+      "type": "Job Family",
+      "children": [
+        {
+          "name": "DevOps Engineer",
+          "layer": 2,
+          "type": "Core Occupation",
+          "children": [
+            { "name": "Site Reliability Engineer (SRE)", "layer": 3, "type": "Specialized Role" },
+            { "name": "Release Manager", "layer": 3, "type": "Specialized Role" },
+            { "name": "Cloud Infrastructure Engineer", "layer": 3, "type": "Specialized Role" },
+            { "name": "DevSecOps Engineer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Platform Engineer", "layer": 3, "type": "Specialized Role" }
+          ]
+        },
+        {
+          "name": "System Administrator",
+          "layer": 2,
+          "type": "Core Occupation",
+          "children": [
+            { "name": "Network Administrator", "layer": 3, "type": "Specialized Role" },
+            { "name": "IT Security Administrator", "layer": 3, "type": "Specialized Role" },
+            { "name": "Linux System Administrator", "layer": 3, "type": "Specialized Role" },
+            { "name": "Windows System Administrator", "layer": 3, "type": "Specialized Role" },
+            { "name": "Cloud Administrator", "layer": 3, "type": "Specialized Role" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Data, Analytics & Artificial Intelligence",
+      "layer": 1,
+      "type": "Job Family",
+      "children": [
+        {
+          "name": "Database Administrator (DBA)",
+          "layer": 2,
+          "type": "Core Occupation",
+          "children": [
+            { "name": "Data Warehouse Developer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Database Architect", "layer": 3, "type": "Specialized Role" },
+            { "name": "NoSQL Database Administrator", "layer": 3, "type": "Specialized Role" },
+            { "name": "Cloud Database Engineer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Data Migration Specialist", "layer": 3, "type": "Specialized Role" }
+          ]
+        },
+        {
+          "name": "Data Scientist",
+          "layer": 2,
+          "type": "Core Occupation",
+          "children": [
+            { "name": "Data Analyst", "layer": 3, "type": "Specialized Role" },
+            { "name": "Quantitative Analyst", "layer": 3, "type": "Specialized Role" },
+            { "name": "Predictive Modeler", "layer": 3, "type": "Specialized Role" },
+            { "name": "NLP Scientist", "layer": 3, "type": "Specialized Role" },
+            { "name": "Computer Vision Scientist", "layer": 3, "type": "Specialized Role" }
+          ]
+        },
+        {
+          "name": "Machine Learning (ML) Engineer",
+          "layer": 2,
+          "type": "Core Occupation",
+          "children": [
+            { "name": "Deep Learning Engineer", "layer": 3, "type": "Specialized Role" },
+            { "name": "AI Architect", "layer": 3, "type": "Specialized Role" },
+            { "name": "MLOps Engineer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Large Language Model (LLM) Engineer", "layer": 3, "type": "Specialized Role" },
+            { "name": "Reinforcement Learning Engineer", "layer": 3, "type": "Specialized Role" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -185,12 +185,191 @@ package org.example.jobsmvp.ingestion.orchestrator;
 //    }
 //}
 
+//
+//import org.example.jobsmvp.ingestion.deduplication.DeduplicationService;
+//import org.example.jobsmvp.ingestion.extraction.EntityExtractionService;
+//import org.example.jobsmvp.ingestion.extraction.ExtractedEntities;
+//import org.example.jobsmvp.ingestion.graph.GraphIngestionService;
+//import org.example.jobsmvp.ingestion.normalization.EntityNormalizationService;
+//import org.example.jobsmvp.ingestion.preprocessing.JobPreprocessor;
+//import org.example.jobsmvp.ingestion.source.JSearchApiClient;
+//import org.example.jobsmvp.ingestion.source.JobSourceRegistry;
+//import org.example.jobsmvp.ingestion.source.RawJobDto;
+//import org.example.jobsmvp.ingestion.storage.RawJobStorageService;
+//import org.example.jobsmvp.ingestion.transform.GraphTransformService;
+//import org.example.jobsmvp.ingestion.transform.JobGraphBundle;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
+//import org.springframework.scheduling.annotation.Scheduled;
+//import org.springframework.stereotype.Service;
+//
+//import java.util.List;
+//
+///**
+// * Entry point for the job ingestion pipeline.
+// *
+// * Fully synchronous — no WebFlux, no reactive types.
+// *
+// * The orchestrator depends only on {@link JobSourceRegistry} and has no
+// * knowledge of individual sources. Adding or removing a source requires
+// * no changes here.
+// *
+// * Execution order per job:
+// *  1. Collect jobs from all registered sources via JobSourceRegistry
+// *  2. Deduplication check  → skip if already in graph
+// *  3. Store raw JSON       → raw-data/{jobId}.json
+// *  4. Preprocess text      → strip HTML, normalise
+// *  5. Extract entities     → LLM → ExtractedEntities
+// *  6. Transform            → graph nodes/edges (normalisation inside)
+// *  7. Persist              → MERGE into Neo4j
+// *
+// * Triggers:
+// *  - @Scheduled cron  (configurable via ingestion.cron)
+// *  - POST /api/ingestion/run
+// */
+//@Service
+//public class IngestionPipelineOrchestrator {
+//
+//    private static final Logger log = LoggerFactory.getLogger(IngestionPipelineOrchestrator.class);
+//
+//    private final JobSourceRegistry sourceRegistry;
+//    private final RawJobStorageService storageService;
+//    private final DeduplicationService deduplicationService;
+//    private final JobPreprocessor preprocessor;
+//    private final EntityExtractionService extractionService;
+//    private final GraphTransformService transformService;
+//    private final GraphIngestionService ingestionService;
+//    private final EntityNormalizationService normalizationService;
+//    private final JSearchApiClient apiClient;
+//
+//    public IngestionPipelineOrchestrator(
+//            JobSourceRegistry sourceRegistry,
+//            RawJobStorageService storageService,
+//            DeduplicationService deduplicationService,
+//            JobPreprocessor preprocessor,
+//            EntityExtractionService extractionService,
+//            GraphTransformService transformService,
+//            GraphIngestionService ingestionService,
+//            EntityNormalizationService normalizationService,
+//            JSearchApiClient apiClient
+//    ) {
+//        this.sourceRegistry       = sourceRegistry;
+//        this.storageService       = storageService;
+//        this.deduplicationService = deduplicationService;
+//        this.preprocessor         = preprocessor;
+//        this.extractionService    = extractionService;
+//        this.transformService     = transformService;
+//        this.ingestionService     = ingestionService;
+//        this.normalizationService = normalizationService;
+//        this.apiClient = apiClient;
+//    }
+//
+//    // ── Scheduled run ─────────────────────────────────────────────────────────
+//
+//    @Scheduled(cron = "${ingestion.cron:0 0 2 * * ?}")
+//    public PipelineResult runScheduled() {
+//        log.info("=== Ingestion pipeline starting (scheduled) ===");
+//        return run(null, -1);
+//    }
+//
+//    // ── Manual run ────────────────────────────────────────────────────────────
+//
+//    /**
+//     * Runs the pipeline synchronously across all registered sources.
+//     *
+//     * @param query   search query forwarded to every source; null → each source uses its own default
+//     * @param maxJobs stop after processing this many new jobs total; -1 = no limit
+//     */
+//    public PipelineResult run(String query, int maxJobs) {
+//        normalizationService.clearCache();
+//
+////        List<RawJobDto> jobs = query != null
+////                ? sourceRegistry.fetchAll(query)
+////                : sourceRegistry.fetchAll();
+//
+//        List<RawJobDto> jobs = query != null
+//                ? apiClient.fetchJobsFromRandomFile(3)
+//                : apiClient.fetchJobsFromFile("jwLMxhYLldcDdFY7AAAAAA==");
+//
+//        int fetched  = jobs.size();
+//        int stored   = 0;
+//        int skipped  = 0;
+//        int ingested = 0;
+//        int failed   = 0;
+//
+//        for (RawJobDto job : jobs) {
+//            if (maxJobs >= 0 && ingested >= maxJobs) {
+//                log.info("Reached maxJobs={} limit, stopping.", maxJobs);
+//                break;
+//            }
+//
+//            if (deduplicationService.isDuplicate(job)) {
+//                skipped++;
+//                continue;
+//            }
+//
+//            if (storageService.save(job)) {
+//                stored++;
+//            }
+//
+//            if (processJob(job)) {
+//                ingested++;
+//            } else {
+//                failed++;
+//            }
+//        }
+//
+//        PipelineResult result = new PipelineResult(fetched, stored, skipped, ingested, failed);
+//        log.info("=== Pipeline complete: {} ===", result);
+//        return result;
+//    }
+//
+//    // ── Per-job processing ────────────────────────────────────────────────────
+//
+//    private boolean processJob(RawJobDto job) {
+//        try {
+//            String cleanedDesc = preprocessor.cleanDescription(job);
+//
+//            ExtractedEntities entities = extractionService.extract(
+//                    job.employerName(), job.jobTitle(), cleanedDesc);
+//
+//            JobGraphBundle bundle = transformService.transform(job, entities, cleanedDesc);
+//
+//            ingestionService.ingest(bundle);
+//
+//            log.debug("Processed jobId={} title='{}'", job.jobId(), bundle.job().getTitle());
+//            return true;
+//
+//        } catch (Exception e) {
+//            log.error("Failed to process jobId={}: {}", job.jobId(), e.getMessage(), e);
+//            return false;
+//        }
+//    }
+//
+//    // ── Result DTO ────────────────────────────────────────────────────────────
+//
+//    public record PipelineResult(
+//            int fetched,
+//            int storedRaw,
+//            int skippedDuplicates,
+//            int ingested,
+//            int failed
+//    ) {
+//        @Override
+//        public String toString() {
+//            return "fetched=%d stored=%d skipped=%d ingested=%d failed=%d"
+//                    .formatted(fetched, storedRaw, skippedDuplicates, ingested, failed);
+//        }
+//    }
+//}
+
 
 import org.example.jobsmvp.ingestion.deduplication.DeduplicationService;
 import org.example.jobsmvp.ingestion.extraction.EntityExtractionService;
 import org.example.jobsmvp.ingestion.extraction.ExtractedEntities;
 import org.example.jobsmvp.ingestion.graph.GraphIngestionService;
 import org.example.jobsmvp.ingestion.normalization.EntityNormalizationService;
+import org.example.jobsmvp.ingestion.normalization.OccupationNormalizationService;
 import org.example.jobsmvp.ingestion.preprocessing.JobPreprocessor;
 import org.example.jobsmvp.ingestion.source.JSearchApiClient;
 import org.example.jobsmvp.ingestion.source.JobSourceRegistry;
@@ -210,58 +389,58 @@ import java.util.List;
  *
  * Fully synchronous — no WebFlux, no reactive types.
  *
- * The orchestrator depends only on {@link JobSourceRegistry} and has no
- * knowledge of individual sources. Adding or removing a source requires
- * no changes here.
- *
  * Execution order per job:
  *  1. Collect jobs from all registered sources via JobSourceRegistry
  *  2. Deduplication check  → skip if already in graph
  *  3. Store raw JSON       → raw-data/{jobId}.json
  *  4. Preprocess text      → strip HTML, normalise
  *  5. Extract entities     → LLM → ExtractedEntities
- *  6. Transform            → graph nodes/edges (normalisation inside)
+ *  6. Transform            → graph nodes/edges (skill + occupation normalisation inside)
  *  7. Persist              → MERGE into Neo4j
  *
- * Triggers:
- *  - @Scheduled cron  (configurable via ingestion.cron)
- *  - POST /api/ingestion/run
+ * Post-run:
+ *  - {@link OccupationNormalizationService#flushAndReset()} writes any unmatched
+ *    occupations to a dated JSON file and resets per-run state.
+ *  - {@link EntityNormalizationService#clearCache()} resets the skill cache.
  */
 @Service
 public class IngestionPipelineOrchestrator {
 
     private static final Logger log = LoggerFactory.getLogger(IngestionPipelineOrchestrator.class);
 
-    private final JobSourceRegistry sourceRegistry;
-    private final RawJobStorageService storageService;
-    private final DeduplicationService deduplicationService;
-    private final JobPreprocessor preprocessor;
-    private final EntityExtractionService extractionService;
-    private final GraphTransformService transformService;
-    private final GraphIngestionService ingestionService;
-    private final EntityNormalizationService normalizationService;
-//    private final JSearchApiClient apiClient;
+    private final JobSourceRegistry              sourceRegistry;
+    private final RawJobStorageService           storageService;
+    private final DeduplicationService           deduplicationService;
+    private final JobPreprocessor                preprocessor;
+    private final EntityExtractionService        extractionService;
+    private final GraphTransformService          transformService;
+    private final GraphIngestionService          ingestionService;
+    private final EntityNormalizationService     normalizationService;
+    private final OccupationNormalizationService occupationNormalizationService;
+    private final JSearchApiClient apiClient;
 
     public IngestionPipelineOrchestrator(
-            JobSourceRegistry sourceRegistry,
-            RawJobStorageService storageService,
-            DeduplicationService deduplicationService,
-            JobPreprocessor preprocessor,
-            EntityExtractionService extractionService,
-            GraphTransformService transformService,
-            GraphIngestionService ingestionService,
-            EntityNormalizationService normalizationService
-//            JSearchApiClient apiClient
+            JobSourceRegistry              sourceRegistry,
+            RawJobStorageService           storageService,
+            DeduplicationService           deduplicationService,
+            JobPreprocessor                preprocessor,
+            EntityExtractionService        extractionService,
+            GraphTransformService          transformService,
+            GraphIngestionService          ingestionService,
+            EntityNormalizationService     normalizationService,
+            OccupationNormalizationService occupationNormalizationService,
+            JSearchApiClient apiClient
     ) {
-        this.sourceRegistry       = sourceRegistry;
-        this.storageService       = storageService;
-        this.deduplicationService = deduplicationService;
-        this.preprocessor         = preprocessor;
-        this.extractionService    = extractionService;
-        this.transformService     = transformService;
-        this.ingestionService     = ingestionService;
-        this.normalizationService = normalizationService;
-//        this.apiClient = apiClient;
+        this.sourceRegistry                = sourceRegistry;
+        this.storageService                = storageService;
+        this.deduplicationService          = deduplicationService;
+        this.preprocessor                  = preprocessor;
+        this.extractionService             = extractionService;
+        this.transformService              = transformService;
+        this.ingestionService              = ingestionService;
+        this.normalizationService          = normalizationService;
+        this.occupationNormalizationService = occupationNormalizationService;
+        this.apiClient = apiClient;
     }
 
     // ── Scheduled run ─────────────────────────────────────────────────────────
@@ -281,15 +460,15 @@ public class IngestionPipelineOrchestrator {
      * @param maxJobs stop after processing this many new jobs total; -1 = no limit
      */
     public PipelineResult run(String query, int maxJobs) {
+        // Reset per-run caches before starting
         normalizationService.clearCache();
 
-        List<RawJobDto> jobs = query != null
-                ? sourceRegistry.fetchAll(query)
-                : sourceRegistry.fetchAll();
-
 //        List<RawJobDto> jobs = query != null
-//                ? apiClient.fetchJobsFromRandomFile(3)
-//                : apiClient.fetchJobsFromFile("jwLMxhYLldcDdFY7AAAAAA==");
+//                ? sourceRegistry.fetchAll(query)
+//                : sourceRegistry.fetchAll();
+        List<RawJobDto> jobs = query != null
+                ? apiClient.fetchJobsFromRandomFile(10)
+                : apiClient.fetchJobsFromFile("jwLMxhYLldcDdFY7AAAAAA==");
 
         int fetched  = jobs.size();
         int stored   = 0;
@@ -308,16 +487,14 @@ public class IngestionPipelineOrchestrator {
                 continue;
             }
 
-            if (storageService.save(job)) {
-                stored++;
-            }
+            if (storageService.save(job)) stored++;
 
-            if (processJob(job)) {
-                ingested++;
-            } else {
-                failed++;
-            }
+            if (processJob(job)) ingested++;
+            else                 failed++;
         }
+
+        // Flush unmatched occupations to JSON and reset occupation service state
+        occupationNormalizationService.flushAndReset();
 
         PipelineResult result = new PipelineResult(fetched, stored, skipped, ingested, failed);
         log.info("=== Pipeline complete: {} ===", result);
@@ -332,6 +509,11 @@ public class IngestionPipelineOrchestrator {
 
             ExtractedEntities entities = extractionService.extract(
                     job.employerName(), job.jobTitle(), cleanedDesc);
+                    
+            if (entities == null || (entities.technicalSkills().isEmpty() && entities.softSkills().isEmpty())) {
+                log.warn("LLM failed to extract entities or extracted 0 skills for jobId={}, skipping DB ingestion.", job.jobId());
+                return false;
+            }
 
             JobGraphBundle bundle = transformService.transform(job, entities, cleanedDesc);
 
