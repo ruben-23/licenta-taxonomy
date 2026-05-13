@@ -1,6 +1,7 @@
 package org.example.jobsmvp.repositories;
 
 import org.example.jobsmvp.models.nodes.Job;
+import org.example.jobsmvp.models.nodes.Company;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.neo4j.repository.query.Query;
 import org.springframework.data.repository.query.Param;
@@ -14,6 +15,11 @@ public interface JobRepository extends Neo4jRepository<Job, String> {
             "RETURN j, collect(r), collect(t)")
     List<Job> findJobsByCompany(String companyId);
 
+    @Query("MATCH (j:Job) WHERE j.clean_description IS NULL RETURN j")
+    List<Job> findJobsWithoutCleanDescription();
+
+    @Query("MATCH (c:Company)-[:POSTS]->(j:Job {job_id: $jobId}) RETURN c LIMIT 1")
+    Optional<Company> findCompanyForJob(@Param("jobId") String jobId);
 
     @Query("MATCH (j:Job {job_id: $jobId}) RETURN j LIMIT 1")
     Optional<Job> findByJobId(@Param("jobId") String jobId);

@@ -18,6 +18,7 @@ public class Company {
     private String industry;
     private String location;
     private String size;
+    private String description;
 
     @Relationship(type = "POSTS", direction = Relationship.Direction.OUTGOING)
     private List<Posts> jobs;

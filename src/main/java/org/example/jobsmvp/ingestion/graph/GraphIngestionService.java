@@ -1,4 +1,3 @@
-
 package org.example.jobsmvp.ingestion.graph;
 
 import lombok.AllArgsConstructor;
@@ -77,14 +76,59 @@ public class GraphIngestionService {
 
     // ── Node merges ──────────────────────────────────────────────────────────
 
+    /**
+     * MERGEs the Company node by its stable ID.
+     *
+     * On CREATE: all fields are written.
+     * On MATCH:  only non-null enrichment fields are updated so that a company
+     *            node populated by an earlier job posting is never downgraded to
+     *            nulls.  {@code description} is treated the same way — it is
+     *            written only when the incoming value is non-null, so the first
+     *            posting that carries a company blurb wins and subsequent runs
+     *            that lack one leave it intact.
+     */
     private Company mergeCompany(Company company) {
+        neo4jClient.query("""
+                MERGE (c:Company {company_id: $companyId})
+                ON CREATE SET
+                    c.name        = $name,
+                    c.industry    = $industry,
+                    c.size        = $size,
+                    c.description = $description
+                ON MATCH SET
+                    c.industry    = CASE WHEN $industry    IS NOT NULL THEN $industry    ELSE c.industry    END,
+                    c.size        = CASE WHEN $size        IS NOT NULL THEN $size        ELSE c.size        END,
+                    c.description = CASE WHEN $description IS NOT NULL THEN $description ELSE c.description END
+                """)
+                .bindAll(Map.of(
+                        "companyId",   company.getCompany_id(),
+                        "name",        company.getName(),
+                        "industry",    company.getIndustry()    != null ? company.getIndustry()    : "",
+                        "size",        company.getSize()        != null ? company.getSize()        : "",
+                        "description", company.getDescription() != null ? company.getDescription() : ""
+                ))
+                .run();
+
+        // Also persist the text embedding if present (kept separate because
+        // Neo4jClient bindAll doesn't handle List<Double> inside the same map
+        // reliably on all driver versions).
+        if (company.getTextEmbedding() != null && !company.getTextEmbedding().isEmpty()) {
+            neo4jClient.query("""
+                    MATCH (c:Company {company_id: $companyId})
+                    SET c.text_embedding = $text_embedding
+                    """)
+                    .bindAll(Map.of(
+                            "companyId",      company.getCompany_id(),
+                            "text_embedding", company.getTextEmbedding()
+                    ))
+                    .run();
+        }
+
+        // Return the now-persisted node via the repository so callers have the
+        // managed entity (needed for relationship merges).
         return companyRepository.findByCompanyId(company.getCompany_id())
-                .map(existing -> {
-                    if (company.getIndustry() != null) existing.setIndustry(company.getIndustry());
-                    if (company.getSize()     != null) existing.setSize(company.getSize());
-                    return companyRepository.save(existing);
-                })
-                .orElseGet(() -> companyRepository.save(company));
+                .orElseThrow(() -> new IllegalStateException(
+                        "Company not found after MERGE: " + company.getCompany_id()));
     }
 
     private Job mergeJob(Job job) {
@@ -133,7 +177,7 @@ public class GraphIngestionService {
     private void mergeSkill(Skill skill) {
         if (skill.getTextEmbedding() == null || skill.getTextEmbedding().isEmpty()) {
             neo4jClient.query("""
-                    MERGE (s:Skill {SkillId: $skillId})
+                    MERGE (s:Skill {skill_id: $skillId})
                     ON CREATE SET s.name   = $name,
                                   s.layer  = $layer,
                                   s.type   = $type,
@@ -149,7 +193,7 @@ public class GraphIngestionService {
                     .run();
         } else {
             neo4jClient.query("""
-                    MERGE (s:Skill {SkillId: $skillId})
+                    MERGE (s:Skill {skill_id: $skillId})
                     ON CREATE SET s.name           = $name,
                                   s.layer          = $layer,
                                   s.type           = $type,
@@ -170,24 +214,11 @@ public class GraphIngestionService {
 
     // ── Hierarchy wiring ─────────────────────────────────────────────────────
 
-    /**
-     * Ensures the full {@code SUBCLASS_OF} chain exists for a layer-3 Skill:
-     *
-     *   (Specific Skill) -[:SUBCLASS_OF]-> (Skill Group) -[:SUBCLASS_OF]-> (Skill Category)
-     *
-     * Both the Skill Group and Skill Category nodes are guaranteed to exist
-     *
-     *
-     * The {@code skill.getParent()} field holds the Skill Group name, so we
-     * can resolve the group node by name and then follow its own {@code parent}
-     * field up to the category.
-     */
     private void mergeSkillHierarchy(Skill skill) {
         if (skill.getParent() == null || skill.getParent().isBlank()) return;
 
-        // Link Specific Skill → Skill Group (layer 2) by name
         neo4jClient.query("""
-                MATCH (child:Skill  {SkillId: $skillId})
+                MATCH (child:Skill  {skill_id: $skillId})
                 MATCH (parent:Skill {name: $parentName, layer: 2})
                 MERGE (child)-[:SUBCLASS_OF]->(parent)
                 """)
@@ -197,8 +228,6 @@ public class GraphIngestionService {
                 ))
                 .run();
 
-        // Link Skill Group → Skill Category (layer 1) — seeder already did this,
-        // but MERGE keeps it idempotent in case a new group was created at runtime.
         neo4jClient.query("""
                 MATCH (group:Skill    {name: $groupName, layer: 2})
                 MATCH (category:Skill {layer: 1})
@@ -235,7 +264,7 @@ public class GraphIngestionService {
     private void mergeRequiresRelationship(String jobId, String skillId) {
         neo4jClient.query("""
                 MATCH (j:Job   {job_id:   $jobId})
-                MATCH (s:Skill {SkillId: $skillId})
+                MATCH (s:Skill {skill_id: $skillId})
                 MERGE (j)-[r:REQUIRES]->(s)
                 ON CREATE SET r.importance      = 'required',
                               r.min_proficiency = 1

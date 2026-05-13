@@ -26,6 +26,10 @@ public class Job {
     @Property("contract_duration")
     private String contractDuration;
     private String description;
+
+    @Property("clean_description")
+    private String cleanDescription;
+
     private Integer salary;
     private String currency;
     private Boolean remote;

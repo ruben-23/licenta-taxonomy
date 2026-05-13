@@ -200,7 +200,7 @@ import java.util.stream.Collectors;
 @ConditionalOnProperty(
         name    = "ingestion.sources.jsearch.enabled",
         havingValue = "true",
-        matchIfMissing = false   // on by default
+        matchIfMissing = true   // on by default
 )
 public class JSearchApiClient implements JobSource {
 
