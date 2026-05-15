@@ -655,13 +655,14 @@ public class IngestionPipelineOrchestrator {
     public PipelineResult run(String query, int maxJobs) {
         normalizationService.clearCache();
 
-        List<RawJobDto> jobs = query != null
-                ? sourceRegistry.fetchAll(query)
-                : sourceRegistry.fetchAll();
-
 //        List<RawJobDto> jobs = query != null
-//                ? apiClient.fetchJobsFromRandomFile(30)
-//                : apiClient.fetchJobsFromFile("jwLMxhYLldcDdFY7AAAAAA==");
+//                ? sourceRegistry.fetchAll(query)
+//                : sourceRegistry.fetchAll();
+
+        List<RawJobDto> jobs = query != null
+                ? apiClient.fetchJobsFromRandomFile(30)
+                : apiClient.fetchJobsFromFile("jwLMxhYLldcDdFY7AAAAAA==");
+
 
         int fetched  = jobs.size();
         int stored   = 0;

@@ -17,7 +17,7 @@ import java.util.List;
  *
  * All three persisted layers share this node label. The {@code layer} and
  * {@code type} fields distinguish them. Hierarchy is expressed as
- * {@code BELONGS_TO} edges: Specific Skill → Skill Group → Skill Category.
+ * {@code SUBLASS_OF} edges: Specific Skill → Skill Group → Skill Category.
  *
  * The {@code parent} field stores the direct parent's name and is used when
  * building those edges during ingestion.

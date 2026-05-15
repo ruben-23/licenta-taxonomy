@@ -1,0 +1,11 @@
+[ {
+  "name" : "C++ Developer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Software Developer"
+}, {
+  "name" : "SQL Developer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Database Administrator (DBA)"
+} ]

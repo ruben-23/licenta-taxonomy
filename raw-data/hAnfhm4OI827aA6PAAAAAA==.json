@@ -1,0 +1,17 @@
+{
+  "job_id" : "hAnfhm4OI827aA6PAAAAAA==",
+  "employer_name" : "Guardian RF",
+  "employer_website" : "https://www.guardianrf.com",
+  "job_title" : "Backend Software Engineer",
+  "job_description" : "Guardian RF is building next-generation drone detection systems to protect critical infrastructure, national security, and public safety. Our passive RF-based platform provides real-time situational awareness by detecting both compliant and non-compliant drones and integrating directly with security and law enforcement systems.\n\nThis role is primarily a full-time, in-person position based in Washington, DC, where close collaboration with our RF engineers and hardware team is essential. That said, we will consider strong candidates for remote work depending on experience and fit.\n\nAs a backend engineer, you’ll design and build scalable services to process large volumes of RF data, develop APIs for integrations, and help shape the foundation of our distributed system. You’ll work closely with RF engineers, data scientists, and front-end developers to deliver mission-critical technology that has real-world impact.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Marlow Heights",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : 80000,
+  "job_max_salary" : 120000,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

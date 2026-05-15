@@ -164,6 +164,9 @@ public class EntityExtractionService {
             - "technicalSkills" must list every programming language, framework, library, tool, platform,
               cloud service, or technical methodology mentioned (e.g. Java, Spring Boot, Docker, AWS,
               Microservices architecture, CI/CD pipelines).
+            - Exclude broad job domains and vague concepts from "technicalSkills". Strictly ignore general
+              categories like "Backend", "Frontend", "Full Stack Development", or "Software Engineering".
+              Focus ONLY on concrete, named technologies and tools.
             - "softSkills" must list every interpersonal or cognitive skill mentioned or clearly implied
               (e.g. Problem solving, Communication skills, Teamwork, Analytical thinking, Adaptability).
             - "occupation" should be the single best-fit canonical job role for this posting
@@ -172,6 +175,7 @@ public class EntityExtractionService {
             - Use the exact names from the posting for skills (do not normalise them here).
             - If a field cannot be determined, use null.
             - Both skill arrays must be valid JSON arrays — use [] if none are found, never null.
+            
 
             Job Posting:
             Company: {{employerName}}

@@ -297,7 +297,8 @@ public class GraphTransformService {
         String title      = firstNonNull(entities.jobTitle(), raw.jobTitle(), "Unknown Role");
         String embedInput = title + " " + cleanDescription;
         Embedding textEmbedding = embeddingModel.embed(
-                embedInput.length() > 2000 ? embedInput.substring(0, 2000) : embedInput
+//                embedInput.length() > 2000 ? embedInput.substring(0, 2000) : embedInput
+                embedInput
         ).content();
 
         Job job = new Job();

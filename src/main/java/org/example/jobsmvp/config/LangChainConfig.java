@@ -63,6 +63,7 @@ public class LangChainConfig {
         return OllamaEmbeddingModel.builder()
                 .baseUrl(ollamaBaseUrl)
                 .modelName(ollamaEmbeddingModelName)
+                .dimensions(768)
                 .timeout(Duration.ofSeconds(60))
                 .build();
     }

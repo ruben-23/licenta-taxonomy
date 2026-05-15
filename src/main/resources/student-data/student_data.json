@@ -1,0 +1,671 @@
+[
+  {
+    "student_id": "S-987654321",
+    "name": "Costica Predoiu",
+    "major": "Computer Science",
+    "graduation_year": 2026,
+    "current_year_of_study": 2,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "64a7b8e1-1234-4f56-a789-abcdef123456",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": { "skill_id": "SK-001", "name": "Java" }
+      },
+      {
+        "id": "98c6d5f2-4321-4b56-c789-fedcba654321",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": { "skill_id": "SK-002", "name": "Neo4j" }
+      },
+      {
+        "id": "11d8e6f3-5555-4a56-b789-abcdef654321",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-008", "name": "Spring Boot" }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-101",
+        "title": "Graph-based Recommendation Engine",
+        "description": "A highly scalable recommendation engine designed to suggest optimized course pathways to university students by analyzing complex, overlapping skill dependencies. The backend architecture leverages Java and Spring Boot to expose RESTful APIs, while Neo4j serves as the core graph database to map student proficiencies against course requirements. Complex Cypher queries were optimized to traverse the graph efficiently, reducing query response times by 40% under heavy simulated load.",
+        "github_link": "https://github.com/andreiionescu/graph-recommender",
+        "builtWith": [
+          { "skill_id": "SK-001", "name": "Java" },
+          { "skill_id": "SK-002", "name": "Neo4j" },
+          { "skill_id": "SK-008", "name": "Spring Boot" }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-301",
+        "title": "Data Structures and Algorithms",
+        "description": "Comprehensive study of fundamental data structures and algorithmic paradigms, focusing heavily on graph theory, dynamic programming, and hash-based structures. The coursework involved rigorous implementation of these concepts using Java, emphasizing memory management and CPU efficiency. Students applied Object Oriented Design principles throughout, building custom data structure libraries evaluated for correctness and performance.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          { "skill_id": "SK-001", "name": "Java" },
+          { "skill_id": "SK-003", "name": "Object Oriented Design" },
+          { "skill_id": "SK-004", "name": "Problem solving" }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-123",
+        "title": "AWS Certified Cloud Practitioner",
+        "description": "Foundational certification validating overall understanding of the AWS Cloud platform, including its security architecture, billing models, and core computational services. The curriculum required hands-on practice deploying virtual networks using Amazon Web Services and understanding the shared responsibility model. It officially certifies a baseline competency in Cloud Computing principles and working knowledge of foundational services like EC2, S3, and RDS.",
+        "issuer": "Amazon Web Services",
+        "certifies": [
+          { "skill_id": "SK-005", "name": "Cloud Computing" },
+          { "skill_id": "SK-006", "name": "Amazon Web Services" }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-102938475",
+    "name": "Elena Popescu",
+    "major": "Data Science",
+    "graduation_year": 2025,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": { "skill_id": "SK-010", "name": "Python" }
+      },
+      {
+        "id": "f6e5d4c3-b2a1-0f9e-8d7c-6b5a4f3e2d1c",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-011", "name": "Pandas" }
+      },
+      {
+        "id": "1a2b3c4d-5e6f-7a8b-9c0d-e1f2a3b4c5d6",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": { "skill_id": "SK-012", "name": "TensorFlow" }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-102",
+        "title": "Predictive Retail Analytics Model",
+        "description": "Developed a machine learning pipeline to forecast weekly retail store sales based on historical data, holiday markdown events, and regional economic indicators. The raw data was ingested and heavily cleaned using Python and Pandas to handle missing values and perform feature engineering. A deep neural network was then constructed and trained using TensorFlow, ultimately achieving a Mean Absolute Error 15% lower than the baseline linear regression model.",
+        "github_link": "https://github.com/elenapopescu/retail-prediction-tf",
+        "builtWith": [
+          { "skill_id": "SK-010", "name": "Python" },
+          { "skill_id": "SK-011", "name": "Pandas" },
+          { "skill_id": "SK-012", "name": "TensorFlow" }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "DS-405",
+        "title": "Machine Learning Fundamentals",
+        "description": "An intensive dive into supervised and unsupervised learning techniques, covering everything from linear regression and decision trees to clustering algorithms and dimensionality reduction. The course heavily utilized Python for weekly lab assignments, requiring students to build models from scratch before transitioning to industry-standard libraries like Scikit-learn and TensorFlow. Students were evaluated on their ability to apply Analytical thinking to interpret model outputs and tune hyperparameters to avoid overfitting.",
+        "provider": "University Data Science Department",
+        "covers": [
+          { "skill_id": "SK-015", "name": "Machine Learning" },
+          { "skill_id": "SK-016", "name": "Analytical thinking" },
+          { "skill_id": "SK-010", "name": "Python" }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-124",
+        "title": "Google Data Analytics Professional Certificate",
+        "description": "A comprehensive professional certificate covering the entire data analysis process, including data cleaning, analysis, and visualization. The program provided extensive hands-on experience querying large datasets with SQL and performing data manipulation using R and Pandas. It formally certifies the ability to transform raw data into actionable business insights through rigorous Data Visualization and analysis techniques.",
+        "issuer": "Coursera & Google",
+        "certifies": [
+          { "skill_id": "SK-014", "name": "Data Visualization" },
+          { "skill_id": "SK-013", "name": "SQL" },
+          { "skill_id": "SK-011", "name": "Pandas" }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-564738291",
+    "name": "Vlad Constantin",
+    "major": "Software Engineering",
+    "graduation_year": 2024,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Engineering",
+    "knownTechnologies": [
+      {
+        "id": "bbccdd11-2233-4455-6677-889900aabbcc",
+        "proficiency_level": 5,
+        "years_of_experience": 4.0,
+        "technology": { "skill_id": "SK-020", "name": "JavaScript" }
+      },
+      {
+        "id": "aa11bb22-cc33-dd44-ee55-ff6600112233",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": { "skill_id": "SK-021", "name": "React" }
+      },
+      {
+        "id": "99887766-5544-3322-1100-ffeeddccbbaa",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-022", "name": "TypeScript" }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-103",
+        "title": "Real-time Collaborative Whiteboard",
+        "description": "Engineered a highly interactive, browser-based collaborative whiteboard application enabling distributed teams to draw, write, and share diagrams concurrently with sub-second latency. The frontend architecture was constructed using React for efficient component state management and UI rendering, while TypeScript was enforced strictly to ensure type safety and interface reliability across the complex codebase. WebSocket connections were used to sync the canvas state globally, leveraging native JavaScript APIs for smooth vector graphics rendering.",
+        "github_link": "https://github.com/vladconstantin/collab-board",
+        "builtWith": [
+          { "skill_id": "SK-021", "name": "React" },
+          { "skill_id": "SK-022", "name": "TypeScript" },
+          { "skill_id": "SK-020", "name": "JavaScript" }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "SE-310",
+        "title": "Advanced Web Development",
+        "description": "An advanced exploration of modern web application architecture, focusing on Single Page Applications, client-side routing, and state management using Redux. The curriculum required students to build production-ready applications using React and manage complex data flows. Strong emphasis was placed on writing clean, modular JavaScript and transitioning to strictly typed environments using TypeScript, following Front End Development best practices.",
+        "provider": "University Engineering Faculty",
+        "covers": [
+          { "skill_id": "SK-021", "name": "React" },
+          { "skill_id": "SK-023", "name": "Front End Development" },
+          { "skill_id": "SK-022", "name": "TypeScript" }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-125",
+        "title": "Meta Front-End Developer Professional Certificate",
+        "description": "An industry-recognized credential validating the ability to create responsive, accessible, and dynamic user interfaces for the web. The certification process involved rigorous assessments in semantic HTML, advanced CSS, and vanilla JavaScript DOM manipulation. Furthermore, it validates a deep, practical understanding of building and deploying functional applications using the React framework and modern UI/UX Design principles.",
+        "issuer": "Coursera & Meta",
+        "certifies": [
+          { "skill_id": "SK-021", "name": "React" },
+          { "skill_id": "SK-020", "name": "JavaScript" },
+          { "skill_id": "SK-024", "name": "UI/UX Design" }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-223344556",
+    "name": "Raluca Dumitrescu",
+    "major": "Cybersecurity",
+    "graduation_year": 2026,
+    "current_year_of_study": 2,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "11223344-5566-7788-9900-aabbccddeeff",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-030", "name": "Bash" }
+      },
+      {
+        "id": "ffeeddcc-bbaa-0099-8877-665544332211",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": { "skill_id": "SK-031", "name": "Wireshark" }
+      },
+      {
+        "id": "abcde123-4567-890f-edcb-a09876543210",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": { "skill_id": "SK-010", "name": "Python" }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-104",
+        "title": "Automated Network Vulnerability Scanner",
+        "description": "Designed and developed a command-line utility capable of scanning local networks to identify active hosts, open ports, and known service vulnerabilities matching CVE databases. The core logic and network traversal loops were implemented in Python, utilizing asynchronous networking libraries for rapid scanning. The tool relies on custom Bash scripts to automatically deploy payloads in a sandboxed environment, while network traffic during the scan can be logged and analyzed via exported PCAP files compatible with Wireshark.",
+        "github_link": "https://github.com/ralucadumitrescu/auto-vuln-scan",
+        "builtWith": [
+          { "skill_id": "SK-010", "name": "Python" },
+          { "skill_id": "SK-030", "name": "Bash" },
+          { "skill_id": "SK-031", "name": "Wireshark" }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CYB-205",
+        "title": "Network Security and Packet Analysis",
+        "description": "An in-depth study of network protocols, cryptographic standards, and the methodologies used to secure or exploit network infrastructures. Students participated in live lab environments where they utilized Wireshark to perform deep packet inspection, identifying anomalies and malicious traffic patterns. The course culminated in a practical exam where students had to mitigate simulated DDoS attacks and write incident response scripts using Bash, applying core Network Security and Information Security principles.",
+        "provider": "Department of Information Security",
+        "covers": [
+          { "skill_id": "SK-032", "name": "Network Security" },
+          { "skill_id": "SK-031", "name": "Wireshark" },
+          { "skill_id": "SK-033", "name": "Information Security" }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-126",
+        "title": "CompTIA Security+",
+        "description": "A globally recognized, vendor-neutral certification that establishes the core knowledge required of any cybersecurity role and provides a springboard to intermediate-level cybersecurity jobs. The certification verifies a comprehensive understanding of threat management, Cryptography, identity management, and securing network architectures. Earning this required demonstrating proficiency in identifying and mitigating vulnerabilities across various Network Security scenarios.",
+        "issuer": "CompTIA",
+        "certifies": [
+          { "skill_id": "SK-034", "name": "Cybersecurity" },
+          { "skill_id": "SK-032", "name": "Network Security" },
+          { "skill_id": "SK-035", "name": "Cryptography" }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-998877665",
+    "name": "Marius Ardelean",
+    "major": "Information Technology",
+    "graduation_year": 2025,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Information Technology",
+    "knownTechnologies": [
+      {
+        "id": "77665544-3322-1100-aabb-ccddeeff0011",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-040", "name": "Docker" }
+      },
+      {
+        "id": "88776655-4433-2211-00aa-bbccddeeff22",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": { "skill_id": "SK-041", "name": "Kubernetes" }
+      },
+      {
+        "id": "99887766-5544-3322-1100-aabbccddeeff",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": { "skill_id": "SK-042", "name": "Terraform" }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-105",
+        "title": "Scalable Microservices Architecture Deployment",
+        "description": "Orchestrated a highly resilient, cloud-native microservices environment designed to simulate a high-traffic e-commerce backend. The infrastructure was entirely provisioned as code using Terraform, ensuring reproducible environments across multiple AWS regions. Individual services were containerized using Docker to guarantee consistency from development to production, and the entire fleet of containers was managed, scaled, and auto-healed utilizing a robust Kubernetes cluster with automated CI/CD pipelines for deployment.",
+        "github_link": "https://github.com/bogdanmunteanu/k8s-microservices",
+        "builtWith": [
+          { "skill_id": "SK-040", "name": "Docker" },
+          { "skill_id": "SK-041", "name": "Kubernetes" },
+          { "skill_id": "SK-042", "name": "Terraform" }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "IT-420",
+        "title": "Cloud Computing Architectures",
+        "description": "An advanced exploration of enterprise-grade cloud environments, focusing on fault tolerance, disaster recovery, and infrastructure automation. The course required students to move away from manual server configuration and embrace Infrastructure as Code principles, heavily utilizing Terraform for provisioning resources on AWS. Containerization strategies were extensively covered with rigorous lab work dedicated to packaging applications with Docker and deploying them via CI/CD pipelines into Kubernetes clusters.",
+        "provider": "College of Computing and Informatics",
+        "covers": [
+          { "skill_id": "SK-043", "name": "Infrastructure as Code" },
+          { "skill_id": "SK-042", "name": "Terraform" },
+          { "skill_id": "SK-040", "name": "Docker" }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-127",
+        "title": "AWS Certified Solutions Architect - Associate",
+        "description": "An industry-leading certification that validates the ability to design secure, robust, and scalable distributed systems using Amazon Web Services. The examination requires deep architectural knowledge, proving the candidate can select the appropriate compute, storage, and database services based on technical requirements. Achieving this credential demonstrates high-level understanding of cloud networking and the ability to integrate modern orchestration tools like Kubernetes within the Amazon Web Services ecosystem.",
+        "issuer": "Amazon Web Services",
+        "certifies": [
+          { "skill_id": "SK-044", "name": "Cloud Native Architecture" },
+          { "skill_id": "SK-006", "name": "Amazon Web Services" },
+          { "skill_id": "SK-041", "name": "Kubernetes" }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-334455667",
+    "name": "Mihaela Florescu",
+    "major": "Artificial Intelligence",
+    "graduation_year": 2024,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "12345678-90ab-cdef-1234-567890abcdef",
+        "proficiency_level": 5,
+        "years_of_experience": 3.5,
+        "technology": { "skill_id": "SK-010", "name": "Python" }
+      },
+      {
+        "id": "fedcba09-8765-4321-fedc-ba0987654321",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-050", "name": "PyTorch" }
+      },
+      {
+        "id": "11112222-3333-4444-5555-666677778888",
+        "proficiency_level": 4,
+        "years_of_experience": 1.5,
+        "technology": { "skill_id": "SK-051", "name": "Hugging Face" }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-106",
+        "title": "Context-Aware Customer Support Chatbot",
+        "description": "Developed a highly intelligent, domain-specific conversational agent capable of understanding contextual nuance, resolving complex technical support queries, and managing conversation history. The core training loops and neural network architecture were authored entirely in Python, utilizing PyTorch for dynamic computation graphing and hardware-accelerated tensor operations. The model's natural language understanding was significantly boosted by fine-tuning pre-trained transformer models sourced from the Hugging Face model hub, drastically reducing training time and improving intent classification accuracy.",
+        "github_link": "https://github.com/mihaelaflorescu/support-transformer",
+        "builtWith": [
+          { "skill_id": "SK-010", "name": "Python" },
+          { "skill_id": "SK-050", "name": "PyTorch" },
+          { "skill_id": "SK-051", "name": "Hugging Face" }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "AI-450",
+        "title": "Natural Language Processing",
+        "description": "An intensive study into the computational techniques used to analyze and synthesize natural language and speech. The curriculum progressed from classical statistical methods such as TF-IDF and Hidden Markov Models to cutting-edge deep learning architectures including LSTMs and Transformers. Weekly assignments required implementing complex tokenization and sequence-to-sequence models using PyTorch, drawing on the Hugging Face ecosystem for pre-trained models, and preparing students for real-world Deep Learning research and development.",
+        "provider": "Institute of Artificial Intelligence",
+        "covers": [
+          { "skill_id": "SK-052", "name": "Natural Language Processing (NLP)" },
+          { "skill_id": "SK-050", "name": "PyTorch" },
+          { "skill_id": "SK-053", "name": "Deep Learning" }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-128",
+        "title": "Natural Language Processing Specialization",
+        "description": "A rigorous series of courses designed to master foundational to advanced NLP concepts, bridging the gap between theoretical linguistics and modern machine learning application. The specialization validated the ability to design systems that perform question-answering, sentiment analysis, and machine translation. Extensive practical projects demonstrated high proficiency in Python and the ability to leverage state-of-the-art Deep Learning architectures via the Hugging Face ecosystem.",
+        "issuer": "DeepLearning.AI",
+        "certifies": [
+          { "skill_id": "SK-052", "name": "Natural Language Processing (NLP)" },
+          { "skill_id": "SK-010", "name": "Python" },
+          { "skill_id": "SK-051", "name": "Hugging Face" }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-445566778",
+    "name": "Cristian Georgescu",
+    "major": "Computer Science",
+    "graduation_year": 2026,
+    "current_year_of_study": 2,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "aaabbbcc-ddde-eeff-0011-223344556677",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-060", "name": "Swift" }
+      },
+      {
+        "id": "11221122-3344-5566-7788-99aabbccddee",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-061", "name": "Kotlin" }
+      },
+      {
+        "id": "ff00ee11-dd22-cc33-bb44-aa5599668877",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": { "skill_id": "SK-062", "name": "Flutter" }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-107",
+        "title": "Cross-Platform Fitness Tracking Application",
+        "description": "Conceived and developed a comprehensive mobile fitness application that tracks user workouts, monitors dietary intake, and provides localized social leaderboards. To ensure maximum market reach while maintaining a native feel, the primary user interface and logic were built using Flutter, allowing a single codebase to serve both iOS and Android platforms. For hardware-specific features like biometric authentication and pedometer integration, custom platform channels were written utilizing Swift for iOS and Kotlin for Android, incorporating Native Mobile Security best practices throughout.",
+        "github_link": "https://github.com/cristiangeorgescu/fit-track-mobile",
+        "builtWith": [
+          { "skill_id": "SK-062", "name": "Flutter" },
+          { "skill_id": "SK-060", "name": "Swift" },
+          { "skill_id": "SK-061", "name": "Kotlin" }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-330",
+        "title": "Mobile Application Development",
+        "description": "A project-oriented course focusing on the design, implementation, and deployment of applications for mobile devices. The curriculum primarily explored the Android lifecycle, demanding rigorous practice in building responsive layouts using Model-View-ViewModel patterns, managing application state, and interacting with REST APIs. Students were required to build robust, memory-efficient applications entirely in Kotlin and gained supplementary exposure to Swift for iOS-specific development.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          { "skill_id": "SK-063", "name": "Mobile Development" },
+          { "skill_id": "SK-061", "name": "Kotlin" },
+          { "skill_id": "SK-064", "name": "Model-View-ViewModel" }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-129",
+        "title": "Associate Android Developer",
+        "description": "An official Google certification demonstrating fundamental competency in native Android development. The performance-based exam requires candidates to build, debug, and test an Android application using Android Studio, proving their ability to work with core UI components, background processing, and data persistence. The diploma certifies a professional-level mastery of Kotlin programming within the context of the Android operating system, with an emphasis on Native Mobile Security and clean architecture.",
+        "issuer": "Google Developers",
+        "certifies": [
+          { "skill_id": "SK-064", "name": "Model-View-ViewModel" },
+          { "skill_id": "SK-061", "name": "Kotlin" },
+          { "skill_id": "SK-065", "name": "Native Mobile Security" }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-556677889",
+    "name": "Ioana Barbu",
+    "major": "Interactive Media & Game Design",
+    "graduation_year": 2024,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Fine Arts",
+    "knownTechnologies": [
+      {
+        "id": "10293847-56a7-b8c9-d0e1-f2a3b4c5d6e7",
+        "proficiency_level": 5,
+        "years_of_experience": 4.0,
+        "technology": { "skill_id": "SK-070", "name": "C#" }
+      },
+      {
+        "id": "f2a3b4c5-d6e7-1029-3847-56a7b8c9d0e1",
+        "proficiency_level": 5,
+        "years_of_experience": 3.5,
+        "technology": { "skill_id": "SK-071", "name": "C++" }
+      },
+      {
+        "id": "a1b2c3d4-0987-6543-21ef-ababcdcd1234",
+        "proficiency_level": 3,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-072", "name": "Lua" }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-108",
+        "title": "3D Multiplayer Survival Experience",
+        "description": "Led the technical development of a fully playable, immersive 3D multiplayer survival game featuring a dynamic weather system, resource crafting, and AI-driven hostile entities. The game engine core, including the physics system and rendering pipeline, was written in C++ for maximum performance. Complex game logic including custom client-server network synchronization, player inventory management, and NPC pathfinding was scripted in C#, while Lua was used for modding support and designer-authored gameplay scripting.",
+        "github_link": "https://github.com/ioanabarbu/survival-3d",
+        "builtWith": [
+          { "skill_id": "SK-071", "name": "C++" },
+          { "skill_id": "SK-070", "name": "C#" },
+          { "skill_id": "SK-072", "name": "Lua" }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "GAM-340",
+        "title": "Game Engine Architecture",
+        "description": "A highly technical course exploring the underlying software architecture of modern 3D game engines, dissecting subsystems like the rendering engine, physics simulation, audio playback, and scripting runtimes. The course heavily emphasized low-level memory management and performance, requiring students to write custom engine components using C++. The final project required designing a plugin system exposable to gameplay scripters via an embedded Lua runtime, reinforcing Design Patterns for extensible engine architecture.",
+        "provider": "School of Interactive Arts",
+        "covers": [
+          { "skill_id": "SK-073", "name": "Design Patterns" },
+          { "skill_id": "SK-071", "name": "C++" },
+          { "skill_id": "SK-072", "name": "Lua" }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-130",
+        "title": "Unity Certified Associate: Game Developer",
+        "description": "A foundational certification validating the core skills needed to create games and interactive experiences. The exam comprehensively assesses knowledge of game engine interfaces, lighting, animation, audio integration, and UI design. Most importantly, it thoroughly tests the candidate's ability to write clean, efficient, and bug-free gameplay scripts using C#, applying Object Oriented Programming principles and Design Patterns recognized in professional game studios.",
+        "issuer": "Unity Technologies",
+        "certifies": [
+          { "skill_id": "SK-070", "name": "C#" },
+          { "skill_id": "SK-074", "name": "Object Oriented Programming" },
+          { "skill_id": "SK-073", "name": "Design Patterns" }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-667788990",
+    "name": "Razvan Popa",
+    "major": "Computer Engineering",
+    "graduation_year": 2025,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Engineering",
+    "knownTechnologies": [
+      {
+        "id": "11112222-3333-aaaa-bbbb-ccccddddeeee",
+        "proficiency_level": 5,
+        "years_of_experience": 4.0,
+        "technology": { "skill_id": "SK-080", "name": "C++" }
+      },
+      {
+        "id": "22223333-4444-bbbb-cccc-ddddeeeeffff",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": { "skill_id": "SK-081", "name": "Linux" }
+      },
+      {
+        "id": "33334444-5555-cccc-dddd-eeeeffff0000",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-082", "name": "Shell Scripting" }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-109",
+        "title": "Smart Home Environmental Monitoring System",
+        "description": "Designed a distributed hardware and software system to continuously monitor indoor air quality, temperature, and humidity across multiple rooms. Microcontroller nodes were programmed in C++ to interface directly with analog sensors, ensuring minimal power draw and real-time data sampling at 100Hz. The edge processing and central hub coordination were handled by a single-board computer running Linux, which aggregated sensor data via a message broker and exposed a REST API. System automation and deployment were managed through Shell Scripting.",
+        "github_link": "https://github.com/razvanpopa/smart-home-iot",
+        "builtWith": [
+          { "skill_id": "SK-080", "name": "C++" },
+          { "skill_id": "SK-081", "name": "Linux" },
+          { "skill_id": "SK-082", "name": "Shell Scripting" }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CE-350",
+        "title": "Embedded Systems Design",
+        "description": "A rigorous engineering course focused on the integration of hardware and software in resource-constrained environments. Students learned to design schematic circuits, interface microprocessors with peripherals via I2C, SPI, and UART, and handle hardware interrupts. A significant portion of lab work required writing highly optimized, deterministic, and memory-safe firmware in C++, and configuring bare-metal Linux environments using Shell Scripting for test automation.",
+        "provider": "College of Engineering",
+        "covers": [
+          { "skill_id": "SK-080", "name": "C++" },
+          { "skill_id": "SK-081", "name": "Linux" },
+          { "skill_id": "SK-082", "name": "Shell Scripting" }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-131",
+        "title": "Cisco Certified Network Associate (CCNA)",
+        "description": "A widely respected IT certification proving a professional's ability to navigate the ever-changing landscape of network infrastructure. The exam covers network access, IP connectivity, IP services, security fundamentals, and automation. By earning this diploma, the student demonstrated a deep understanding of how devices communicate over networks, critical for designing robust IoT systems, and gained practical experience in configuring Linux-based network appliances using Shell Scripting for automation.",
+        "issuer": "Cisco Systems",
+        "certifies": [
+          { "skill_id": "SK-083", "name": "Network Security" },
+          { "skill_id": "SK-081", "name": "Linux" },
+          { "skill_id": "SK-082", "name": "Shell Scripting" }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-778899001",
+    "name": "Diana Stoica",
+    "major": "Software Engineering",
+    "graduation_year": 2024,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Engineering",
+    "knownTechnologies": [
+      {
+        "id": "55556666-7777-8888-9999-000011112222",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": { "skill_id": "SK-090", "name": "Node.js" }
+      },
+      {
+        "id": "66667777-8888-9999-0000-111122223333",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": { "skill_id": "SK-091", "name": "Mongodb" }
+      },
+      {
+        "id": "77778888-9999-0000-1111-222233334444",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": { "skill_id": "SK-092", "name": "Vue.js" }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-110",
+        "title": "E-commerce Platform with Real-time Inventory",
+        "description": "Architected and deployed a full-stack, end-to-end e-commerce web application capable of handling user authentication, secure checkout, and dynamic product catalogs. The backend RESTful API was built entirely with Node.js and Express, ensuring non-blocking, asynchronous request handling for thousands of concurrent users. Product data, user profiles, and order histories were structured via flexible JSON schemas and stored in Mongodb, while the client-side interface was rendered efficiently using the reactive Vue.js framework with a focus on Full Stack Development best practices.",
+        "github_link": "https://github.com/dianastoica/vue-node-ecommerce",
+        "builtWith": [
+          { "skill_id": "SK-090", "name": "Node.js" },
+          { "skill_id": "SK-091", "name": "Mongodb" },
+          { "skill_id": "SK-092", "name": "Vue.js" }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "SE-415",
+        "title": "Full Stack Web Architecture",
+        "description": "A comprehensive capstone course that bridges client-side interfaces, server-side business logic, and database administration. The curriculum heavily emphasized the MEVN stack — Mongodb, Express, Vue.js, and Node.js — requiring students to build secure API endpoints, manage session states, and deploy applications to cloud providers. Strict architectural principles were evaluated, ensuring students understood how to write scalable, loosely coupled Node.js microservices and apply Full Stack Development competency end-to-end.",
+        "provider": "University Engineering Faculty",
+        "covers": [
+          { "skill_id": "SK-093", "name": "Full Stack Development" },
+          { "skill_id": "SK-090", "name": "Node.js" },
+          { "skill_id": "SK-092", "name": "Vue.js" }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-132",
+        "title": "IBM Full Stack Software Developer Professional Certificate",
+        "description": "An extensive professional certification demonstrating job-ready skills in cloud-native Full Stack Development. The rigorous program validates the developer's ability to create, deploy, and scale web applications using both relational and NoSQL databases such as Mongodb. Furthermore, it certifies a high level of competence in backend asynchronous programming paradigms, specifically utilizing Node.js alongside modern frontend frameworks like Vue.js to deliver seamless user experiences, with Cloud Development deployment practices assessed throughout.",
+        "issuer": "Coursera & IBM",
+        "certifies": [
+          { "skill_id": "SK-093", "name": "Full Stack Development" },
+          { "skill_id": "SK-090", "name": "Node.js" },
+          { "skill_id": "SK-094", "name": "Cloud Development" }
+        ]
+      }
+    ]
+  }
+]

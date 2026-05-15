@@ -1,0 +1,3837 @@
+[
+  {
+    "student_id": "S-100000001",
+    "name": "Andrei Ionescu",
+    "major": "Computer Science",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "a1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.5,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "a1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-102",
+          "name": "TensorFlow"
+        }
+      },
+      {
+        "id": "a1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-103",
+          "name": "Docker"
+        }
+      },
+      {
+        "id": "a1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-104",
+          "name": "Machine Learning"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1001",
+        "title": "Sentiment Analysis Platform",
+        "description": "A real-time sentiment analysis web platform that processes Romanian-language news articles using fine-tuned BERT models. The backend was built in Python with FastAPI, containerized via Docker, and the model was trained using TensorFlow. The system achieved 89% accuracy on a custom Romanian NLP benchmark dataset and was deployed with a CI/CD pipeline.",
+        "github_link": "https://github.com/andreiionescu/sentiment-ro",
+        "builtWith": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-102",
+            "name": "TensorFlow"
+          },
+          {
+            "skill_id": "SK-103",
+            "name": "Docker"
+          },
+          {
+            "skill_id": "SK-104",
+            "name": "Machine Learning"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-401",
+        "title": "Machine Learning Fundamentals",
+        "description": "An in-depth course covering supervised and unsupervised learning algorithms, neural network architectures, and model evaluation techniques. Students implemented projects using Python and TensorFlow, applying concepts such as gradient descent, regularization, and hyperparameter tuning to real-world datasets.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-104",
+            "name": "Machine Learning"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-102",
+            "name": "TensorFlow"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1001",
+        "title": "TensorFlow Developer Certificate",
+        "description": "Professional certification issued by Google that validates competency in building and training neural networks using TensorFlow. The exam required demonstrating proficiency in image classification, natural language processing, and time series forecasting using Python and TensorFlow APIs.",
+        "issuer": "Google",
+        "certifies": [
+          {
+            "skill_id": "SK-102",
+            "name": "TensorFlow"
+          },
+          {
+            "skill_id": "SK-104",
+            "name": "Machine Learning"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000002",
+    "name": "Maria Popescu",
+    "major": "Software Engineering",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "b1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-201",
+          "name": "React"
+        }
+      },
+      {
+        "id": "b1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-202",
+          "name": "TypeScript"
+        }
+      },
+      {
+        "id": "b1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-203",
+          "name": "GraphQL"
+        }
+      },
+      {
+        "id": "b1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-204",
+          "name": "Communication"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1002",
+        "title": "E-learning Portal for Romanian High Schools",
+        "description": "A fully responsive e-learning web application built with React and TypeScript, offering interactive quizzes, video lessons, and progress tracking for students. A GraphQL API was designed to provide flexible data fetching, reducing over-fetching by 60%. The project was delivered in collaboration with a team of five developers, requiring strong Communication and planning skills.",
+        "github_link": "https://github.com/mariapopescu/elearn-ro",
+        "builtWith": [
+          {
+            "skill_id": "SK-201",
+            "name": "React"
+          },
+          {
+            "skill_id": "SK-202",
+            "name": "TypeScript"
+          },
+          {
+            "skill_id": "SK-203",
+            "name": "GraphQL"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-302",
+        "title": "Modern Web Development",
+        "description": "A comprehensive course covering the full web development stack with emphasis on React, TypeScript, and API design patterns including REST and GraphQL. Students built multi-page applications with state management, authentication, and responsive design best practices.",
+        "provider": "University Software Engineering Department",
+        "covers": [
+          {
+            "skill_id": "SK-201",
+            "name": "React"
+          },
+          {
+            "skill_id": "SK-202",
+            "name": "TypeScript"
+          },
+          {
+            "skill_id": "SK-203",
+            "name": "GraphQL"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1002",
+        "title": "Meta Front-End Developer Certificate",
+        "description": "A professional certificate from Meta validating front-end development skills including React component architecture, responsive design, and UX principles. Coursework involved building real-world projects using React and TypeScript with industry-standard tooling.",
+        "issuer": "Meta",
+        "certifies": [
+          {
+            "skill_id": "SK-201",
+            "name": "React"
+          },
+          {
+            "skill_id": "SK-202",
+            "name": "TypeScript"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000003",
+    "name": "Radu Constantin",
+    "major": "Cybersecurity",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "c1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-301",
+          "name": "Network Security"
+        }
+      },
+      {
+        "id": "c1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-302",
+          "name": "Cybersecurity"
+        }
+      },
+      {
+        "id": "c1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-303",
+          "name": "Linux"
+        }
+      },
+      {
+        "id": "c1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-304",
+          "name": "Critical thinking"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1003",
+        "title": "University Network Vulnerability Scanner",
+        "description": "An automated network vulnerability scanning tool developed to assess the security posture of the university's internal infrastructure. The tool leveraged Kali Linux utilities and custom Python scripts to perform Penetration Testing tasks, generating detailed reports of discovered CVEs. Network Security principles guided the remediation recommendations provided in the final report.",
+        "github_link": "https://github.com/raduconstantin/vuln-scanner",
+        "builtWith": [
+          {
+            "skill_id": "SK-301",
+            "name": "Network Security"
+          },
+          {
+            "skill_id": "SK-302",
+            "name": "Cybersecurity"
+          },
+          {
+            "skill_id": "SK-303",
+            "name": "Linux"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CY-401",
+        "title": "Ethical Hacking and Penetration Testing",
+        "description": "Hands-on course covering the full ethical hacking lifecycle, from reconnaissance and scanning to exploitation and post-exploitation. Students used Kali Linux and industry tools such as Metasploit, Burp Suite, and Nmap. A focus on Network Security and legal/ethical boundaries was maintained throughout all lab exercises.",
+        "provider": "University Cybersecurity Department",
+        "covers": [
+          {
+            "skill_id": "SK-302",
+            "name": "Cybersecurity"
+          },
+          {
+            "skill_id": "SK-303",
+            "name": "Linux"
+          },
+          {
+            "skill_id": "SK-301",
+            "name": "Network Security"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1003",
+        "title": "CompTIA Security+",
+        "description": "An internationally recognized certification covering core cybersecurity skills including threat analysis, risk management, cryptography, and Network Security. The certification validates readiness for a junior security analyst role and demonstrates proficiency with security protocols and incident response procedures.",
+        "issuer": "CompTIA",
+        "certifies": [
+          {
+            "skill_id": "SK-301",
+            "name": "Network Security"
+          },
+          {
+            "skill_id": "SK-304",
+            "name": "Critical thinking"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000004",
+    "name": "Elena Dumitrescu",
+    "major": "Data Science",
+    "graduation_year": 2026,
+    "current_year_of_study": 2,
+    "degree_level": "Master of Science",
+    "knownTechnologies": [
+      {
+        "id": "d1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 4.0,
+        "technology": {
+          "skill_id": "SK-401",
+          "name": "R"
+        }
+      },
+      {
+        "id": "d1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 5,
+        "years_of_experience": 3.5,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "d1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-402",
+          "name": "Apache Spark"
+        }
+      },
+      {
+        "id": "d1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-403",
+          "name": "Data Visualization"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1004",
+        "title": "Romanian Census Data Analysis Pipeline",
+        "description": "A large-scale data engineering and analysis pipeline built with Apache Spark and Python to process and visualize 20 years of Romanian census records. Statistical modeling in R was used to identify demographic trends, and interactive Plotly dashboards were created for public data exploration. The project emphasized Data storytelling to communicate findings to non-technical stakeholders.",
+        "github_link": "https://github.com/elenadumitrescu/census-pipeline",
+        "builtWith": [
+          {
+            "skill_id": "SK-401",
+            "name": "R"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-402",
+            "name": "Apache Spark"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "DS-501",
+        "title": "Big Data Analytics",
+        "description": "Graduate-level course exploring distributed data processing frameworks such as Apache Spark and Hadoop, combined with statistical analysis methods using R and Python. Topics included data lakes, stream processing, and large-scale machine learning model training on cluster environments.",
+        "provider": "University Data Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-402",
+            "name": "Apache Spark"
+          },
+          {
+            "skill_id": "SK-401",
+            "name": "R"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1004",
+        "title": "IBM Data Science Professional Certificate",
+        "description": "A nine-course professional certificate from IBM covering the full data science workflow: data collection, cleaning, analysis, visualization, and machine learning modeling using Python, R, and SQL. Capstone projects required producing end-to-end analytical reports presented to a peer panel.",
+        "issuer": "IBM",
+        "certifies": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-401",
+            "name": "R"
+          },
+          {
+            "skill_id": "SK-403",
+            "name": "Data Visualization"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000005",
+    "name": "Mihai Stanescu",
+    "major": "Computer Science",
+    "graduation_year": 2027,
+    "current_year_of_study": 1,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "e1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-501",
+          "name": "Java"
+        }
+      },
+      {
+        "id": "e1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 2,
+        "years_of_experience": 0.5,
+        "technology": {
+          "skill_id": "SK-502",
+          "name": "SQL"
+        }
+      },
+      {
+        "id": "e1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-503",
+          "name": "Problem solving"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1005",
+        "title": "Student Grade Management System",
+        "description": "A desktop Java application for managing student grades, attendance, and course registrations. The data layer used SQL with a local SQLite database. The project helped strengthen Problem solving skills by designing a normalized relational schema and implementing custom report generation features.",
+        "github_link": "https://github.com/mihaistanescu/grade-manager",
+        "builtWith": [
+          {
+            "skill_id": "SK-501",
+            "name": "Java"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-101",
+        "title": "Introduction to Programming",
+        "description": "Foundational programming course using Java to introduce variables, control flow, object-oriented programming, and basic data structures. Students developed small applications and algorithmic problems, building core Problem solving skills and logical reasoning.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-501",
+            "name": "Java"
+          },
+          {
+            "skill_id": "SK-503",
+            "name": "Problem solving"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000006",
+    "name": "Ioana Alexandrescu",
+    "major": "Information Systems",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "f1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-601",
+          "name": "Enterprise Performance Management"
+        }
+      },
+      {
+        "id": "f1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-602",
+          "name": "Data Modeling"
+        }
+      },
+      {
+        "id": "f1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-502",
+          "name": "SQL"
+        }
+      },
+      {
+        "id": "f1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-603",
+          "name": "Stakeholder Management"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1006",
+        "title": "ERP Implementation Simulation for SME",
+        "description": "A capstone project simulating the end-to-end implementation of SAP ERP for a fictional Romanian small-to-medium enterprise. The team performed Business Process Modeling using BPMN diagrams, configured SAP modules for finance and logistics, and documented all change management steps. Strong Stakeholder management skills were practiced through structured stakeholder interviews and presentation sessions.",
+        "github_link": "https://github.com/ioanaalexandrescu/sap-sme",
+        "builtWith": [
+          {
+            "skill_id": "SK-601",
+            "name": "Enterprise Performance Management"
+          },
+          {
+            "skill_id": "SK-602",
+            "name": "Data Modeling"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "IS-401",
+        "title": "Enterprise Systems and ERP",
+        "description": "A course examining the architecture and implementation of enterprise resource planning systems with a focus on SAP ERP. Topics included Business Process Modeling, integration between SAP modules, and data migration strategies. Case studies of real Romanian company ERP rollouts were analyzed.",
+        "provider": "University Information Systems Department",
+        "covers": [
+          {
+            "skill_id": "SK-601",
+            "name": "Enterprise Performance Management"
+          },
+          {
+            "skill_id": "SK-602",
+            "name": "Data Modeling"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1006",
+        "title": "SAP Certified Associate - Business Process Integration",
+        "description": "Entry-level SAP certification confirming knowledge of core SAP ERP modules including FI, MM, and SD, and their integration across business processes. Candidates must demonstrate understanding of Business Process Modeling and end-to-end transaction flows within the SAP landscape.",
+        "issuer": "SAP",
+        "certifies": [
+          {
+            "skill_id": "SK-601",
+            "name": "Enterprise Performance Management"
+          },
+          {
+            "skill_id": "SK-602",
+            "name": "Data Modeling"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000007",
+    "name": "Bogdan Munteanu",
+    "major": "Computer Science",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "g1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-701",
+          "name": "Kubernetes"
+        }
+      },
+      {
+        "id": "g1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-103",
+          "name": "Docker"
+        }
+      },
+      {
+        "id": "g1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-702",
+          "name": "Terraform"
+        }
+      },
+      {
+        "id": "g1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-703",
+          "name": "Attention to detail"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1007",
+        "title": "Microservices Deployment Platform",
+        "description": "A personal cloud-native deployment platform designed to orchestrate containerized microservices using Kubernetes and Docker. Infrastructure was provisioned as code using Terraform on a local bare-metal cluster. The project required strong Attention to detail when writing Helm charts and configuring resource limits and autoscaling policies.",
+        "github_link": "https://github.com/bogdanmunteanu/microplatform",
+        "builtWith": [
+          {
+            "skill_id": "SK-701",
+            "name": "Kubernetes"
+          },
+          {
+            "skill_id": "SK-103",
+            "name": "Docker"
+          },
+          {
+            "skill_id": "SK-702",
+            "name": "Terraform"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-351",
+        "title": "Cloud-Native Application Development",
+        "description": "A course covering containerization, orchestration, and infrastructure-as-code principles. Students gained hands-on experience with Docker and Kubernetes, learning to deploy, scale, and monitor containerized workloads. Terraform was introduced for reproducible cloud environment provisioning.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-103",
+            "name": "Docker"
+          },
+          {
+            "skill_id": "SK-701",
+            "name": "Kubernetes"
+          },
+          {
+            "skill_id": "SK-702",
+            "name": "Terraform"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1007",
+        "title": "Certified Kubernetes Administrator",
+        "description": "The CKA certification from the Cloud Native Computing Foundation validates the ability to design, install, configure, and manage production-grade Kubernetes clusters. It covers networking, storage, security, troubleshooting, and cluster upgrade procedures in hands-on performance-based exams.",
+        "issuer": "Cloud Native Computing Foundation",
+        "certifies": [
+          {
+            "skill_id": "SK-701",
+            "name": "Kubernetes"
+          },
+          {
+            "skill_id": "SK-103",
+            "name": "Docker"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000008",
+    "name": "Cristina Popa",
+    "major": "Artificial Intelligence",
+    "graduation_year": 2026,
+    "current_year_of_study": 2,
+    "degree_level": "Master of Science",
+    "knownTechnologies": [
+      {
+        "id": "h1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-801",
+          "name": "PyTorch"
+        }
+      },
+      {
+        "id": "h1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "h1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-802",
+          "name": "Deep Learning"
+        }
+      },
+      {
+        "id": "h1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-803",
+          "name": "Analytical skills"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1008",
+        "title": "Real-Time Object Detection for Autonomous Drones",
+        "description": "A graduate research project developing a lightweight YOLO-based Computer Vision model for detecting obstacles and landing zones from drone footage in real time. The model was trained and fine-tuned using PyTorch on a custom annotated dataset. The project resulted in a peer-reviewed conference paper, requiring advanced Research skills to conduct literature reviews and comparative experiments.",
+        "github_link": "https://github.com/cristinapopa/drone-vision",
+        "builtWith": [
+          {
+            "skill_id": "SK-801",
+            "name": "PyTorch"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-802",
+            "name": "Deep Learning"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "AI-502",
+        "title": "Deep Learning for Computer Vision",
+        "description": "An advanced graduate course covering convolutional neural networks, object detection architectures such as YOLO and Faster R-CNN, and image segmentation techniques. All implementations used PyTorch, with students completing a final project involving a novel Computer Vision application evaluated on public benchmarks.",
+        "provider": "University Artificial Intelligence Department",
+        "covers": [
+          {
+            "skill_id": "SK-801",
+            "name": "PyTorch"
+          },
+          {
+            "skill_id": "SK-802",
+            "name": "Deep Learning"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000009",
+    "name": "Vlad Georgescu",
+    "major": "Software Engineering",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "i1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-901",
+          "name": "Spring Boot"
+        }
+      },
+      {
+        "id": "i1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-501",
+          "name": "Java"
+        }
+      },
+      {
+        "id": "i1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-902",
+          "name": "PostgreSQL"
+        }
+      },
+      {
+        "id": "i1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-903",
+          "name": "Teamwork"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1009",
+        "title": "Hospital Appointment Booking System",
+        "description": "A RESTful backend service for managing hospital appointments, doctors, and patient records built with Java and Spring Boot. PostgreSQL served as the relational database with optimized indexing for high-concurrency appointment queries. The project was a 4-person Teamwork effort, integrating continuous integration pipelines for automated testing and deployment.",
+        "github_link": "https://github.com/vladgeorgescu/hospital-booking",
+        "builtWith": [
+          {
+            "skill_id": "SK-901",
+            "name": "Spring Boot"
+          },
+          {
+            "skill_id": "SK-501",
+            "name": "Java"
+          },
+          {
+            "skill_id": "SK-902",
+            "name": "PostgreSQL"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "SE-402",
+        "title": "Enterprise Application Development",
+        "description": "A software engineering course focused on building scalable backend systems using Java and the Spring Boot framework. Topics included dependency injection, RESTful API design, database integration with PostgreSQL via JPA/Hibernate, and software design patterns. Students completed a group project emphasizing Teamwork and agile workflows.",
+        "provider": "University Software Engineering Department",
+        "covers": [
+          {
+            "skill_id": "SK-901",
+            "name": "Spring Boot"
+          },
+          {
+            "skill_id": "SK-501",
+            "name": "Java"
+          },
+          {
+            "skill_id": "SK-902",
+            "name": "PostgreSQL"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1009",
+        "title": "Oracle Certified Professional: Java SE 17 Developer",
+        "description": "Oracle's professional-level Java certification validating advanced knowledge of the Java language, including generics, concurrency, modular programming, and streams. The exam tests real-world coding and debugging scenarios at a professional software engineering level.",
+        "issuer": "Oracle",
+        "certifies": [
+          {
+            "skill_id": "SK-501",
+            "name": "Java"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000010",
+    "name": "Andreea Florescu",
+    "major": "Human-Computer Interaction",
+    "graduation_year": 2026,
+    "current_year_of_study": 2,
+    "degree_level": "Master of Science",
+    "knownTechnologies": [
+      {
+        "id": "j1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-1001",
+          "name": "UI/UX Design"
+        }
+      },
+      {
+        "id": "j1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-1002",
+          "name": "Analytical thinking"
+        }
+      },
+      {
+        "id": "j1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-1003",
+          "name": "Software Testing"
+        }
+      },
+      {
+        "id": "j1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 5,
+        "years_of_experience": 3.5,
+        "technology": {
+          "skill_id": "SK-1004",
+          "name": "Collaboration"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1010",
+        "title": "Accessible Banking App Redesign",
+        "description": "A graduate UX research and design project focused on redesigning a Romanian banking mobile application to improve accessibility for elderly users. Extensive User Research was conducted through interviews and contextual inquiries. High-fidelity prototypes were created in Figma and evaluated through Usability Testing sessions with 20 participants, revealing critical pain points that informed the final design iteration.",
+        "github_link": "https://github.com/andreeaflorescu/banking-ux",
+        "builtWith": [
+          {
+            "skill_id": "SK-1001",
+            "name": "UI/UX Design"
+          },
+          {
+            "skill_id": "SK-1002",
+            "name": "Analytical thinking"
+          },
+          {
+            "skill_id": "SK-1003",
+            "name": "Software Testing"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "HCI-501",
+        "title": "User-Centered Design Methods",
+        "description": "An advanced course covering qualitative and quantitative User Research methodologies, interaction design principles, and iterative prototyping with Figma. Usability Testing was a core component, with students conducting moderated and unmoderated tests and analyzing think-aloud protocols to generate actionable design insights.",
+        "provider": "University HCI Department",
+        "covers": [
+          {
+            "skill_id": "SK-1002",
+            "name": "Analytical thinking"
+          },
+          {
+            "skill_id": "SK-1003",
+            "name": "Software Testing"
+          },
+          {
+            "skill_id": "SK-1001",
+            "name": "UI/UX Design"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1010",
+        "title": "Google UX Design Professional Certificate",
+        "description": "A seven-course professional certificate from Google covering the end-to-end UX design process: empathize, define, ideate, prototype, and test. Practical projects were completed using Figma and Adobe XD, involving User Research planning, wireframing, and Usability Testing with real participants.",
+        "issuer": "Google",
+        "certifies": [
+          {
+            "skill_id": "SK-1001",
+            "name": "UI/UX Design"
+          },
+          {
+            "skill_id": "SK-1002",
+            "name": "Analytical thinking"
+          },
+          {
+            "skill_id": "SK-1003",
+            "name": "Software Testing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000011",
+    "name": "Ciprian Rusu",
+    "major": "Computer Engineering",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "k1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-1101",
+          "name": "C++"
+        }
+      },
+      {
+        "id": "k1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-1102",
+          "name": "C++"
+        }
+      },
+      {
+        "id": "k1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1103",
+          "name": "Programming"
+        }
+      },
+      {
+        "id": "k1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-703",
+          "name": "Attention to detail"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1011",
+        "title": "Smart Home Controller on ARM Cortex-M4",
+        "description": "An embedded systems project implementing a smart home controller on an STM32 ARM Cortex-M4 microcontroller. The firmware was written in C Embedded and used FreeRTOS for task scheduling, managing sensors for temperature, humidity, and motion detection. FPGA Programming was explored for accelerating signal processing routines. The project demanded high Attention to detail to ensure reliable interrupt handling and power management.",
+        "github_link": "https://github.com/ciprianrusu/smart-home-fw",
+        "builtWith": [
+          {
+            "skill_id": "SK-1101",
+            "name": "C++"
+          },
+          {
+            "skill_id": "SK-1102",
+            "name": "C++"
+          },
+          {
+            "skill_id": "SK-1103",
+            "name": "Programming"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CE-401",
+        "title": "Real-Time Embedded Systems",
+        "description": "A comprehensive course on real-time operating system concepts and embedded firmware development. Students wrote C Embedded drivers for peripherals and implemented multitasking applications using FreeRTOS on ARM microcontrollers. Labs included timing analysis and priority inversion resolution exercises.",
+        "provider": "University Computer Engineering Department",
+        "covers": [
+          {
+            "skill_id": "SK-1101",
+            "name": "C++"
+          },
+          {
+            "skill_id": "SK-1102",
+            "name": "C++"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000012",
+    "name": "Gabriela Neagu",
+    "major": "Business Information Technology",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "l1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-1201",
+          "name": "PowerBI"
+        }
+      },
+      {
+        "id": "l1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-502",
+          "name": "SQL"
+        }
+      },
+      {
+        "id": "l1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1202",
+          "name": "PowerBI"
+        }
+      },
+      {
+        "id": "l1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-403",
+          "name": "Data Visualization"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1012",
+        "title": "Retail Sales Performance Dashboard",
+        "description": "An interactive Power BI dashboard built for a Romanian retail chain to monitor KPIs including revenue, inventory turnover, and regional sales performance. Complex DAX measures were written to calculate year-over-year comparisons and rolling averages. SQL queries were used to extract and transform raw transactional data from the company's data warehouse. The final deliverable demonstrated strong Data storytelling through executive-level summary pages.",
+        "github_link": "https://github.com/gabrielaneagu/retail-dashboard",
+        "builtWith": [
+          {
+            "skill_id": "SK-1201",
+            "name": "PowerBI"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          },
+          {
+            "skill_id": "SK-1202",
+            "name": "PowerBI"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "BIT-301",
+        "title": "Business Intelligence and Data Analytics",
+        "description": "A course on designing and building BI solutions using Power BI, SQL data warehouses, and advanced analytics with DAX. Students learned to connect to diverse data sources, model star schemas, and produce interactive dashboards that communicate business insights clearly through Data storytelling principles.",
+        "provider": "University Business Information Technology Department",
+        "covers": [
+          {
+            "skill_id": "SK-1201",
+            "name": "PowerBI"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          },
+          {
+            "skill_id": "SK-1202",
+            "name": "PowerBI"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1012",
+        "title": "Microsoft Certified: Power BI Data Analyst Associate",
+        "description": "Microsoft certification validating the ability to design and build scalable data models, clean and transform data, and enable advanced analytics capabilities using Power BI. The exam covers DAX, Power Query, and best practices for report creation and deployment to Power BI Service.",
+        "issuer": "Microsoft",
+        "certifies": [
+          {
+            "skill_id": "SK-1201",
+            "name": "PowerBI"
+          },
+          {
+            "skill_id": "SK-1202",
+            "name": "PowerBI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000013",
+    "name": "Lucian Barbu",
+    "major": "Computer Science",
+    "graduation_year": 2027,
+    "current_year_of_study": 2,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "m1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1301",
+          "name": "C++"
+        }
+      },
+      {
+        "id": "m1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1302",
+          "name": "C++"
+        }
+      },
+      {
+        "id": "m1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 2,
+        "years_of_experience": 0.5,
+        "technology": {
+          "skill_id": "SK-503",
+          "name": "Problem solving"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1013",
+        "title": "3D Terrain Renderer",
+        "description": "A real-time 3D terrain visualization engine written in C++ using OpenGL. The renderer implemented height-map based terrain generation, dynamic lighting using Phong shading, and texture blending. Problem solving was central when optimizing the rendering pipeline to achieve 60 FPS on mid-range hardware through level-of-detail (LOD) techniques.",
+        "github_link": "https://github.com/lucianbarbu/terrain-renderer",
+        "builtWith": [
+          {
+            "skill_id": "SK-1301",
+            "name": "C++"
+          },
+          {
+            "skill_id": "SK-1302",
+            "name": "C++"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-204",
+        "title": "Computer Graphics",
+        "description": "An undergraduate course covering the mathematical foundations of 2D and 3D computer graphics, including transformations, projection, rasterization, and shading models. Practical labs involved implementing a simple renderer in C++ with OpenGL, culminating in a semester-long graphics project.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-1301",
+            "name": "C++"
+          },
+          {
+            "skill_id": "SK-1302",
+            "name": "C++"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000014",
+    "name": "Teodora Vasile",
+    "major": "Software Engineering",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "n1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-1401",
+          "name": "Vue.js"
+        }
+      },
+      {
+        "id": "n1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1402",
+          "name": "Node.js"
+        }
+      },
+      {
+        "id": "n1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-1403",
+          "name": "Mongodb"
+        }
+      },
+      {
+        "id": "n1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-204",
+          "name": "Communication"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1014",
+        "title": "Community Event Management App",
+        "description": "A full-stack web application for discovering and managing local community events, built with Vue.js on the frontend and a Node.js Express API on the backend. MongoDB was used as the document store for flexible event schemas. The project was presented to city hall representatives as part of a digital transformation initiative, requiring effective Communication to explain technical decisions to non-technical audiences.",
+        "github_link": "https://github.com/teodoravasile/event-app",
+        "builtWith": [
+          {
+            "skill_id": "SK-1401",
+            "name": "Vue.js"
+          },
+          {
+            "skill_id": "SK-1402",
+            "name": "Node.js"
+          },
+          {
+            "skill_id": "SK-1403",
+            "name": "Mongodb"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "SE-301",
+        "title": "Full-Stack JavaScript Development",
+        "description": "A project-based course covering the JavaScript ecosystem from front-end with Vue.js to back-end with Node.js and RESTful API design. Database integration with MongoDB was explored using Mongoose ODM. Students practiced iterative development, code review, and technical Communication within Scrum teams.",
+        "provider": "University Software Engineering Department",
+        "covers": [
+          {
+            "skill_id": "SK-1401",
+            "name": "Vue.js"
+          },
+          {
+            "skill_id": "SK-1402",
+            "name": "Node.js"
+          },
+          {
+            "skill_id": "SK-1403",
+            "name": "Mongodb"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000015",
+    "name": "Silviu Moldovan",
+    "major": "Cybersecurity",
+    "graduation_year": 2027,
+    "current_year_of_study": 2,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "o1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-1501",
+          "name": "Cryptography"
+        }
+      },
+      {
+        "id": "o1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 2,
+        "years_of_experience": 0.5,
+        "technology": {
+          "skill_id": "SK-301",
+          "name": "Network Security"
+        }
+      },
+      {
+        "id": "o1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-503",
+          "name": "Problem solving"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1015",
+        "title": "Encrypted File Storage CLI",
+        "description": "A command-line file storage tool implementing AES-256 encryption and RSA key exchange for secure file storage and sharing. The project demonstrated core Cryptography principles and was developed in Python, reinforcing Problem solving skills when debugging side-channel vulnerabilities in the initial implementation.",
+        "github_link": "https://github.com/silviuMoldovan/crypto-storage",
+        "builtWith": [
+          {
+            "skill_id": "SK-1501",
+            "name": "Cryptography"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CY-201",
+        "title": "Introduction to Cryptography",
+        "description": "A foundational course covering symmetric and asymmetric encryption, hash functions, digital signatures, and PKI infrastructure. Mathematical foundations including modular arithmetic and number theory were taught alongside practical implementations using Python. Network Security context was provided by examining TLS and secure communication protocols.",
+        "provider": "University Cybersecurity Department",
+        "covers": [
+          {
+            "skill_id": "SK-1501",
+            "name": "Cryptography"
+          },
+          {
+            "skill_id": "SK-301",
+            "name": "Network Security"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000016",
+    "name": "Raluca Toma",
+    "major": "Data Science",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "p1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "p1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1601",
+          "name": "Tableau"
+        }
+      },
+      {
+        "id": "p1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-502",
+          "name": "SQL"
+        }
+      },
+      {
+        "id": "p1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-403",
+          "name": "Data Visualization"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1016",
+        "title": "COVID-19 Impact Analysis for Romanian Economy",
+        "description": "A data analysis project examining the economic impact of COVID-19 on Romanian industries using publicly available datasets. SQL was used to query and aggregate economic indicators from relational databases, while Python handled statistical modeling and Tableau was used to build an interactive public-facing story dashboard emphasizing Data storytelling for broad audience comprehension.",
+        "github_link": "https://github.com/ralucatoma/covid-economic-analysis",
+        "builtWith": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-1601",
+            "name": "Tableau"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "DS-301",
+        "title": "Data Visualization and Communication",
+        "description": "A course exploring visualization theory, best practices, and tools including Tableau and Python-based libraries such as Matplotlib and Seaborn. Students built interactive dashboards and practiced Data storytelling to effectively communicate complex analytical findings to both technical and business audiences.",
+        "provider": "University Data Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-1601",
+            "name": "Tableau"
+          },
+          {
+            "skill_id": "SK-403",
+            "name": "Data Visualization"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1016",
+        "title": "Tableau Desktop Specialist",
+        "description": "Tableau's foundational certification verifying the ability to connect to data sources, build visualizations, and apply best practices for dashboarding within Tableau Desktop. The exam covers charts, calculations, filters, and dashboard interactivity.",
+        "issuer": "Tableau / Salesforce",
+        "certifies": [
+          {
+            "skill_id": "SK-1601",
+            "name": "Tableau"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000017",
+    "name": "Florin Dinu",
+    "major": "Computer Science",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "q1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.5,
+        "technology": {
+          "skill_id": "SK-1701",
+          "name": "Go"
+        }
+      },
+      {
+        "id": "q1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-1702",
+          "name": "gRPC"
+        }
+      },
+      {
+        "id": "q1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1703",
+          "name": "Databases"
+        }
+      },
+      {
+        "id": "q1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-903",
+          "name": "Teamwork"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1017",
+        "title": "Distributed Task Queue System",
+        "description": "A high-throughput distributed task queue built with Go, exposing worker nodes over gRPC for efficient inter-service communication. Redis was used as the message broker and caching layer to ensure low-latency job dispatching. The project was a Teamwork effort with two other students, with contributions tracked through GitHub pull requests and code reviews.",
+        "github_link": "https://github.com/florindinu/dist-task-queue",
+        "builtWith": [
+          {
+            "skill_id": "SK-1701",
+            "name": "Go"
+          },
+          {
+            "skill_id": "SK-1702",
+            "name": "gRPC"
+          },
+          {
+            "skill_id": "SK-1703",
+            "name": "Databases"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-452",
+        "title": "Distributed Systems",
+        "description": "A rigorous course on distributed systems fundamentals including consensus algorithms, CAP theorem, replication, and fault tolerance. Students implemented distributed key-value stores and message queues using Go, experimenting with gRPC for service communication and Redis as a shared state store.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-1701",
+            "name": "Go"
+          },
+          {
+            "skill_id": "SK-1702",
+            "name": "gRPC"
+          },
+          {
+            "skill_id": "SK-1703",
+            "name": "Databases"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000018",
+    "name": "Nicoleta Badea",
+    "major": "Artificial Intelligence",
+    "graduation_year": 2026,
+    "current_year_of_study": 1,
+    "degree_level": "Master of Science",
+    "knownTechnologies": [
+      {
+        "id": "r1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "r1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-1801",
+          "name": "Natural Language Processing (NLP)"
+        }
+      },
+      {
+        "id": "r1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-1802",
+          "name": "Hugging Face"
+        }
+      },
+      {
+        "id": "r1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-803",
+          "name": "Analytical skills"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1018",
+        "title": "Romanian Legal Text Summarizer",
+        "description": "An NLP application leveraging pre-trained Hugging Face Transformers models fine-tuned on Romanian legal corpora to produce abstractive summaries of court decisions. Built entirely in Python, the system reduced average reading time by 70% in user tests. The project was carried out as part of a graduate Research skills seminar, requiring rigorous methodology and literature comparison.",
+        "github_link": "https://github.com/nicoletabadea/legal-summarizer",
+        "builtWith": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-1801",
+            "name": "Natural Language Processing (NLP)"
+          },
+          {
+            "skill_id": "SK-1802",
+            "name": "Hugging Face"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "AI-503",
+        "title": "Natural Language Processing",
+        "description": "A graduate course covering modern NLP techniques from tokenization and embeddings to transformer architectures and large language models. Students used Hugging Face Transformers to fine-tune models on Romanian text datasets in Python, with an emphasis on evaluation metrics and Research skills for comparing approaches.",
+        "provider": "University Artificial Intelligence Department",
+        "covers": [
+          {
+            "skill_id": "SK-1801",
+            "name": "Natural Language Processing (NLP)"
+          },
+          {
+            "skill_id": "SK-1802",
+            "name": "Hugging Face"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000019",
+    "name": "Dragos Cojocaru",
+    "major": "Information Technology",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "s1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-1901",
+          "name": "Amazon Web Services"
+        }
+      },
+      {
+        "id": "s1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-702",
+          "name": "Terraform"
+        }
+      },
+      {
+        "id": "s1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "s1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1902",
+          "name": "Time management"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1019",
+        "title": "Serverless Image Processing Pipeline",
+        "description": "A serverless image processing pipeline deployed entirely on AWS Cloud Services using Lambda, S3, and SQS. Infrastructure was managed as code with Terraform and orchestration scripts were written in Python. The project was completed as part of an internship program where Time management was essential to deliver within a six-week deadline.",
+        "github_link": "https://github.com/dragoscojocaru/serverless-img",
+        "builtWith": [
+          {
+            "skill_id": "SK-1901",
+            "name": "Amazon Web Services"
+          },
+          {
+            "skill_id": "SK-702",
+            "name": "Terraform"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "IT-351",
+        "title": "Cloud Computing and Infrastructure",
+        "description": "A course exploring public cloud architecture with a focus on AWS Cloud Services, covering compute, storage, networking, and serverless patterns. Students provisioned infrastructure using Terraform and wrote Lambda functions in Python, learning about cloud cost optimization and security best practices.",
+        "provider": "University Information Technology Department",
+        "covers": [
+          {
+            "skill_id": "SK-1901",
+            "name": "Amazon Web Services"
+          },
+          {
+            "skill_id": "SK-702",
+            "name": "Terraform"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1019",
+        "title": "AWS Certified Solutions Architect – Associate",
+        "description": "AWS certification validating the ability to design distributed systems on Amazon Web Services. It covers selecting appropriate AWS Cloud Services for various use cases, applying the AWS Well-Architected Framework, and designing for scalability, resilience, and cost efficiency.",
+        "issuer": "Amazon Web Services",
+        "certifies": [
+          {
+            "skill_id": "SK-1901",
+            "name": "Amazon Web Services"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000020",
+    "name": "Oana Serban",
+    "major": "Software Engineering",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "t1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.5,
+        "technology": {
+          "skill_id": "SK-2001",
+          "name": "Kotlin"
+        }
+      },
+      {
+        "id": "t1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-2002",
+          "name": "Android"
+        }
+      },
+      {
+        "id": "t1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-2003",
+          "name": "Android"
+        }
+      },
+      {
+        "id": "t1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-204",
+          "name": "Communication"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1020",
+        "title": "Personal Finance Tracker for Android",
+        "description": "A feature-rich personal finance Android application developed in Kotlin using Jetpack Compose for the UI layer. The app supports multi-currency budgets, recurring transactions, and visual spending analytics. Published on the Google Play Store with over 500 installs. Effective Communication was practiced through user feedback incorporation and presenting the app at a regional mobile developer meetup.",
+        "github_link": "https://github.com/oanaserban/finance-tracker",
+        "builtWith": [
+          {
+            "skill_id": "SK-2001",
+            "name": "Kotlin"
+          },
+          {
+            "skill_id": "SK-2002",
+            "name": "Android"
+          },
+          {
+            "skill_id": "SK-2003",
+            "name": "Android"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "SE-403",
+        "title": "Mobile Application Development",
+        "description": "A course focused on building native mobile applications for Android using Kotlin and Jetpack Compose. Topics included activity lifecycle, navigation, ViewModel, Room database, and publishing to the Play Store. Group projects required teamwork and technical Communication to coordinate the design and development process.",
+        "provider": "University Software Engineering Department",
+        "covers": [
+          {
+            "skill_id": "SK-2001",
+            "name": "Kotlin"
+          },
+          {
+            "skill_id": "SK-2002",
+            "name": "Android"
+          },
+          {
+            "skill_id": "SK-2003",
+            "name": "Android"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1020",
+        "title": "Associate Android Developer Certification",
+        "description": "Google's official Android developer certification confirming proficiency in building production-quality Android apps with Kotlin. The exam requires demonstrating skill in Android Development architecture patterns, Jetpack libraries, testing, and debugging.",
+        "issuer": "Google",
+        "certifies": [
+          {
+            "skill_id": "SK-2001",
+            "name": "Kotlin"
+          },
+          {
+            "skill_id": "SK-2002",
+            "name": "Android"
+          },
+          {
+            "skill_id": "SK-2003",
+            "name": "Android"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000021",
+    "name": "Marius Enache",
+    "major": "Computer Science",
+    "graduation_year": 2027,
+    "current_year_of_study": 2,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "u1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-2101",
+          "name": "Rust"
+        }
+      },
+      {
+        "id": "u1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 2,
+        "years_of_experience": 0.5,
+        "technology": {
+          "skill_id": "SK-1301",
+          "name": "C++"
+        }
+      },
+      {
+        "id": "u1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-503",
+          "name": "Problem solving"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1021",
+        "title": "Memory-Safe HTTP Server in Rust",
+        "description": "A lightweight HTTP/1.1 server implemented from scratch in Rust, focusing on memory safety and performance without relying on unsafe blocks. The project was inspired by studying C++ vulnerabilities in network servers and demonstrates Problem solving through designing an asynchronous connection handling model using Tokio.",
+        "github_link": "https://github.com/mariusenache/rust-http-server",
+        "builtWith": [
+          {
+            "skill_id": "SK-2101",
+            "name": "Rust"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-202",
+        "title": "Systems Programming",
+        "description": "A low-level systems course covering memory management, concurrency, and operating system interfaces using C++. Selected topics in modern systems languages such as Rust were also introduced, highlighting ownership models and memory safety guarantees in contrast to manual memory management in C++.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-1301",
+            "name": "C++"
+          },
+          {
+            "skill_id": "SK-2101",
+            "name": "Rust"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000022",
+    "name": "Simona Chirila",
+    "major": "Data Science",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "v1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "v1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-2201",
+          "name": "Scikit-learn"
+        }
+      },
+      {
+        "id": "v1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-502",
+          "name": "SQL"
+        }
+      },
+      {
+        "id": "v1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-2202",
+          "name": "Machine Learning"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1022",
+        "title": "Customer Churn Prediction for Telecom",
+        "description": "A machine learning project predicting customer churn for a Romanian telecom company using Scikit-learn classification models including Random Forest and XGBoost. Feature engineering was performed on SQL-extracted behavioral data. Statistical modeling techniques such as logistic regression and SHAP value analysis were applied to interpret model decisions for business stakeholders.",
+        "github_link": "https://github.com/simonachirila/churn-prediction",
+        "builtWith": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-2201",
+            "name": "Scikit-learn"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "DS-401",
+        "title": "Applied Machine Learning",
+        "description": "A practical course covering end-to-end machine learning pipelines using Scikit-learn and Python. Topics included data preprocessing, feature selection, model selection with cross-validation, and Statistical modeling. Emphasis was placed on interpretability and communicating model outputs to non-technical decision-makers.",
+        "provider": "University Data Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-2201",
+            "name": "Scikit-learn"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-2202",
+            "name": "Machine Learning"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000023",
+    "name": "Petru Anca",
+    "major": "Information Technology",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "w1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-2301",
+          "name": "Linux"
+        }
+      },
+      {
+        "id": "w1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-2302",
+          "name": "Bash"
+        }
+      },
+      {
+        "id": "w1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-2303",
+          "name": "Ansible"
+        }
+      },
+      {
+        "id": "w1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1902",
+          "name": "Time management"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1023",
+        "title": "Automated Server Provisioning Tool",
+        "description": "An infrastructure automation tool using Ansible playbooks and Bash Scripting to provision and configure Ubuntu servers for a local hosting provider. The tool reduced manual server setup time from three hours to under ten minutes. Linux System Administration expertise was required to correctly configure networking, firewalls, and user permissions, and strong Time management ensured delivery across a compressed timeline.",
+        "github_link": "https://github.com/petruanca/server-provisioner",
+        "builtWith": [
+          {
+            "skill_id": "SK-2301",
+            "name": "Linux"
+          },
+          {
+            "skill_id": "SK-2302",
+            "name": "Bash"
+          },
+          {
+            "skill_id": "SK-2303",
+            "name": "Ansible"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "IT-252",
+        "title": "System Administration and DevOps Fundamentals",
+        "description": "An introductory course to Linux System Administration and infrastructure automation covering the Linux command line, user management, Bash Scripting, and configuration management with Ansible. Students set up and managed virtual server environments throughout the course, simulating real-world sysadmin workloads.",
+        "provider": "University Information Technology Department",
+        "covers": [
+          {
+            "skill_id": "SK-2301",
+            "name": "Linux"
+          },
+          {
+            "skill_id": "SK-2302",
+            "name": "Bash"
+          },
+          {
+            "skill_id": "SK-2303",
+            "name": "Ansible"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000024",
+    "name": "Larisa Preda",
+    "major": "Human-Computer Interaction",
+    "graduation_year": 2027,
+    "current_year_of_study": 1,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "x1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-1001",
+          "name": "UI/UX Design"
+        }
+      },
+      {
+        "id": "x1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 2,
+        "years_of_experience": 0.5,
+        "technology": {
+          "skill_id": "SK-2401",
+          "name": "UI/UX Design"
+        }
+      },
+      {
+        "id": "x1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-1004",
+          "name": "Collaboration"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1024",
+        "title": "Transit App Redesign for Cluj-Napoca",
+        "description": "A UX redesign project for the Cluj-Napoca public transit app. Wireframing was completed in Figma based on observations and interviews with daily commuters. The redesigned prototype improved task completion time by 35% in moderated usability tests. The project required Empathy to deeply understand the frustrations of elderly and visually impaired users.",
+        "github_link": "https://github.com/larisapreda/transit-redesign",
+        "builtWith": [
+          {
+            "skill_id": "SK-1001",
+            "name": "UI/UX Design"
+          },
+          {
+            "skill_id": "SK-2401",
+            "name": "UI/UX Design"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "HCI-101",
+        "title": "Introduction to UX Design",
+        "description": "An introductory course covering the fundamentals of user experience design, including design thinking, personas, Wireframing, and prototyping. Students worked in Figma to create and iterate on low- and high-fidelity prototypes, guided by Empathy mapping exercises to understand target user needs.",
+        "provider": "University HCI Department",
+        "covers": [
+          {
+            "skill_id": "SK-1001",
+            "name": "UI/UX Design"
+          },
+          {
+            "skill_id": "SK-2401",
+            "name": "UI/UX Design"
+          },
+          {
+            "skill_id": "SK-1004",
+            "name": "Collaboration"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000025",
+    "name": "Alexandru Ciobanu",
+    "major": "Computer Science",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "y1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-501",
+          "name": "Java"
+        }
+      },
+      {
+        "id": "y1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-2501",
+          "name": "Apache Kafka"
+        }
+      },
+      {
+        "id": "y1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-902",
+          "name": "PostgreSQL"
+        }
+      },
+      {
+        "id": "y1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-2502",
+          "name": "Adaptability"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1025",
+        "title": "Real-Time Stock Market Simulator",
+        "description": "A real-time stock trading simulation platform where price events are streamed via Apache Kafka and consumed by Java microservices that update PostgreSQL trade records. The event-driven architecture handles thousands of messages per second with sub-millisecond latency. Adaptability was required throughout the project as requirements changed significantly following user testing sessions.",
+        "github_link": "https://github.com/alexandruciobanu/stock-simulator",
+        "builtWith": [
+          {
+            "skill_id": "SK-501",
+            "name": "Java"
+          },
+          {
+            "skill_id": "SK-2501",
+            "name": "Apache Kafka"
+          },
+          {
+            "skill_id": "SK-902",
+            "name": "PostgreSQL"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-453",
+        "title": "Event-Driven Architectures",
+        "description": "A course exploring asynchronous and event-driven software architecture patterns. Students built streaming applications using Apache Kafka and Java, learned about consumer groups, topic partitioning, and exactly-once delivery semantics. PostgreSQL was used to persist event-driven state updates.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-2501",
+            "name": "Apache Kafka"
+          },
+          {
+            "skill_id": "SK-501",
+            "name": "Java"
+          },
+          {
+            "skill_id": "SK-902",
+            "name": "PostgreSQL"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000026",
+    "name": "Ileana Tomescu",
+    "major": "Business Information Technology",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "z1b2c3d4-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-2601",
+          "name": "Agile"
+        }
+      },
+      {
+        "id": "z1b2c3d4-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-2602",
+          "name": "Jira"
+        }
+      },
+      {
+        "id": "z1b2c3d4-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-502",
+          "name": "SQL"
+        }
+      },
+      {
+        "id": "z1b2c3d4-0004-4000-8000-000000000004",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-603",
+          "name": "Stakeholder Management"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1026",
+        "title": "IT Project Management Simulation",
+        "description": "A semester-long simulation managing a fictional IT project from inception to delivery using Agile Methodologies and Jira for sprint tracking and backlog management. SQL reporting queries were written to extract KPIs from the simulated project database. Strong Stakeholder management skills were practiced through weekly mock stakeholder presentations and expectation-setting sessions.",
+        "github_link": "https://github.com/ileanatomescu/pm-simulation",
+        "builtWith": [
+          {
+            "skill_id": "SK-2601",
+            "name": "Agile"
+          },
+          {
+            "skill_id": "SK-2602",
+            "name": "Jira"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "BIT-302",
+        "title": "IT Project Management",
+        "description": "A course on modern IT project management practices including Agile Methodologies such as Scrum and Kanban, project scheduling, risk management, and team coordination. Jira was used for sprint planning and progress tracking. Students completed a group project delivered using Agile sprints and practiced Stakeholder management through structured review meetings.",
+        "provider": "University Business Information Technology Department",
+        "covers": [
+          {
+            "skill_id": "SK-2601",
+            "name": "Agile"
+          },
+          {
+            "skill_id": "SK-2602",
+            "name": "Jira"
+          },
+          {
+            "skill_id": "SK-603",
+            "name": "Stakeholder Management"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1026",
+        "title": "PMI Agile Certified Practitioner (PMI-ACP)",
+        "description": "A globally recognized certification from the Project Management Institute validating knowledge of Agile Methodologies including Scrum, Kanban, Lean, and Extreme Programming. Candidates must demonstrate experience applying agile principles in project environments and proficiency with tools such as Jira.",
+        "issuer": "Project Management Institute",
+        "certifies": [
+          {
+            "skill_id": "SK-2601",
+            "name": "Agile"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000027",
+    "name": "Claudiu Apostol",
+    "major": "Computer Science",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "aa1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "aa1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-2701",
+          "name": "Django"
+        }
+      },
+      {
+        "id": "aa1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-2702",
+          "name": "Celery"
+        }
+      },
+      {
+        "id": "aa1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1703",
+          "name": "Databases"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1027",
+        "title": "Online Exam Platform with Anti-Cheat Module",
+        "description": "A full-featured online examination platform built with Django and Python, supporting time-limited exams, automated grading, and an anti-cheat module using browser focus detection and tab switching alerts. Background email notifications and report generation were offloaded to Celery workers backed by a Redis broker, ensuring the web server remained responsive under high exam load.",
+        "github_link": "https://github.com/claudiuapostol/exam-platform",
+        "builtWith": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-2701",
+            "name": "Django"
+          },
+          {
+            "skill_id": "SK-2702",
+            "name": "Celery"
+          },
+          {
+            "skill_id": "SK-1703",
+            "name": "Databases"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-353",
+        "title": "Web Application Development with Python",
+        "description": "A course covering back-end web development using Python and the Django framework. Students built data-driven web applications with authentication, RESTful APIs, and asynchronous task processing using Celery and Redis. Topics also included deployment, testing, and security best practices.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-2701",
+            "name": "Django"
+          },
+          {
+            "skill_id": "SK-2702",
+            "name": "Celery"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000028",
+    "name": "Veronica Stoica",
+    "major": "Cybersecurity",
+    "graduation_year": 2026,
+    "current_year_of_study": 2,
+    "degree_level": "Master of Science",
+    "knownTechnologies": [
+      {
+        "id": "ab1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-2801",
+          "name": "Cybersecurity"
+        }
+      },
+      {
+        "id": "ab1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-2802",
+          "name": "Cybersecurity"
+        }
+      },
+      {
+        "id": "ab1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-303",
+          "name": "Linux"
+        }
+      },
+      {
+        "id": "ab1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-304",
+          "name": "Critical thinking"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1028",
+        "title": "Ransomware Incident Investigation Simulation",
+        "description": "A graduate thesis-level project simulating a ransomware attack investigation in a controlled laboratory environment. Digital Forensics tools such as Autopsy and Volatility were used to analyze disk and memory images for indicators of compromise. The full Incident Response lifecycle was documented from initial detection to remediation and lessons-learned reporting. Kali Linux was used for red-team simulation, and the project demanded strong Critical thinking to interpret ambiguous forensic artifacts.",
+        "github_link": "https://github.com/veronicastoica/ransomware-forensics",
+        "builtWith": [
+          {
+            "skill_id": "SK-2801",
+            "name": "Cybersecurity"
+          },
+          {
+            "skill_id": "SK-2802",
+            "name": "Cybersecurity"
+          },
+          {
+            "skill_id": "SK-303",
+            "name": "Linux"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CY-502",
+        "title": "Digital Forensics and Incident Response",
+        "description": "A graduate course covering the full spectrum of Digital Forensics and Incident Response. Students performed disk imaging, memory forensics, log analysis, and network traffic reconstruction using industry-standard tools. The course simulated realistic breach scenarios requiring Critical thinking to piece together attack timelines.",
+        "provider": "University Cybersecurity Department",
+        "covers": [
+          {
+            "skill_id": "SK-2801",
+            "name": "Cybersecurity"
+          },
+          {
+            "skill_id": "SK-2802",
+            "name": "Cybersecurity"
+          },
+          {
+            "skill_id": "SK-304",
+            "name": "Critical thinking"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1028",
+        "title": "GIAC Certified Forensic Analyst (GCFA)",
+        "description": "An advanced GIAC certification validating expertise in Digital Forensics and Incident Response, covering memory analysis, timeline analysis, and anti-forensics detection. Certified analysts can independently lead investigations into complex security incidents in enterprise environments.",
+        "issuer": "GIAC",
+        "certifies": [
+          {
+            "skill_id": "SK-2801",
+            "name": "Cybersecurity"
+          },
+          {
+            "skill_id": "SK-2802",
+            "name": "Cybersecurity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000029",
+    "name": "Sorin Manea",
+    "major": "Software Engineering",
+    "graduation_year": 2027,
+    "current_year_of_study": 1,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "ac1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 2,
+        "years_of_experience": 0.5,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "ac1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 2,
+        "years_of_experience": 0.5,
+        "technology": {
+          "skill_id": "SK-502",
+          "name": "SQL"
+        }
+      },
+      {
+        "id": "ac1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-2502",
+          "name": "Adaptability"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1029",
+        "title": "Personal Budget Tracker CLI",
+        "description": "A command-line Python application for tracking personal income and expenses, storing data in an SQLite database via SQL queries. The project was built during the first university semester as an introductory programming exercise and demonstrates Adaptability to quickly learning new tools and technologies.",
+        "github_link": "https://github.com/sorinmanea/budget-cli",
+        "builtWith": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "SE-101",
+        "title": "Introduction to Software Engineering",
+        "description": "A first-year course introducing software engineering principles, programming with Python, version control with Git, and basic SQL database management. Students completed small projects to practice coding fundamentals and develop Adaptability to evolving tool requirements.",
+        "provider": "University Software Engineering Department",
+        "covers": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000030",
+    "name": "Mihaela Ionita",
+    "major": "Artificial Intelligence",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "ad1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "ad1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-3001",
+          "name": "Machine Learning"
+        }
+      },
+      {
+        "id": "ad1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-801",
+          "name": "PyTorch"
+        }
+      },
+      {
+        "id": "ad1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-803",
+          "name": "Analytical skills"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1030",
+        "title": "Autonomous Robot Navigation with Deep Reinforcement Learning",
+        "description": "A senior thesis project training an autonomous robot navigation agent using Reinforcement Learning algorithms, specifically Proximal Policy Optimization (PPO) implemented in PyTorch and Python. The agent was trained in a simulated Gazebo environment and transferred to a physical TurtleBot. The project required strong Research skills to review current state-of-the-art sim-to-real transfer techniques.",
+        "github_link": "https://github.com/mihaelaionita/robot-rl-nav",
+        "builtWith": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-3001",
+            "name": "Machine Learning"
+          },
+          {
+            "skill_id": "SK-801",
+            "name": "PyTorch"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "AI-404",
+        "title": "Reinforcement Learning",
+        "description": "An undergraduate senior-level course covering the mathematical foundations and algorithms of Reinforcement Learning, including Markov decision processes, Q-learning, policy gradients, and actor-critic methods. Students implemented algorithms in Python and PyTorch, evaluating agents on standard gym environments.",
+        "provider": "University Artificial Intelligence Department",
+        "covers": [
+          {
+            "skill_id": "SK-3001",
+            "name": "Machine Learning"
+          },
+          {
+            "skill_id": "SK-801",
+            "name": "PyTorch"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000031",
+    "name": "Tudor Nistor",
+    "major": "Computer Science",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "ae1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-3101",
+          "name": "Scala"
+        }
+      },
+      {
+        "id": "ae1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-402",
+          "name": "Apache Spark"
+        }
+      },
+      {
+        "id": "ae1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-3102",
+          "name": "Programming"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1031",
+        "title": "Log Analytics Engine",
+        "description": "A batch log analytics engine processing server access logs using Apache Spark and Scala. The system aggregates request patterns, detects anomalies, and generates daily performance reports. The codebase was written using Functional programming paradigms—pure functions, immutable data structures, and monadic error handling—resulting in highly testable and composable code.",
+        "github_link": "https://github.com/tudornistor/log-analytics",
+        "builtWith": [
+          {
+            "skill_id": "SK-3101",
+            "name": "Scala"
+          },
+          {
+            "skill_id": "SK-402",
+            "name": "Apache Spark"
+          },
+          {
+            "skill_id": "SK-3102",
+            "name": "Programming"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-354",
+        "title": "Functional Programming and Type Systems",
+        "description": "A course exploring Functional programming concepts including higher-order functions, monads, type inference, and category theory basics. Scala was the primary language, with students also building data processing pipelines using Apache Spark in Scala. Emphasis was placed on writing correct, composable, and side-effect-free code.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-3101",
+            "name": "Scala"
+          },
+          {
+            "skill_id": "SK-3102",
+            "name": "Programming"
+          },
+          {
+            "skill_id": "SK-402",
+            "name": "Apache Spark"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000032",
+    "name": "Alina Petrescu",
+    "major": "Information Systems",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "af1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-3201",
+          "name": "Servicenow"
+        }
+      },
+      {
+        "id": "af1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-3202",
+          "name": "Back End Development"
+        }
+      },
+      {
+        "id": "af1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-602",
+          "name": "Data Modeling"
+        }
+      },
+      {
+        "id": "af1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-603",
+          "name": "Stakeholder Management"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1032",
+        "title": "CRM Customization for Romanian Insurance Firm",
+        "description": "A Salesforce CRM customization project for a fictional Romanian insurance company, implementing custom Apex triggers, validation rules, and automated flows to streamline the policy management process. Business Process Modeling diagrams were created to map existing processes before configuring Salesforce objects. The project required Stakeholder management to gather requirements from sales, underwriting, and IT teams.",
+        "github_link": "https://github.com/alinapetrescu/salesforce-crm",
+        "builtWith": [
+          {
+            "skill_id": "SK-3201",
+            "name": "Servicenow"
+          },
+          {
+            "skill_id": "SK-3202",
+            "name": "Back End Development"
+          },
+          {
+            "skill_id": "SK-602",
+            "name": "Data Modeling"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "IS-402",
+        "title": "CRM Systems and Implementation",
+        "description": "A course on modern CRM platforms with a focus on Salesforce, covering standard and custom objects, Apex development, Lightning components, and automation tools such as Flow. Business Process Modeling was used to document client workflows before configuring CRM solutions.",
+        "provider": "University Information Systems Department",
+        "covers": [
+          {
+            "skill_id": "SK-3201",
+            "name": "Servicenow"
+          },
+          {
+            "skill_id": "SK-3202",
+            "name": "Back End Development"
+          },
+          {
+            "skill_id": "SK-602",
+            "name": "Data Modeling"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1032",
+        "title": "Salesforce Certified Administrator",
+        "description": "Salesforce's foundational administrator certification validating expertise in configuring and managing Salesforce orgs including user management, security models, automation, and reporting. Certified administrators can design and implement business solutions using declarative Salesforce tools.",
+        "issuer": "Salesforce",
+        "certifies": [
+          {
+            "skill_id": "SK-3201",
+            "name": "Servicenow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000033",
+    "name": "Horia Lazarescu",
+    "major": "Computer Engineering",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "ag1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-3301",
+          "name": "Programming"
+        }
+      },
+      {
+        "id": "ag1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1103",
+          "name": "Programming"
+        }
+      },
+      {
+        "id": "ag1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-1301",
+          "name": "C++"
+        }
+      },
+      {
+        "id": "ag1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-703",
+          "name": "Attention to detail"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1033",
+        "title": "FPGA-Based Digital Signal Processor",
+        "description": "A digital signal processing core implemented in VHDL and synthesized for FPGA Programming on a Xilinx Artix-7 board. The project implemented FIR and IIR filters with configurable tap coefficients. A C++ test harness was developed on the host PC to validate filter outputs against reference implementations. Attention to detail was critical during timing closure and simulation debugging.",
+        "github_link": "https://github.com/horlazarescu/fpga-dsp",
+        "builtWith": [
+          {
+            "skill_id": "SK-3301",
+            "name": "Programming"
+          },
+          {
+            "skill_id": "SK-1103",
+            "name": "Programming"
+          },
+          {
+            "skill_id": "SK-1301",
+            "name": "C++"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CE-302",
+        "title": "Digital Design and FPGA Implementation",
+        "description": "A course covering digital circuit design using VHDL, from combinational and sequential logic up to full system designs synthesized for FPGA Programming targets. Vivado Design Suite was the primary tool, and students completed labs designing and testing memory controllers, state machines, and arithmetic units.",
+        "provider": "University Computer Engineering Department",
+        "covers": [
+          {
+            "skill_id": "SK-3301",
+            "name": "Programming"
+          },
+          {
+            "skill_id": "SK-1103",
+            "name": "Programming"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000034",
+    "name": "Diana Oprea",
+    "major": "Data Science",
+    "graduation_year": 2027,
+    "current_year_of_study": 2,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "ah1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "ah1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-3401",
+          "name": "Pandas"
+        }
+      },
+      {
+        "id": "ah1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 2,
+        "years_of_experience": 0.5,
+        "technology": {
+          "skill_id": "SK-502",
+          "name": "SQL"
+        }
+      },
+      {
+        "id": "ah1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-2502",
+          "name": "Adaptability"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1034",
+        "title": "Romanian Housing Market Data Explorer",
+        "description": "A data exploration project analyzing Romanian housing market trends using Python and Pandas to clean, transform, and visualize scraped property listing data. SQL was used to load the cleaned dataset into a local SQLite database for structured querying. Adaptability was demonstrated by pivoting from a regression model plan to an exploratory analysis when data quality issues were discovered.",
+        "github_link": "https://github.com/dianaoprea/housing-explorer",
+        "builtWith": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-3401",
+            "name": "Pandas"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "DS-201",
+        "title": "Data Analysis with Python",
+        "description": "A second-year course teaching data manipulation and analysis using Python and the Pandas library. Topics included data cleaning, aggregation, merging, and visualization with Matplotlib. SQL fundamentals were introduced for relational data querying alongside DataFrame operations.",
+        "provider": "University Data Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-3401",
+            "name": "Pandas"
+          },
+          {
+            "skill_id": "SK-502",
+            "name": "SQL"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000035",
+    "name": "Sebastian Luca",
+    "major": "Computer Science",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "ai1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 3.5,
+        "technology": {
+          "skill_id": "SK-201",
+          "name": "React"
+        }
+      },
+      {
+        "id": "ai1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-3501",
+          "name": "Next.js"
+        }
+      },
+      {
+        "id": "ai1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-202",
+          "name": "TypeScript"
+        }
+      },
+      {
+        "id": "ai1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-3502",
+          "name": "Front End Development"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1035",
+        "title": "SaaS Landing Page Builder",
+        "description": "A no-code landing page builder SaaS product built with Next.js, React, and TypeScript. The platform allows users to visually construct and publish landing pages with drag-and-drop components. Server-side rendering via Next.js and structured data markup were used to optimize Search Engine Optimization, achieving a perfect Lighthouse SEO score on all generated pages.",
+        "github_link": "https://github.com/sebastianluca/page-builder",
+        "builtWith": [
+          {
+            "skill_id": "SK-201",
+            "name": "React"
+          },
+          {
+            "skill_id": "SK-3501",
+            "name": "Next.js"
+          },
+          {
+            "skill_id": "SK-202",
+            "name": "TypeScript"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-355",
+        "title": "Advanced React and Modern JavaScript Frameworks",
+        "description": "A senior-level elective covering advanced React patterns including context, portals, and concurrent mode, alongside Next.js for server-side rendering and static site generation. TypeScript was required throughout, and a module on Search Engine Optimization covered metadata, open graph tags, and performance optimization for web apps.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-201",
+            "name": "React"
+          },
+          {
+            "skill_id": "SK-3501",
+            "name": "Next.js"
+          },
+          {
+            "skill_id": "SK-202",
+            "name": "TypeScript"
+          },
+          {
+            "skill_id": "SK-3502",
+            "name": "Front End Development"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000036",
+    "name": "Corina Mihalcea",
+    "major": "Information Systems",
+    "graduation_year": 2026,
+    "current_year_of_study": 3,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "aj1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-3601",
+          "name": "Azure"
+        }
+      },
+      {
+        "id": "aj1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-3602",
+          "name": "Azure DevOps"
+        }
+      },
+      {
+        "id": "aj1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-901",
+          "name": "Spring Boot"
+        }
+      },
+      {
+        "id": "aj1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-1902",
+          "name": "Time management"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1036",
+        "title": "University Document Management System on Azure",
+        "description": "A cloud-based document management system deployed on Microsoft Azure using App Service, Blob Storage, and Azure SQL. The backend API was built with Spring Boot and the CI/CD pipeline was configured in Azure DevOps with automated testing and staging environment gates. Strong Time management enabled the team to deliver all sprints on schedule despite mid-project scope additions.",
+        "github_link": "https://github.com/corinamihalcea/azure-docs",
+        "builtWith": [
+          {
+            "skill_id": "SK-3601",
+            "name": "Azure"
+          },
+          {
+            "skill_id": "SK-3602",
+            "name": "Azure DevOps"
+          },
+          {
+            "skill_id": "SK-901",
+            "name": "Spring Boot"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "IS-352",
+        "title": "Cloud Platforms and DevOps Practices",
+        "description": "A course exploring cloud service models using Microsoft Azure, including Infrastructure as a Service, Platform as a Service, and Serverless. Azure DevOps was used for continuous integration and delivery pipelines. Students built and deployed a Spring Boot microservice to Azure App Service through an automated CI/CD pipeline.",
+        "provider": "University Information Systems Department",
+        "covers": [
+          {
+            "skill_id": "SK-3601",
+            "name": "Azure"
+          },
+          {
+            "skill_id": "SK-3602",
+            "name": "Azure DevOps"
+          },
+          {
+            "skill_id": "SK-901",
+            "name": "Spring Boot"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1036",
+        "title": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+        "description": "Microsoft's foundational Azure certification covering core cloud concepts, Microsoft Azure services, pricing, SLAs, and lifecycle. It validates a fundamental understanding of cloud computing and how Microsoft Azure implements cloud services.",
+        "issuer": "Microsoft",
+        "certifies": [
+          {
+            "skill_id": "SK-3601",
+            "name": "Azure"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000037",
+    "name": "Razvan Dobre",
+    "major": "Computer Science",
+    "graduation_year": 2026,
+    "current_year_of_study": 2,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "ak1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-3701",
+          "name": "Solidity"
+        }
+      },
+      {
+        "id": "ak1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-3702",
+          "name": "Solidity"
+        }
+      },
+      {
+        "id": "ak1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 2,
+        "years_of_experience": 0.5,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "ak1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-503",
+          "name": "Problem solving"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1037",
+        "title": "Decentralized Voting System",
+        "description": "A decentralized e-voting application built on Ethereum using Solidity smart contracts. The system enables anonymous and tamper-proof ballot casting for student council elections. A Python script was written for contract interaction and batch voter registration. Problem solving was required to design the commit-reveal voting scheme to prevent front-running attacks.",
+        "github_link": "https://github.com/razvandobre/decentra-vote",
+        "builtWith": [
+          {
+            "skill_id": "SK-3701",
+            "name": "Solidity"
+          },
+          {
+            "skill_id": "SK-3702",
+            "name": "Solidity"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-260",
+        "title": "Blockchain and Decentralized Applications",
+        "description": "An elective course exploring distributed ledger technology, smart contracts, and decentralized application development. Students wrote Solidity contracts deployed to Ethereum testnets, examined consensus mechanisms and tokenomics, and analyzed real-world security vulnerabilities in blockchain protocols.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-3701",
+            "name": "Solidity"
+          },
+          {
+            "skill_id": "SK-3702",
+            "name": "Solidity"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000038",
+    "name": "Camelia Voicu",
+    "major": "Software Engineering",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "al1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-3801",
+          "name": "Software Testing"
+        }
+      },
+      {
+        "id": "al1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-3802",
+          "name": "Automated testing"
+        }
+      },
+      {
+        "id": "al1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "al1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-703",
+          "name": "Attention to detail"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1038",
+        "title": "Automated E-Commerce Test Suite",
+        "description": "A comprehensive automated Software Testing framework for an e-commerce platform using Selenium WebDriver and Python. The test suite covers end-to-end user journeys including registration, product search, checkout, and payment flows. The framework integrates with a CI pipeline to run regression tests on every pull request. Attention to detail was essential when writing assertions and designing data-driven test cases.",
+        "github_link": "https://github.com/cameliaoicu/ecommerce-tests",
+        "builtWith": [
+          {
+            "skill_id": "SK-3801",
+            "name": "Software Testing"
+          },
+          {
+            "skill_id": "SK-3802",
+            "name": "Automated testing"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "SE-404",
+        "title": "Software Quality Assurance and Testing",
+        "description": "A course on Software Testing methodologies including unit, integration, system, and acceptance testing. Students implemented automated test suites using Selenium and Python, applied test-driven development practices, and analyzed defect metrics. Topics also included performance testing, security testing basics, and continuous testing integration.",
+        "provider": "University Software Engineering Department",
+        "covers": [
+          {
+            "skill_id": "SK-3801",
+            "name": "Software Testing"
+          },
+          {
+            "skill_id": "SK-3802",
+            "name": "Automated testing"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1038",
+        "title": "ISTQB Certified Tester Foundation Level",
+        "description": "The globally recognized ISTQB Foundation certification covering Software Testing fundamentals including test levels, types, techniques, and the software testing lifecycle. Certified practitioners understand testing principles, static analysis, and test management concepts applicable across all domains.",
+        "issuer": "ISTQB",
+        "certifies": [
+          {
+            "skill_id": "SK-3801",
+            "name": "Software Testing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "student_id": "S-100000039",
+    "name": "Ionut Marginean",
+    "major": "Artificial Intelligence",
+    "graduation_year": 2026,
+    "current_year_of_study": 1,
+    "degree_level": "Master of Science",
+    "knownTechnologies": [
+      {
+        "id": "am1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 4,
+        "years_of_experience": 2.5,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "am1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-3901",
+          "name": "MLflow"
+        }
+      },
+      {
+        "id": "am1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 3,
+        "years_of_experience": 1.0,
+        "technology": {
+          "skill_id": "SK-3902",
+          "name": "MLflow"
+        }
+      },
+      {
+        "id": "am1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 3,
+        "years_of_experience": 1.5,
+        "technology": {
+          "skill_id": "SK-2502",
+          "name": "Adaptability"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1039",
+        "title": "Machine Learning Operations Pipeline",
+        "description": "An end-to-end MLOps pipeline automating model training, experiment tracking, versioning, and Model deployment for a binary classification task. MLflow was used for experiment tracking and model registry. The deployment stage served predictions via a FastAPI endpoint containerized with Docker. Adaptability was key when pivoting between model architectures based on MLflow comparison results.",
+        "github_link": "https://github.com/ionutmarginean/mlops-pipeline",
+        "builtWith": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-3901",
+            "name": "MLflow"
+          },
+          {
+            "skill_id": "SK-3902",
+            "name": "MLflow"
+          },
+          {
+            "skill_id": "SK-103",
+            "name": "Docker"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "AI-504",
+        "title": "MLOps and Production Machine Learning",
+        "description": "A graduate course on operationalizing machine learning systems. Topics include experiment tracking with MLflow, model versioning, automated retraining pipelines, monitoring for data drift, and Model deployment strategies including canary releases and A/B testing. Python and Docker are used throughout.",
+        "provider": "University Artificial Intelligence Department",
+        "covers": [
+          {
+            "skill_id": "SK-3901",
+            "name": "MLflow"
+          },
+          {
+            "skill_id": "SK-3902",
+            "name": "MLflow"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "diplomas": []
+  },
+  {
+    "student_id": "S-100000040",
+    "name": "Patricia Gherman",
+    "major": "Computer Science",
+    "graduation_year": 2025,
+    "current_year_of_study": 4,
+    "degree_level": "Bachelor of Science",
+    "knownTechnologies": [
+      {
+        "id": "an1b2c3d-0001-4000-8000-000000000001",
+        "proficiency_level": 5,
+        "years_of_experience": 4.0,
+        "technology": {
+          "skill_id": "SK-101",
+          "name": "Python"
+        }
+      },
+      {
+        "id": "an1b2c3d-0002-4000-8000-000000000002",
+        "proficiency_level": 5,
+        "years_of_experience": 3.0,
+        "technology": {
+          "skill_id": "SK-4001",
+          "name": "Problem solving"
+        }
+      },
+      {
+        "id": "an1b2c3d-0003-4000-8000-000000000003",
+        "proficiency_level": 4,
+        "years_of_experience": 2.0,
+        "technology": {
+          "skill_id": "SK-4002",
+          "name": "Problem solving"
+        }
+      },
+      {
+        "id": "an1b2c3d-0004-4000-8000-000000000004",
+        "proficiency_level": 5,
+        "years_of_experience": 3.5,
+        "technology": {
+          "skill_id": "SK-503",
+          "name": "Problem solving"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-1040",
+        "title": "Competitive Programming Judge Platform",
+        "description": "An online judge system for hosting Competitive Programming contests, supporting problem submission, sandboxed code execution in Python and C++, and real-time leaderboards. The platform was designed with Algorithm Design principles to efficiently evaluate up to 500 concurrent submissions using a worker queue architecture. The platform hosted the internal university programming contest with over 300 participants.",
+        "github_link": "https://github.com/patriciagherman/online-judge",
+        "builtWith": [
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          },
+          {
+            "skill_id": "SK-4001",
+            "name": "Problem solving"
+          },
+          {
+            "skill_id": "SK-4002",
+            "name": "Problem solving"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "course_id": "CS-303",
+        "title": "Advanced Algorithms and Data Structures",
+        "description": "A senior-level algorithms course covering advanced topics including network flow, string algorithms, computational geometry, and approximation algorithms. Problem solving through Competitive Programming-style exercises was the primary pedagogy, with weekly contests on Codeforces integrated into the grading scheme. Python was used for rapid prototyping and C++ for performance-critical submissions.",
+        "provider": "University Computer Science Department",
+        "covers": [
+          {
+            "skill_id": "SK-4001",
+            "name": "Problem solving"
+          },
+          {
+            "skill_id": "SK-4002",
+            "name": "Problem solving"
+          },
+          {
+            "skill_id": "SK-503",
+            "name": "Problem solving"
+          },
+          {
+            "skill_id": "SK-101",
+            "name": "Python"
+          }
+        ]
+      }
+    ],
+    "diplomas": [
+      {
+        "diploma_id": "DIP-1040",
+        "title": "ICPC Regional Finalist Certificate",
+        "description": "Certificate of achievement awarded to participants who advanced to the ICPC (International Collegiate Programming Contest) Regional Finals. Demonstrates elite-level Algorithm Design and Competitive Programming skills, having outperformed hundreds of university teams in the regional selection rounds.",
+        "issuer": "ICPC Foundation",
+        "certifies": [
+          {
+            "skill_id": "SK-4001",
+            "name": "Problem solving"
+          },
+          {
+            "skill_id": "SK-4002",
+            "name": "Problem solving"
+          },
+          {
+            "skill_id": "SK-503",
+            "name": "Problem solving"
+          }
+        ]
+      }
+    ]
+  }
+]

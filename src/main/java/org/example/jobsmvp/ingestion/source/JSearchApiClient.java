@@ -215,7 +215,7 @@ public class JSearchApiClient implements JobSource {
     @Value("${ingestion.sources.jsearch.api-key}")
     private String apiKey;
 
-    @Value("${ingestion.sources.jsearch.default-query:software engineer}")
+    @Value("${ingestion.sources.jsearch.default-query:junior developer jobs}")
     private String defaultQuery;
 
     @Value("${ingestion.sources.jsearch.pages:3}")

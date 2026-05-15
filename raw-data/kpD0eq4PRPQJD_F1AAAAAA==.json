@@ -1,0 +1,17 @@
+{
+  "job_id" : "kpD0eq4PRPQJD_F1AAAAAA==",
+  "employer_name" : "Jobs via Dice",
+  "employer_website" : null,
+  "job_title" : "Sr Python Developer",
+  "job_description" : "Dice is the leading career destination for tech experts at every stage of their careers. Our client, eSolutionsFirst, LLC, is seeking the following. Apply via Dice today!\n\nSr Python Developer\n\n12 Months contract extension\nMcLean , VA On-site M-F\n\nInterview Type: On-site (F2F) interview required.\n\nMust Have Qualifications:\n\n• Hands on backend development- Python required. Strong database skills-SQL Server or DB2, data extraction using Snowflake, and solid data analysis experience.\n• Mortgage experience is highly preferred.\n\nJob Description:\n\n• Looking for a senior Python developer (7 10 years experience) with strong SQL and data migration expertise.\n• The role involves converting complex queries, integrating new data sources, and working with Snowflake for data warehousing and analytics.\n• Requires experience in microservices, REST APIs, and tools like Docker, Jenkins, and Git. Familiarity with Django/FastAPI, large datasets, and ETL pipelines is essential.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "McLean",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

@@ -1,0 +1,17 @@
+{
+  "job_id" : "JaunI3tz84Ua9JM5AAAAAA==",
+  "employer_name" : "Ampcus Inc",
+  "employer_website" : "https://ampcus.com",
+  "job_title" : "Oracle OIC Developer/Admin (USAC/IBM)",
+  "job_description" : "Ampcus Inc. is a certified global provider of a broad range of Technology and Business consulting services. We are in search of a highly motivated candidate to join our talented Team.\n\nJob Title: Oracle OIC Developer/Admin (USAC/IBM).\n\nLocation: Washington, DC.\n\nDescription of project and tasks :\n\nTask Description:\n\n• This request is to support the implementation and maintenance of Oracle EBS on OCI, specifically related to the Oracle Integration Cloud (OIC) middleware.\n\nRequired Skills/Level of Experience:\n\n• 4 years of hands-on experience building complex integrations using OIC Gen2 or Gen 3\n• Experience with implementing and maintaining OIC for Oracle EBS on OCI through the project lifecycle (design, build, test, deployment, and sustainment)\n• Ability to work in a team\n• Good analysis and communication skills\n\nNice to have skills:\n\n• OCP or Associate certification is a plus, but hands-on experience is the more important attribute\n• Experience working with Oracle Cloud Infrastructure and Oracle Application Framework and Oracle EBS development\n• Experience working with Confluence and Jira\n\nAmpcus is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, protected veterans, or individuals with disabilities.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Washington",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : 60,
+  "job_max_salary" : 75,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

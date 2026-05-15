@@ -72,8 +72,8 @@
 
 		<dependency>
 			<groupId>dev.langchain4j</groupId>
-			<artifactId>langchain4j-google-ai-gemini</artifactId>
-			<version>1.9.1</version>
+				<artifactId>langchain4j-google-ai-gemini</artifactId>
+			<version>1.14.0</version>
 			<exclusions>
 				<exclusion>
 					<groupId>dev.langchain4j.http.client.spring.restclient</groupId>
@@ -85,13 +85,13 @@
 		<dependency>
 			<groupId>dev.langchain4j</groupId>
 			<artifactId>langchain4j</artifactId>
-			<version>1.9.1</version>
+			<version>1.14.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>dev.langchain4j</groupId>
 			<artifactId>langchain4j-ollama</artifactId>
-			<version>1.12.2</version>
+			<version>1.14.0</version>
 		</dependency>
 
 	</dependencies>

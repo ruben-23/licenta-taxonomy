@@ -1,0 +1,17 @@
+{
+  "job_id" : "x_mEIDjI9tFulxKVAAAAAA==",
+  "employer_name" : "Jobsbridge",
+  "employer_website" : "https://jobsbridge.com",
+  "job_title" : "Front End Developer",
+  "job_description" : "Company Description\n\nJobs Bridge Inc is among the fastest growing IT staffing / professional services organization with its own job portal. Jobs Bridge works extremely closely with a large number of IT organizations in the most in-demand technology skill sets.\n\nJob Description\n\nSkill Front End, Java Script\n\nLocation Chevy Chase, MD\n\nTotal Experience 2 yrs.\n\nMax Salary Not Mentioned\n\nEmployment Type Direct Jobs (Full Time)\n\nDomain Any\n\nDescription\n\nOPT and EAD can apply\n\nJOB FUNCTIONS\n\nBuilds web applications - Follows coding standards, builds appropriate unit tests, integration tests and deployment scripts\n\nCollaborates with leads to explore existing systems\n\nCommunicates continually with project teams - Explains progress on the development effort\n\nOwns success - Takes responsibility for successful delivery of the solutions\n\nTranslates designs and style guides provided by the UI/UX team into functional user interfaces, ensuring cross browser compatibility and performance\n\nContributes to continual improvement by suggesting improvements to user interface, software architecture or new technologies\n\nDesired Skills and Expertise\n\nObject-Oriented JavaScript, various JavaScript libraries and micro frameworks (jQuery, Backbone, Marionette), HTML and SASS/CSS\n\nWell-versed in software engineering principles AND frameworks\n\nExcellent communication skills\n\nSelf-directed team player who thrives in a continually changing environment\n\nStrong customer service/client service skills\n\nAdditional Information\n\nMultiple Openings for OPT/CPT/H4/L2/EAD/Citizen's.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Chevy Chase",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

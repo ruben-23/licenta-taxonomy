@@ -1,0 +1,17 @@
+{
+  "job_id" : "tIyW9kwa9penu5HmAAAAAA==",
+  "employer_name" : "Jobs via Dice",
+  "employer_website" : null,
+  "job_title" : "MSBI Developer",
+  "job_description" : "Dice is the leading career destination for tech experts at every stage of their careers. Our client, TechVirtue LLC, is seeking the following. Apply via Dice today!\n\n• *Role: MSBI Developer\n• *Location: Washington, DC\n• *Duration: Long Term\n• *Job Description\n\nAn MSBI Developer is responsible for building, enhancing, and supporting Business Intelligence solutions using Microsoft BI technologies, with a strong focus on SSIS and Microsoft Fabric. The role involves data integration, data modeling, and delivering reliable analytics solutions for business users.\n• *Key Responsibilities**\n\nDesign, develop, and maintain ETL pipelines using SSIS and Microsoft Fabric Data Factory\nIntegrate data from multiple sources into data warehouses and lake houses\n\nBuild and manage Microsoft Fabric Lakehouse/Warehouse solutions\n\nDevelop datasets and reports using Power BI within Fabric\n\nOptimize SQL Server queries, stored procedures, and data models\n\nEnsure data quality, performance, and scalability of BI solutions\n\nProvide production support and resolve data-related issues\n\nCollaborate with business and technical teams to gather reporting requirements\n\n• *Required Skills**\n\nStrong experience with SQL Server\nHands-on experience with SSIS, SSRS and SSAS\n\nExperience with Microsoft Fabric (Data Factory, Lakehouse, Warehouse)\n\nStrong understanding of data warehousing concepts (facts, dimensions, star schema)\n\nExperience with Power BI and basic DAX\n\nKnowledge of ETL, data validation, and performance tuning",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Washington",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

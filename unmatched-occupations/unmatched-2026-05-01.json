@@ -1,0 +1,6 @@
+[ {
+  "name" : "C++ Developer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Software Developer"
+} ]
