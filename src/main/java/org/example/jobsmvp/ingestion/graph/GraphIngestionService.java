@@ -15,6 +15,7 @@ import org.springframework.data.neo4j.core.Neo4jClient;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -88,25 +89,31 @@ public class GraphIngestionService {
      *            that lack one leave it intact.
      */
     private Company mergeCompany(Company company) {
+        Map<String, Object> params = new HashMap<>();
+        params.put("companyId", company.getCompany_id());
+        params.put("name", company.getName());
+        params.put("isRecruitmentAgency", company.getIsRecruitmentAgency());
+        params.put("industry", company.getIndustry());
+        params.put("size", company.getSize());
+        params.put("description", company.getDescription());
+
+        // If the company already exists in the graph, it will just update the fields,
+        // otherwise it will create a new one using the company_id determined in GraphTransformService.
         neo4jClient.query("""
                 MERGE (c:Company {company_id: $companyId})
                 ON CREATE SET
                     c.name        = $name,
-                    c.industry    = $industry,
-                    c.size        = $size,
-                    c.description = $description
+                    c.isRecruitmentAgency = COALESCE($isRecruitmentAgency, false),
+                    c.industry    = COALESCE($industry, ''),
+                    c.size        = COALESCE($size, ''),
+                    c.description = COALESCE($description, '')
                 ON MATCH SET
-                    c.industry    = CASE WHEN $industry    IS NOT NULL THEN $industry    ELSE c.industry    END,
-                    c.size        = CASE WHEN $size        IS NOT NULL THEN $size        ELSE c.size        END,
-                    c.description = CASE WHEN $description IS NOT NULL THEN $description ELSE c.description END
+                    c.isRecruitmentAgency = CASE WHEN $isRecruitmentAgency IS NOT NULL THEN $isRecruitmentAgency ELSE c.isRecruitmentAgency END,
+                    c.industry    = CASE WHEN $industry IS NOT NULL AND $industry <> '' THEN $industry ELSE c.industry END,
+                    c.size        = CASE WHEN $size IS NOT NULL AND $size <> '' THEN $size ELSE c.size END,
+                    c.description = CASE WHEN $description IS NOT NULL AND $description <> '' THEN $description ELSE c.description END
                 """)
-                .bindAll(Map.of(
-                        "companyId",   company.getCompany_id(),
-                        "name",        company.getName(),
-                        "industry",    company.getIndustry()    != null ? company.getIndustry()    : "",
-                        "size",        company.getSize()        != null ? company.getSize()        : "",
-                        "description", company.getDescription() != null ? company.getDescription() : ""
-                ))
+                .bindAll(params)
                 .run();
 
         // Also persist the text embedding if present (kept separate because

@@ -1,0 +1,17 @@
+{
+  "job_id" : "rSqyp0Y01BWSR2DlAAAAAA==",
+  "employer_name" : "GCI Incorporated",
+  "employer_website" : null,
+  "job_title" : "Software Developer SME (Systems Software) (TS/SCI with Poly Required)",
+  "job_description" : "GCI embodies excellence, integrity and professionalism. The employees supporting our customers deliver unique, high-value mission solutions while effectively leverage the technological expertise of our valued workforce to meet critical mission requirements in the areas of Data Analytics and Software Development, Engineering, Targeting and Analysis, Operations, Training, and Cyber Operations. We maximize opportunities for success by building and maintaining trusted and reliable partnerships with our customers and industry.\n\nAt GCI, we solve the hard problems. As a SME Software Developer, a typical day will include the following duties/skills:\n\nWork Requirements\n\n• The Candidate shall install externally developed web applications on Customer cloud environment infrastructure.\n• The Candidate shall ensure the web applications communicates with external and internal databases, using API keys.\n• The Candidate shall modify the web applications as required and be able to work independently on the project as needed.\n• The Candidate shall provide front end development to host models and connect APls in order to demo and transition tools in Customer software.\n• The Candidate shall utilize AI/ML models to integrate with front-end development.\n\nRequired Skills And Demonstrated Experience\n\n• Demonstrated experience with full stack web Development using JavaScript, PHP, R, Python, NodeJS, and/or MongoDB.\n• Demonstrated experience working with client-side code such as Angular, Bootstrap, Material, jQuery.\n• Demonstrated experience with REST APIs and data ETL.\n• Demonstrated experience with Linux System Administration and associated scripting languages (Bash).\n• Demonstrated experience with NoSQL and MySQL databases.\n• Demonstrated experience with web app installation and deployment.\n• Demonstrated experience with web-based software development.\n• Demonstrated hands-on experience working within cloud platforms such as AWS, Azure, or similar.\n• Demonstrated experience and knowledge of AI/ML (Artificial Intelligence/ Machine Learning) models.\n\nHighly Desired Skills And Demonstrated Experience\n\n• Demonstrated experience with Cloud-based Relational Database Services (RDS).\n• Demonstrated experience with JIRA and Confluence.\n• A candidate must be a US Citizen and requires an active/current TS/SCI with Polygraph clearance.\n\nEqual Opportunity Employer / Individuals with Disabilities / Protected Veterans",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Dulles Town Center",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-21T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

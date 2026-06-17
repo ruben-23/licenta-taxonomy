@@ -1,0 +1,17 @@
+{
+  "job_id" : "tyjApAnIXqfppLjnAAAAAA==",
+  "employer_name" : "Tyto Athene, LLC",
+  "employer_website" : "https://gotyto.com",
+  "job_title" : "Senior Software Developer",
+  "job_description" : "Tyto Athene is searching for a Software Developer to support a DoD customer in Adelphi, Maryland.\n\nResponsibilities:\n• The Senior Software Developer is responsible for the development, support, and modernization of the CSSP's custom software portfolio, primarily deployed in a Red Hat Enterprise Linux (RHEL) infrastructure.\n• This position leads software development efforts for critical cyber defense applications including Interrogator (GOTS network intrusion detection architecture), CSSP Subscriber Manager (CSM), RMF Writer, and other mission-essential tools supporting defensive cyber operations.\n\nRequired:\n• A Bachelor’s Degree in a related technical field is required, however, can be replaced with 3 years of relevant industry experience (in addition to the minimum years of experience requirement).\n• Minimum seven (10) years of software development experience.\n• Expert proficiency in Python, PHP, JavaScript, C/C++, and/or Java.\n• Experience with Elasticsearch, PostgreSQL, and database design/management.\n• Experience developing applications for RHEL and Linux environments.\n• Knowledge of secure software development practices and DoD security requirements.\n• Experience with Machine Learning (ML) and Artificial Intelligence (AI) frameworks and data analytics.\n• Proficiency with web application frameworks (Laravel, NodeJS, React, Angular).\n• Experience with version control systems (Git, BitBucket) and CI/CD pipelines.\n• Familiarity with Atlassian products (JIRA, BitBucket, Confluence) for project management and documentation.\n• Knowledge of RESTful API design and implementation.\n• Experience with containerization technologies (Docker, Kubernetes).\n• ITIL Foundations certification required within three (3) months of start date.\n\nCertifications:\n• IAT II: Security, CySA, SSCP, CCNA Security, GSEC, IAT III: CISSP, CASP+, CISA, GCED, GCIH\n\nClearance:\n• TS/SCI Clearance required.\n\nLocation:\n• Adelphi, MD",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Adelphi",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-02T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

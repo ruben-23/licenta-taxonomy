@@ -1,0 +1,17 @@
+{
+  "job_id" : "QraTJ-a0Y1Jg5dF3AAAAAA==",
+  "employer_name" : "FutureTech Consultants LLC",
+  "employer_website" : null,
+  "job_title" : "Junior Python Developer with NodeJS - @W2 - In-Person Interview",
+  "job_description" : "Title: Jr Full Stack Python Engineer - Enterprise Applications\n\nLocation: Rockville, MD or McLean, VA (Hybrid 3 days onsite with 2 days remote)\n\nDuration: 6 Months with possible extension\n\nInterview process: Coding Assessment, Phone, In-Person\n\nJob Summary:\n\nWe are looking for a driven and curious Software Engineer to join a modern engineering team building scalable, cloud-native applications. This role is ideal for someone with strong foundational experience who wants to grow within an enterprise environment, work with modern technologies, and contribute to high-impact systems.\n\nYou will be part of a collaborative Agile team delivering solutions that support large-scale, data-driven platforms. This is an opportunity to gain hands-on experience with cloud architecture, DevOps practices, and enterprise engineering standards while continuing to build depth across the full stack.\n\nWhat you'll do\n\n•\n\nContribute to development and maintenance of:\n\n•\n\nPublic-facing websites (built on various technologies)\n\n•\n\nInternal platforms used by multiple engineering teams\n\n•\n\nShared services (notifications, internal tools, etc.)\n\n•\n\nMicrosites owned by different teams\n\nSupport:\n\n•\n\nEnhancements, bug fixes, and new feature development\n\n•\n\nNew initiatives as they arise across platforms\n\n•\n\nCross-team collaboration on shared systems\n\nWhat you bring\n\nTechnology Environment\n\nFront-End: Angular (primary framework)\n\nBack-End: Python (primary), Node.js, Java (increasing adoption; currently lighter usage)\n\nCloud / Infrastructure: AWS (Lambda/serverless development)\n\nDatabases: PostgreSQL, DynamoDB, Other standard relational databases\n\nAdditional: Exposure to AI tools and integrations (preferred)\n\nTechnical Expectations:\n\n•\n\nFull-stack development capability (frontend + backend)\n\n•\n\nComfortable working across multiple languages/environments:\n\n•\n\nPython + Node.js required\n\n•\n\nJava exposure preferred (team gradually shifting toward Java)\n\n•\n\nExperience building or supporting APIs and web applications\n\n•\n\nFamiliarity with cloud-based/serverless architectures (Lambda)",
+  "job_employment_type" : "Contractor",
+  "job_city" : "McLean",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-04-26T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

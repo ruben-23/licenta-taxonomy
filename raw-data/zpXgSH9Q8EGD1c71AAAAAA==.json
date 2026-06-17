@@ -1,0 +1,17 @@
+{
+  "job_id" : "zpXgSH9Q8EGD1c71AAAAAA==",
+  "employer_name" : "TriOptus LLC",
+  "employer_website" : null,
+  "job_title" : "Sr Software Engineer",
+  "job_description" : "Job Title: Sr. Software Developer\n\nLocation: St. Louis, MO\n\nRelevant Experience Needed: 8+ years\n\nContract Duration: 12+ months\n\nExperience Summary:\n• Strong Experience in Core Java, Spring and Web Development\n• Strong Server development and administration\n• Strong experience in Spring, NoSQL data stores\n• Continuous Integration/Deployment - Jenkins, Jenkins Pipelines; build tools such as Maven\n• Understanding of network protocols such as TCP, SSL, HTTPS and SFTP\n• Working knowledge of GIT, ALM (Rally)\n• Experience with deploying and scaling distributed systems on virtual/docker/kubernetes infrastructure as well as Cloud FoundryExperience with Linux and Open Source Software like Apache, Kafka, Hadoop\n\nGood to have:\n• Systems Knowledge (worked on protocols, FTP, SFTP, this would be a plus)\n• Expertise in Web technologies especially AngularJS is a plus\n• Familiarity with installation/configuration automation and scripting (Chef, BOSH)\n• Familiarity with Performance Testing\n• Awareness in security implementations such as X.509 Certificates, SSH Keys, PGP encryption",
+  "job_employment_type" : null,
+  "job_city" : "Lake St Louis",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-17T11:06:17Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

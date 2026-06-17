@@ -1,0 +1,17 @@
+{
+  "job_id" : "Q9r1fdGOIIzOrNnQAAAAAA==",
+  "employer_name" : "MonetizeNow",
+  "employer_website" : null,
+  "job_title" : "Senior Software Engineer (backend)",
+  "job_description" : "Company Description\nB2B Product Led Growth Enterprises are struggling in their Go-To-Market as they don't have systems in place to support their rapid growth. We are building the first elegant solution for API-centric Saas Monetization Platform to allow our customers to monetize their products across all channels with a single system.\n\nJob Description\nOverview\nOur team is building a modern microservices-based multi-tenant SaaS platform that needs to be highly scalable and performant. We are looking for an engineer who has done this before to help us architect and build it right from the start. We are using Java/Spring, AWS, Lambda, Postgres, NoSQL, Kafka, and much more. Our company is still young so this role will get a chance to work across the entire backend and help bring our product to market. This is a high-impact/high ownership role and is expected to grow as our company does.\nWhat you'll do\n• Design, architect, and build Java/Kotlin microservices in an API first way\n\n• Collaborate with design, product, and other engineers to execute on our product roadmap\n\n• Assist in setting up testing, pipeline, infrastructure, and deployment pipelines to ensure we can build and deploy fast and predictably\n\n• Ensure our software is working correctly and fix any customer issues with passion and dedication.\n\nQualifications\nWho you are\n• Someone who builds microservices-based cloud products and platforms.\n\n• A creator of beautiful REST API and someone who's willing to debate the most RESTFul way to describe an API\n\n• You live and breath automation, can't live without a robust deployment pipeline, and can prove your code will work when it gets to production\n\n• 8+ years of software engineering experience\n\n• 5+ years recent experience Java\n\n• 3+ years AWS experience with some combo of EC2/ECS/RDS/Lambda/DynamoDb\n\n• Comfortable modeling data in both relational and non-relational databases, and know when to use them\n\n• A person who's obsessed with customers and takes ownership for putting the customer first\n\nThings we'd like you to have, but it's ok if you don't\n• 3+ years working on enterprise, billing, CPQ, finance, or other business software\n\n• Have deployed a GraphQL API to production\n\n• Experience working with remote teams on complex software experiences\n\n• Experience with JavaScript/React and how a modern frontend interacts with APIs\n\nAdditional Information\nWe are also proud partners of Pledge 1% and have pledged 1% of equity, 1% of the product, 1% of profits, and 1% of employee time for giving back.\nWe believe in an open, remote-first culture that fosters creativity, individual ownership, and team collaboration.",
+  "job_employment_type" : null,
+  "job_city" : "Bodega Bay",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-16T13:11:20Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

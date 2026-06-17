@@ -1,0 +1,17 @@
+{
+  "job_id" : "QiTeoRMBwbHrei8WAAAAAA==",
+  "employer_name" : "BCC-NIH",
+  "employer_website" : null,
+  "job_title" : "Software Developer (C++, Python)",
+  "job_description" : "Overview\n\nBlack Canyon Consulting (BCC) is searching for a Software Developer in Bioinformatics and Big Data to support our work at the National Institutes of Health. This opportunity is full time and onsite at the NIH in Bethesda, MD and/or remote work.\n\nWe attract the best people in the business with our competitive benefits package that includes medical, dental and vision coverage, 401k plan with employer contribution, paid holidays, vacation, and tuition reimbursement. If you enjoy being a part of a high performing, professional service and technology focused organization, please apply today!\n\nDuties & Responsibilities:\n\n• Responsible for the development, implementation, testing, and continued maintenance of NCBI bioinformatics software and information retrieval systems\n• Work with a diverse group of scientists, bioinformaticians and other developers across the center to implement efficient bioinformatics algorithms\n• Learn new technologies, keep up with internal systems, and share your knowledge with the team\nRequired qualifications:\n• 5+ years of experience handling large amounts of data or working in a distributed computing environment\n• Programming experience in a Linux environment\n• Proficiency in C++\n• Experience with MS SQL server and relational database design and optimization\n• Fluency in some scripting languages such as BASH, csh, Perl, or Python\nPreferred qualifications:\n• 5+ years of working with genetic and biological data\n• Proficiency in Python and/or JavaScript and familiarity with their associated ecosystems\n• Experience with MongoDB or other NoSQL database technology\n• Experience with Docker or other containerization mechanisms\n• Experience with CI/CD pipelines, unit testing, integration and regression testing\n• Experience using GitHub\n• Experience with Cloud technologies a strong plus",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Bethesda",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

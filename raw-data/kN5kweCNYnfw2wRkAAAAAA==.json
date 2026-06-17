@@ -1,0 +1,17 @@
+{
+  "job_id" : "kN5kweCNYnfw2wRkAAAAAA==",
+  "employer_name" : "GainAm",
+  "employer_website" : "http://gainam.com",
+  "job_title" : "Entry Level Software Engineer job",
+  "job_description" : "Required Skills\n\nAny Object Oriented Programming Language,SQL,Oracle\n\nRequired Experience\n\nGreat at solving problems, debugging, troubleshooting, designing and implementing solutions to complex technical issues\nWork with a variety of relational databases (SQL, Postgres, DB2, MongoDB) and operating systems (Linux, Windows, iOS, Android)\n\nCreate Application Programming Interfaces (APIs) that are clean, well-documented, and easy to use\n\nIn some teams, may involve working with the Linux kernel, scheduler, memory management system, device drivers, and hardware architectures\n\nCloud-Based Development - Architect and develop new cognitive services, using a cloud-first methodology\n\nCreate and configure Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS) applications\n\nDesign and implement large scale systems and Service Oriented Architectures (SOA) that enable continuous delivery",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Hicksville",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

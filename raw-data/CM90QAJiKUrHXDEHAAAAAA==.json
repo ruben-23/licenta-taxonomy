@@ -1,0 +1,17 @@
+{
+  "job_id" : "CM90QAJiKUrHXDEHAAAAAA==",
+  "employer_name" : "Cyber Bat Inc",
+  "employer_website" : "https://www.cyberbatinc.com",
+  "job_title" : "Software Developer Jobs",
+  "job_description" : "Description of Duties The Software Engineer develops, maintains, and enhances complex and diverse software systems (e.g., processing-intensive analytics, novel algorithm development, manipulation of extremely large data sets, real-time systems, and business management information systems) based upon documented requirements. Works individually or as part of a team. Reviews and tests software components for adherence to the design requirements and documents test results. Resolves software problem reports. Utilizes software development and software design methodologies appropriate to the development environment. Provides specific input to the software components of system design to include hardware/software tradeoffs, software reuse, use of Commercial Off-the-shelf (COTS)/Government Off¬ the-shelf (GOTS) in place of new development, and requirements analysis and synthesis from system level to individual software components.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Laurel",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-20T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

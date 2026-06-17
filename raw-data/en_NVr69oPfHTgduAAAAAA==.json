@@ -1,0 +1,17 @@
+{
+  "job_id" : "en_NVr69oPfHTgduAAAAAA==",
+  "employer_name" : "Mphasis",
+  "employer_website" : null,
+  "job_title" : "Sr. Developer",
+  "job_description" : "Role description\n\nPower Automate (Cloud) Developer\n\nJob Description\n\nPosition Overview\nWe are seeking an experienced Power Automate (Cloud) Developer with strong foundational knowledge of Identity and Access Management (IAM) and Privileged Access Management (PAM) principles. The ideal candidate will have hands‑on experience with enterprise IAM PAM platforms—such as Microsoft Entra, CyberArk, SailPoint, ServiceNow, and Active Directory—and will apply that expertise to design and build scalable automations that streamline support processes and reduce operational load for a large enterprise environment.\n\nKey Responsibilities\n\nPower Automate Development\n• Design, develop, and maintain Power Automate (Cloud) flows to support IAM PAM processes.\n• Build integrations with tools such as Entra ID, SailPoint, ServiceNow, CyberArk, and AD.\n• Implement robust exception handling, logging, and monitoring for automated workflows.\n• Optimize existing automations for performance, maintainability, and scalability.\n\nIdentity And Access Automation\n• Translate IAM PAM operational workflows into automated processes.\n• Develop automations for:\n• Access provisioning And deprovisioning\n• Privileged access requests And approvals\n• Password rotation and vaulting workflows\n• User lifecycle events and identity governance tasks\n• Build event‑driven automations triggered by logs, s, and ServiceNow tickets.\n\nTier 1 Support Optimization\n• Create ing and response workflows to speed up incident handling.\n• Implement decision‑tree logic and rule‑based automation for standard support activities.\n• Work closely with analysts to map manual processes into digital workflows.\n\nCollaboration And Governance\n• Work with IAM engineers, security teams, and service owners to gather requirements.\n• Ensure automations comply with enterprise security, audit, and governance standards.\n• Contribute to documentation, runbooks, change control, and knowledge transfer.\n\nYears of Experience\n• 5 and above years of relevant experience with Power Automate (Cloud) development.\n\nRequired Skills And Qualifications\n• 5 and above years of relevant experience with Power Automate (Cloud) development.\n• Strong understanding of IAM And PAM fundamentals, including:\n• Access control models\n• Role‑based access (RBAC)\n• Privileged account lifecycle\n• Identity governance processes\n• Good to have experience with at least two of the following:\n• Microsoft Entra ID (Azure AD)\n• ServiceNow\n• SailPoint IdentityIQ IdentityNow\n• CyberArk (PAM EPM PVWA)\n• Active Directory Group Policy\n• Familiarity with REST APIs, Graph API, JSON, webhooks, and system integrations.\n• Strong analytical skills and ability to simplify complex manual workflows.\n• Excellent communication skills working with cross‑functional engineering and support teams.\n\nOther details\nDeputation Location : US~Kansas~Kansas\nnull",
+  "job_employment_type" : null,
+  "job_city" : "Kansas City",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-16T13:10:22Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

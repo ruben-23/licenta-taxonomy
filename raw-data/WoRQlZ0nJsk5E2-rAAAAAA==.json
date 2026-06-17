@@ -1,0 +1,17 @@
+{
+  "job_id" : "WoRQlZ0nJsk5E2-rAAAAAA==",
+  "employer_name" : "DeVillier's Technology Solutions",
+  "employer_website" : null,
+  "job_title" : "Software Developer, Junior, Part-Time",
+  "job_description" : "The position requires a junior software engineer that can learn various functional domain areas, such as User Interface (UI) development, digital mapping, messaging, and software documentation. This is in support of the company's major software application and its integration with other applications and environments. The position reports to the President and/or Lead Software Engineer. The position requires the candidate to work using guidance from his supervisor.\n\nThe essential functions include, but are not limited to the following:\n• Programming multi-threaded, cross-platform Geospatial Information System (GIS) applications using the Java programming language and JavaFX.\n• Create software documentation using JavaDoc and other documentation tools as specified.\n• Implement and integrate various GIS capabilities using NASA World Wind and OGC standards such as WMS, GeoPackage and WMTS. This includes 2-D and 3-D mapping.\n• Develop test cases, procedures, and Junit methods.\n• Track and help resolve Software Trouble Reports (STR).\n\nExperience desired is 1-3 years programming. Desired skills includes:\n\n1. Experience with SVN systems like Git.\n\n2. Knowledge of Java programming, to include JavaFX\n\n3. Experience with Web development tools and languages, such as Javascript\n\n4. Knowledge working in both MS Windows and Linux\n\n5. Android development, including work in Android Studio.\n\nThis is a remote work position.\n\nCandidate needs to provide their own internet connection.\n\nPosition may require a security clearance in the future, and the candidate will need to abide by company and government non-disclosure policies.",
+  "job_employment_type" : "Part-time",
+  "job_city" : "Stafford",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : 75000,
+  "job_max_salary" : 97000,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

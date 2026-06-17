@@ -265,6 +265,8 @@ public class JSearchApiClient implements JobSource {
                             .queryParam("page", page)
                             .queryParam("num_pages", 1)
                             .queryParam("date_posted", "all")
+//                            .queryParam("country", "ro")
+                            .queryParam("job_requirements", "under_3_years_experience")
                             .build())
                     .header("x-rapidapi-host", RAPIDAPI_HOST)
                     .header("x-rapidapi-key", apiKey)

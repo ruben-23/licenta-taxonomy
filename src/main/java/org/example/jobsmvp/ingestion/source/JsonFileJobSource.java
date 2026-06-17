@@ -137,7 +137,7 @@ public class JsonFileJobSource implements JobSource {
 
     private List<RawJobDto> loadJobsFromFile() {
         List<RawJobDto> jobs = new ArrayList<>();
-        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("exported-data/jobs.json");
+        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("exported-data/jobs_jsearch.json");
              BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
 
             if (inputStream == null) {
@@ -154,6 +154,12 @@ public class JsonFileJobSource implements JobSource {
                     RawJobDto job = toRawJobDto(node);
                     if (job != null) {
                         jobs.add(job);
+                        
+//                        // Limit to 50 jobs to prevent processing all of them
+//                        // You can adjust this number or remove the check entirely
+                        if (jobs.size() >= 230) {
+                            break;
+                        }
                     }
                 } catch (IOException e) {
                     // Log error for malformed JSON lines but continue processing others

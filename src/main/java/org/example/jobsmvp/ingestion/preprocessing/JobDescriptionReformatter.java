@@ -59,8 +59,7 @@ public class JobDescriptionReformatter {
               markdown, no line breaks.
 
             Rules for "companyDescription":
-            - Extract the "About Us" / company overview paragraph(s) from the posting exactly as written
-              (or lightly cleaned of HTML artefacts).
+            - A brief description of the company based on the text. If none is found, infer a brief one based on the context.
             - If no company description is present in the posting, return null.
 
             Job Posting:

@@ -1,0 +1,17 @@
+{
+  "job_id" : "D9pftpW45upHajCvAAAAAA==",
+  "employer_name" : "LexisNexis",
+  "employer_website" : null,
+  "job_title" : "Principal Consulting Software Engineer (Python/AI/LLM/RAG)",
+  "job_description" : "The Principal Software Engineer role performs complex research, design, and software development assignments within a software functional area or product line. And provides direct input to project plans, schedules, and methodology in the development of cross-functional software products. This SWE performs software design — typically across multiple systems; mentors more-junior members of the team; and talks to users/customers and translates their requests into solutions.\n• ****Conditions of Employment - Ability to work a Hybrid schedule reporting to Raleigh, NC Office location*************\n\nRequirements\n• 10+ years of proven experience as a Principal Software Engineer or similar role.\n• Strong proficiency in Python programming language.\n• Strong proficiency in database technology (SQL, NoSQL).\n• Extensive experience with Azure/AWS cloud services (e.g., EC2, S3, Lambda, RDS).\n• Solid understanding of software architecture and design patterns.\n• Experience with containerization and orchestration tools (e.g., Docker, Kubernetes, Terraform).\n• Knowledge of CI/CD pipelines and DevOps practices.\n• Excellent problem-solving skills and attention to detail.\n• Strong communication and leadership abilities.\n• Ability to work effectively in a fast-paced, collaborative environment.\n\nResponsibilities\n• Lead the design, development, and deployment of scalable software solutions using Python and AWS.\n• Architect and implement robust, high-performance systems that meet business requirements.\n• Collaborate with cross-functional teams to define technical specifications and ensure alignment with project goals.\n• Mentor and guide junior engineers, fostering a culture of continuous learning and improvement.\n• Conduct code reviews and ensure adherence to best practices and coding standards.\n• Troubleshoot and resolve complex technical issues, ensuring system reliability and performance.\n• Stay updated with the latest industry trends and technologies, integrating them into the development process.\n\n• All other duties as assigned.\n\nPreferred Qualifications:\n• Experience in scaling AI-driven products from concept to production.\n• Experience with ML pipelines: model deployment, model serving, and debugging.\n• Experience with other programming languages (e.g., Java, Go, C++).\n• Experience with web frameworks (Django, Flask, FastAPI) .\n• Familiarity with machine learning and generative AI.\n• Experienced with system architecture, design patterns, and API design.\n• Experience with infrastructure as code tools.\n• Proven experience in a mentorship and/or leadership role.",
+  "job_employment_type" : null,
+  "job_city" : "Raleigh",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-18T15:00:54Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : 115000,
+  "job_max_salary" : 192000,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

@@ -1,0 +1,17 @@
+{
+  "job_id" : "9gCYqGoiih_qqpSCAAAAAA==",
+  "employer_name" : "Service to Success",
+  "employer_website" : null,
+  "job_title" : "Front-End Software Engineer",
+  "job_description" : "About the Company\n\nService to Success is supporting a fast-growing defense technology client that recently raised a Series A from top investors. The company is building distributed sensing and maritime intelligence systems that help government and commercial users understand complex real-world environments.\n\nAbout the Role\n\nThe team is looking for a Front-End Engineer to help shape the UI/UX of its web portal and mobile application. This role is ideal for someone who has built GIS, mapping, sensor-data, or live operational interfaces and can turn complex real-time information into clean, intuitive, and highly usable products.\n\nResponsibilities\n• Develop interfaces that support GIS, mapping, sensor data, live data streams, and real-time operational views\n• Design, develop, and implement responsive user interfaces for the company’s web portal and mobile application\n• Build polished, user-friendly front-end experiences for complex operational and mission-focused workflows\n• Debug, troubleshoot, and resolve UI issues across browsers, devices, and platforms\n• Collaborate with product managers, designers, backend engineers, and other technical stakeholders\n• Translate product requirements, user feedback, and design concepts into high-quality front-end features\n• Implement reusable components and help maintain a consistent design system across web and mobile\n• Optimize front-end code for performance, scalability, accessibility, and security\n• Support usability testing and incorporate user feedback to improve the product experience\n• Document design and implementation decisions to support maintainability and team knowledge sharing\n\nQualifications\n• Experience as a Front-End Engineer, UI Engineer, Product Engineer, or similar front-end-focused role\n• Strong experience with HTML, CSS, JavaScript, React, and React Native\n• Experience building GIS, mapping, geospatial, or map-heavy user interfaces, ideally in a defense or government facing context\n• Experience with Mapbox, ArcGIS, or similar mapping/geospatial platforms\n• Experience working with sensor data, streaming data, live video, or real-time data\n• Ability to build responsive, accessible, and cross-browser-compatible interfaces\n• Strong understanding of UI/UX principles, component-based development, and design systems\n• Experience working with design tools such as Figma, Sketch, or Adobe XD\n• Familiarity with state management libraries such as Redux\n\nCompensation\n\n$170-200k + equity + benefits\n\nService to Success and its employer partners are equal opportunity employers. We are committed to creating inclusive hiring processes and considering qualified candidates without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, veteran status, age, or any other protected status under applicable law.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Arlington",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-21T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : 170000,
+  "job_max_salary" : 200000,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

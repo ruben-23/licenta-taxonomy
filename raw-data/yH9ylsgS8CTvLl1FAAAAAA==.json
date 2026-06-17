@@ -1,0 +1,17 @@
+{
+  "job_id" : "yH9ylsgS8CTvLl1FAAAAAA==",
+  "employer_name" : "IntraEdge",
+  "employer_website" : null,
+  "job_title" : "Senior .NET Engineer",
+  "job_description" : "Key Responsibilities:\n• Technical & Delivery\n• Own the development of components from design to deployment.\n• Ensure solutions are scalable, maintainable, and aligned with company objectives.\n• Be part of the agile team and provide estimates, status updates in collaboration with Product Manager and the dev team.\n• Prototype and validate technical solutions to meet business requirements.\n• Contribute effectively to coding, design, and architecture reviews.\n• Synchronize deliverables across onshore and offshore teams to ensure successful product releases.\n• Development Excellence\n• Build and maintain robust server-side applications using C# and .NET.\n• Lead the design and development of REST and SOAP-based Web Service APIs in a transaction-heavy environment.\n• Execute on database development for adding new CRUD operations and optimizing query implementation.\n• Utilize TDD/BDD methodologies to achieve high software quality standards.\n• Contribute to performance engineering, CI/CD improvements, and application reliability.\n• Process Improvement\n• Identify and mitigate project risks early through proactive planning.\n• Support Release Managers to improve deployment processes.\n• Collaborate Site Reliability Engineering (SRE) on Chaos Engineering and Observability for your project.\n\nQualifications:\n• Education:\n• Bachelor's or Master's degree in computer science, Engineering, or a related discipline.\n• Experience:\n• 10+ years of software development experience with a proven track record in enterprise applications.\n• 4+ years of experience in designing and deploying high-scale application systems.\n• Core Technical Skills:\n• C#/.NET Development: Proficient in developing APIs (REST/SOAP).\n• MongoDB Development: Expert-level experience.\n• Cloud Development: Strong development experience in building and deploying applications on cloud native platforms such as Google Cloud Platform, Pivotal Cloud Foundry\n• Authentication and Authorization Solutions: Hands-on experience.\n• Test Automation: Strong understanding of unit testing, functional testing and integration testing tools.\n• Logging & Monitoring: Splunk/Big Query tools for analysis and debugging.\n• Preferred Skills:\n• Strong understanding of SOLID principles for writing object-oriented software and scalable system design.\n• Familiarity with Agile software development frameworks, tools, and methodologies.\n• Self-motivated and creative in solving complex, time-sensitive challenges.",
+  "job_employment_type" : null,
+  "job_city" : "Austin",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-15T12:05:11Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

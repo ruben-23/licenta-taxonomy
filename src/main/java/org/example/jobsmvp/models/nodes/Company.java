@@ -20,10 +20,14 @@ public class Company {
     private String size;
     private String description;
 
+    private Boolean isRecruitmentAgency;
+
     @Relationship(type = "POSTS", direction = Relationship.Direction.OUTGOING)
     private List<Posts> jobs;
 
     @Property("text_embedding")
     private List<Double> textEmbedding;
 
+
 }
+

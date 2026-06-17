@@ -1,0 +1,17 @@
+{
+  "job_id" : "ZaSwY55wtmx-MdMQAAAAAA==",
+  "employer_name" : "Mercor",
+  "employer_website" : null,
+  "job_title" : "Software Engineer - Software Dev",
+  "job_description" : "• *About The Job\n• *Mercor\n\nconnects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include\n• *Benchmark**\n\n,\n• *General Catalyst**\n\n,\n• *Peter Thiel**\n\n,\n• *Adam D'Angelo**\n\n,\n• *Larry Summers**\n\n, and\n• *Jack Dorsey**\n\n.\n• *Position:**\n\nSoftware Engineer\n\n• *Type:\n• *Contract\n• Compensation:\n• $70–$95/hour\n• *Location:\n• *Remote\n• *Role Responsibilities\n• Design and develop high-quality Python code for controlling complex hardware systems like wind tunnel fan arrays.\n• Implement and optimize control algorithms for real-time performance, including PWM control for fan motors.\n• Develop software to generate various airflow conditions, including laminar and turbulent flows.\n• Create control interfaces for secondary systems, including robotic HATS movers and multi-channel spatial audio setups.\n• Integrate data from motion capture systems like Optitrack for real-time tracking and system alignment.\n• Troubleshoot and resolve complex software and system-level issues to ensure high availability of lab equipment.\n• *Qualifications\n• *Must-Have\n• Bachelor’s or Master’s degree in Computer Science, Electrical Engineering, Mechanical Engineering, Robotics, or related field.\n• Proven experience in Python programming with emphasis on hardware control or robotics.\n• Understanding of control systems theory, digital signal processing, and data acquisition principles.\n• Knowledge of fluid mechanics, aerodynamic principles, and acoustic measurement techniques.\n• Ability to debug complex systems that include both hardware and software.\n• Excellent communication and collaboration skills.\n• *Preferred\n• Experience with motion control systems for robotics or automation.\n• Familiarity with spatial audio technologies, particularly High-Order Ambisonics (HOA).\n• Experience integrating motion capture systems like Optitrack into control software.\n• Experience with advanced aerodynamic measurement techniques such as Particle Image Velocimetry (PIV).\n• Familiarity with GUI development frameworks for creating internal tools.\n• Experience with cross-platform software development (Windows, macOS, Linux).\n• *Application Process (Takes 20–30 mins to complete)\n• Upload resume\n• AI interview based on your resume\n• Submit form\n• Resources & Support\n• For details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome/welcome\n• For any help or support, reach out to: support@mercor.com\n• PS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.\n\n,",
+  "job_employment_type" : null,
+  "job_city" : "Unknown Location",
+  "job_country" : "",
+  "job_is_remote" : true,
+  "job_posted_at_datetime_utc" : "2026-05-15T12:03:39Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

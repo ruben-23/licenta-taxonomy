@@ -1,0 +1,17 @@
+{
+  "job_id" : "1Si7SWjfrWcnCZ1cAAAAAA==",
+  "employer_name" : "True Helix",
+  "employer_website" : null,
+  "job_title" : "Application Development Engineer (Junior)",
+  "job_description" : "Junior Application Development Specialists develop purpose-built software programs for our clients to use. They collaborate with other members of the development team on software projects, design complex software programs and applications, and incorporate client feedback into our software product development.\n\nDuties will primarily include building software that is simple to use and that makes daily task completion highly efficient. They will be involved in writing code, modifying software to fix errors, adapt it to new uses, improve its performance, or upgrade interfaces. Additionally, they will be entrusted with conducting system testing, and validation procedures, and working with users on technical issues including software system design and maintenance.\n\nResponsibilities Include\n• Understanding client requirements and how they translate into application features\n• Collaborate with a team of IT professionals, business analysts, and end-users to set specifications for new applications\n• Producing efficient and elegant code based on requirements\n• Testing and deploying programs and applications\n• Troubleshooting, debugging, maintaining, and improving existing software\n• Reviewing and assessing user feedback to improve software performance and features\n\nRequirements Include\n• Either a bachelor's degree in a relevant field or equivalent practical work experience\n• Basic knowledge of C#/.NET and object-oriented programming.\n• Basic knowledge of databases, SQL, and relational data\n• Ability and flexibility to learn new software and technology\n• Ability to follow instructions and work in a team environment\n\nPluses\n• Experience with JSON, Javascript, CSS/Less/Saas\n• Experience with or knowledge of Entity Framework Core, Microsoft DevOps, React, React Native, BootStrap, .Net Core, GIT",
+  "job_employment_type" : null,
+  "job_city" : "Delmont",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-15T12:06:31Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

@@ -100,6 +100,9 @@ public record ExtractedEntities(
         /** Canonical company name as mentioned in the posting. */
         String companyName,
 
+        /** Whether the employer is a recruitment agency */
+        Boolean isRecruitmentAgency,
+
         /** Normalised job title (e.g. "Backend Engineer"). */
         String jobTitle,
 
@@ -117,6 +120,9 @@ public record ExtractedEntities(
 
         /** Whether the role is fully remote. */
         Boolean remote,
+
+        /** The location of the job if not remote */
+        String location,
 
         /** Approximate annual salary in the posting's currency, if stated. */
         Integer salary,
@@ -155,8 +161,8 @@ public record ExtractedEntities(
     /** Returns an empty / null-safe instance for error fallback. */
     public static ExtractedEntities empty() {
         return new ExtractedEntities(
-                null, null, null, null, null,
-                null, null, null,
+                null, false, null, null, null, null,
+                null, null, null, null,
                 List.of(), List.of(), null,
                 null, null
         );

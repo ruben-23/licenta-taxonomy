@@ -1,0 +1,17 @@
+{
+  "job_id" : "SH_uy0qN_MB5X18YAAAAAA==",
+  "employer_name" : "Roblox",
+  "employer_website" : null,
+  "job_title" : "Senior Software Engineer - Video",
+  "job_description" : "As a Senior Software Engineer on the Video team, you'll be responsible for building, operating, and evolving our video transcoding and playback platform and innovate on new uses for video in a 3D world. If you enjoy working with C++ and C# or other backend language while building products for the passionate community of Roblox developers and users, you'll be right at home within our experienced team.\n\nThis is a hands-on role developing and operating a complex video processing pipeline with bursty traffic and for someone who takes great pride in being able to sleep in on Saturday mornings.\nYou Will:\n• Own our unique challenges of playing video in a 3D world while the video display size and CPU/GPU/RAM/network availability are changing.\n• Leverage AI coding tools to make yourself even more efficient and productive.\n• Evolve our video ingest, transcoding, processing, and streaming platform to serve the growing community of creators, working on our backend microservices platform, data pipelines, and the game engine.\n• Employ best programming practices to write code that is efficient, robust, resilient, understandable, observable, and scalable.\n• Play a crucial role improving the quality of video encoding and playback on a wide range of devices, from mobile to high-end platforms.\n• Invent new creative uses for video in a 3D world.\n• Work with teams all over Roblox, both engineering and non-technical, to bring product visions and proof of concepts to life.\n• Be responsible for paying close attention to even the smallest details, driving both easy and hard problems to complete conclusions.\nYou Have:\n• At least 5+ years of experience developing and deploying video systems\n• Deep experience with adaptive video playback systems and how to craft an encoding ladder for optimal user experience.\n• Knowledge of video quality metrics and how to use them to improve video quality in different scenarios.\n• Successfully deployed a multi-service distributed system at scale with low costs and high availability, and worked with infra and product teams to get the job done.\n• Familiarity with the challenges of working at scale, especially on constrained platforms like consoles and mobile devices\n• Experience in performance optimization, creating data pipelines that process millions of records, creating data visualizations, and alerting on critical telemetry.\n• Proficiency in C++ and C# or another backend language, with an understanding of parallel/concurrent programming concepts.\n• Knowledge within the video domain and you love to pick up new technologies as the landscape evolves.",
+  "job_employment_type" : null,
+  "job_city" : "San Mateo",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-15T12:07:55Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

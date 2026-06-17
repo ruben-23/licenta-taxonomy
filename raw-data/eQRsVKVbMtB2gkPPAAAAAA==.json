@@ -1,0 +1,17 @@
+{
+  "job_id" : "eQRsVKVbMtB2gkPPAAAAAA==",
+  "employer_name" : "3B Staffing LLC",
+  "employer_website" : null,
+  "job_title" : "Junior Python Developer",
+  "job_description" : "Junior Python Developer\n\n2 DAYS ONSITE in Washington, DC\n\n12- Months Contract\n\nJNR RESOURCE\n\nRoles and Responsibilities:\nDevelopment and Implementation\n• Proficient in writing fully-typed Python (type annotations on all function signatures).\n• Experience with SQL query builders/ORM.\n• Coding to Interfaces and abstractions:\n• Abstract base classes, protocols, type definitions/wrappers/aliases.\n• Production-grade logging and exception handling.\n• Familiar with modern Python packaging (pyproject.toml), writing libraries, and modular, loosely coupled code. Notebook development is only for prototyping and PoCs.\n• Blend of Object-Oriented Programming (OOP) and functional programming:\n• Immutability of objects, preference for pure functions, and minimal state/side effects.\n• Proficiency with Git, feature branch, and PR workflow.\n• Deploy features into production.\n• Experience using tools like linters, type checkers, autoformatters, and code assistants.\n• Detailed developer documentation (docstrings, detailed comments).\n\nTesting and Quality Assurance\n• Develop and execute comprehensive unit, system, and integration test suites to ensure the quality of code.\n• Debug and troubleshoot issues in development and production environments. Qualifications and Skills\n• Ability to pick up new frameworks and libraries by reading public documentation and tutorials with minimal knowledge transfer/explanation.\n• Basic understanding of AI/ML API patterns, knowledge of the underlying algorithms.\n• Experience with RESTful APIs and web services.\n• Experience with SQL and database principles.\n• Experience working with AWS or Azure or Google Cloud environment.",
+  "job_employment_type" : "Contractor",
+  "job_city" : "Washington",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-11T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

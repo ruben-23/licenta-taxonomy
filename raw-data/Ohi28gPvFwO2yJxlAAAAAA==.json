@@ -1,0 +1,17 @@
+{
+  "job_id" : "Ohi28gPvFwO2yJxlAAAAAA==",
+  "employer_name" : "Quantum World Technologies Inc",
+  "employer_website" : null,
+  "job_title" : "Avionics Software Developer",
+  "job_description" : "Job Title - Avionics Software Developer\nJob Location - Denver, CO (100% Onsite role)\nHire type –Contract and Fulltime Role\n\nJob Summary:\n\nJD:\n\nseeking a skilled Motor Control Software Engineer to design, develop, and verify embedded software for aerospace motor control systems in compliance with DO-178C standards. The role involves implementing real-time control algorithms, integrating with hardware platforms, performing model-based development where applicable, and ensuring software meets safety-critical requirements.\n\nResponsibilities:\n\n• Develop and optimize motor control algorithms (BLDC, PMSM, stepper, etc.) for aerospace applications.\n\n• Design, code, and test embedded software in C/C++ following DO-178C guidelines.\n\n• Collaborate with systems, hardware, and verification teams to ensure seamless integration.\n\n• Prepare documentation for certification, including requirements, design, and test reports.\n\n• Support software verification and validation activities, including unit testing and HIL/SIL testing.\n\nQualifications:\n\n• Bachelor’s/Master’s in Electrical, Electronics, Computer, or Aerospace Engineering.\n\n• Strong experience with embedded C/C++ programming and real-time control systems.\n\n• Hands-on experience with motor control techniques (FOC, PWM, sensorless control, etc.).\n\n• Familiarity with DO-178C processes, aerospace standards, and safety-critical software development.\n\n• Experience with MATLAB/Simulink or model-based design (preferred).seeking a skilled Motor Control Software Engineer to design, develop, and verify embedded software for aerospace motor control systems in compliance with DO-178C standards. The role involves implementing real-time control algorithms, integrating with hardware platforms, performing model-based development where applicable, and ensuring software meets safety-critical requirements.\n\nResponsibilities:\n\n• Develop and optimize motor control algorithms (BLDC, PMSM, stepper, etc.) for aerospace applications.\n\n• Design, code, and test embedded software in C/C++ following DO-178C guidelines.\n\n• Collaborate with systems, hardware, and verification teams to ensure seamless integration.\n\n• Prepare documentation for certification, including requirements, design, and test reports.\n\n• Support software verification and validation activities, including unit testing and HIL/SIL testing.\n\nQualifications:\n\n• Bachelor’s/Master’s in Electrical, Electronics, Computer, or Aerospace Engineering.\n\n• Strong experience with embedded C/C++ programming and real-time control systems.\n\n• Hands-on experience with motor control techniques (FOC, PWM, sensorless control, etc.).\n\n• Familiarity with DO-178C processes, aerospace standards, and safety-critical software development.\n\n• Experience with MATLAB/Simulink or model-based design (preferred).",
+  "job_employment_type" : null,
+  "job_city" : "Denver",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-15T12:07:55Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

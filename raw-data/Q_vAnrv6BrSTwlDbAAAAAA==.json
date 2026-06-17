@@ -1,0 +1,17 @@
+{
+  "job_id" : "Q_vAnrv6BrSTwlDbAAAAAA==",
+  "employer_name" : "Ness Digital Engineering",
+  "employer_website" : null,
+  "job_title" : "Sr. Software Developer",
+  "job_description" : "Description\n\n• Minimum 4 - 10 years of work experience in application development\n\n• Strong hands-on experience in designing, developing, testing, and successfully deploying critical and complex projects\n\n• Strong Java Core skills with experience in development of concurrent and distributed systems\n\n• Experience including Spring Boot, Spring Cloud, and Hibernate/JPA\n\n• Experience in designing and implementing scalable REST APIs & micro services-based solutions.\n\n• Experience with OpenAPI/Swagger, caching strategies, event-driven architectures (Kafka), and observability tools.\n\n• Experience in Performance optimization, API security (OAuth2) and system reliability.\n\n• Experience writing SQL queries and good understanding of data model, python knowledge is a plus.\n\n• Experience writing unit/integration tests\n\n• Basic Knowledge of User Interface design & development using React, HTML5, XML & CSS\n• knowledge in AWS cloud (EC2, ECS, Load Balancer, Security Group, EMR, Lambda, S3, Glue, etc.)\n\n• Good knowledge about Infrastructure and exposure to CI/CD and deployment using docker and containers\n\n• Strong analytical and problem-solving skills\n\n• Good knowledge of system architecture, object-oriented design, and design patterns.\n\n• Proficient with software development lifecycle (SDLC) methodologies like Agile, Test-driven development.\n\n• Proficiency in the development environment, including IDE, web & application server, GIT, Azure DevOps, unit-testing tool and defect management tools\n\n• Excellent communication skills are essential, with strong verbal and writing proficiencies.\n\n• Domain knowledge in Financial Industry and Capital Markets is a plus.",
+  "job_employment_type" : null,
+  "job_city" : "Franklin Township",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-15T12:05:39Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

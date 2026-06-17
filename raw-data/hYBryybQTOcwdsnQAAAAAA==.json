@@ -1,0 +1,17 @@
+{
+  "job_id" : "hYBryybQTOcwdsnQAAAAAA==",
+  "employer_name" : "iStrategyLabs",
+  "employer_website" : null,
+  "job_title" : "Senior Web Developer",
+  "job_description" : "Company Description\n\nISL invents digital & physical experiences for the world's biggest brands. Our designers, developers, marketers and makers build everything from apps, to connected devices, to wildly creative campaigns that reach audiences globally.\n\nWhether we're creating devices to connect fans and celebrities for Facebook, inventing an internet-controlled arcade game for Nickelodeon's SpongeBob, or creating live streaming interactive games for MillerCoors - we're constantly pushing the boundaries of what's possible.\n\nJob Description\n\nISL is looking for a skilled, hard-working Senior Web Developer to help build amazing experiences for some of the biggest brands in the world.\n\nYou'll be leading the development of static, dynamic (Python/Django & WordPress), and single page applications. You might even build a mobile app using React Native. Every day will be different-you'll learn more than you ever though possible.\n\nWe love open source and incentivize people to write open source code and contribute to open source projects as much as possible. Much of what you work on will be developed in the open\n\nfor the world to see!\n\nQualifications\nCSS SKILLS\n• CSS holds no secrets for you\n• You can take any design and write the necessary styles for it by splitting it up in logical components\n• Your attention to detail is a source of pride\nJAVASCRIPT SKILLS\n• You've written large front-end JS SPAs using frameworks like Vue.js, React or Ember\n• Experience working on long-lived software projects where iteration and incremental development were key\n• Your SPAs use state management solutions such as Vuex, Flux, or Redux\n• You know how webpack might help you increase your pagespeed by using code splitting\n• You have experience with PWAs and are familiar with Service Workers, offline access\n• Fast load times and caching aren't afterthoughts\n• You love functional programming\n• You see the advantage of promises and async/await over callbacks\n• You're experienced writing Node.js backends\nMISC SKILLS\n• You motivate the team to experiment with new technologies\n• You contribute to code reviews and help junior team members level up\n• Enough backend-end experience to call yourself a full-stack dev is always a plus!\n• Communication is your strong suit\n• Previous experience in a consulting/client-oriented occupation\n\nAdditional Information\n\nDon't worry if you don't check every single one of our boxes (although you should check most!). We look for talented people with passion and curiosity. Everything else is teachable.\n\nISL is an equal opportunity employer.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Washington",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

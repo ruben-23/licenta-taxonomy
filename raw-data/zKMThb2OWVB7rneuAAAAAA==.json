@@ -1,0 +1,17 @@
+{
+  "job_id" : "zKMThb2OWVB7rneuAAAAAA==",
+  "employer_name" : "Yellow Duck Technologies Inc.",
+  "employer_website" : "https://yellowducktechnologies.com",
+  "job_title" : "Cleared Windows CNO Developer & Analyst (Entry-Level)",
+  "job_description" : "Yellow Duck Technologies is seeking a Windows CNO Developer & Analyst with expertise in low-level software analysis, reverse engineering, and exploit development. The ideal candidate must have experience designing and writing code in C++ and Python, working with assembly (x86/x64, ARM, PPC, MIPS, SPARC, or others), and using debuggers like WinDbg. This role requires a deep understanding of Windows internals, OS security mechanisms, and common CNO techniques, along with experience analyzing network protocols, exploitation mitigations (DEP, ASLR), and modern software engineering concepts. The candidate will work within an Agile environment, collaborating with other security researchers to identify vulnerabilities and develop innovative security solutions.\n\nRequirements:\n\n• Must have an active TS/SCI clearance with Full Scope Polygraph.\n\n• Bachelor’s degree in a related field or an additional 4 years of relevant experience in lieu of a degree.\n\n• Minimum 4 years of experience in software security research and reverse engineering.\n\n• Strong programming skills in C++ and Python.\n\n• Proficiency in reading and writing assembly.\n\n• Experience with debugging tools.\n\n• Hands-on experience with reverse engineering tools.\n\n• In-depth knowledge of Windows internals, OS security, network protocols, and sockets.\n\n• Understanding of common CNO techniques and exploitation mitigations.\n\n• Familiarity with Scrum/Kanban methodologies.\n\n• Experience with version control systems.\n\n• Knowledge of basic configuration management principles.\n\nYellow Duck Technologies provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, ethnicity, religion, sex, sexual orientation, gender identity and expression, national origin, disability, genetic information, veteran status, or any other protected characteristic or class.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Annapolis Junction",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-22T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

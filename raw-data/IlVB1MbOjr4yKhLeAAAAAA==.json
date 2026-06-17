@@ -1,0 +1,17 @@
+{
+  "job_id" : "IlVB1MbOjr4yKhLeAAAAAA==",
+  "employer_name" : "Susquehanna International Group",
+  "employer_website" : null,
+  "job_title" : "Software Developer | Market Data | Libraries & Tools",
+  "job_description" : "Overview\n\nSusquehanna is a global proprietary trading firm founded with a growth mindset and a rigorous analytical approach to decision making. We bring together the brightest minds, the best technology, and an expansive library of data to design and implement proprietary trading strategies that make us leaders in the financial markets. Our ability to think together (but not always alike) propels our success.\n\nTechnology is at the core of our winning strategy. As a developer on the Libraries and Tools team, you will be supporting a variety of teams across the firm. You will work collaboratively with other technologists to design and engineer tools aimed at debugging and troubleshooting.\n\nWhat You Could Work On\n\n• Building the libraries used for first stages of market data handling. This includes parsing, orderbook management, and optimized data structures all designed for low latency environments\n• Building tools designed for debugging, troubleshooting, analysis and management of market data\n• Interfacing with RESTful services in C++\n• Development in C++ and Python in both Linux and Windows environments\n• Cross collaboration with other developers, traders and quants\n\nWhat We're Looking For\n\n• BS or MS in Computer Science, Computer Engineering or a similar major.\n• 1-3 years of software development experience in C++\n• Experience with python is a plus\n• Experience on Linux is a plus\n• Visa sponsorship is available for this position\n\nAbout Susquehanna\n\nSusquehanna is a global quantitative trading firm powered by scientific rigor, curiosity, and innovation. Our culture is intellectually driven and highly collaborative, bringing together researchers, engineers, and traders to design and deploy impactful strategies in our systematic trading environment. To meet the unique challenges of global markets, Susquehanna applies machine learning and advanced quantitative research to vast datasets in order to uncover actionable insights and build effective strategies. By uniting deep market expertise with cutting-edge technology, we excel in solving complex problems and pushing boundaries together.\n\nWhat We Do\n\nWe are experts in trading essentially all listed financial products and asset classes, with a focus on derivatives trading. Through market making and market taking, we handle millions of trading transactions around the world every day, providing liquidity and ensuring competitive prices for buyers and sellers. While our presence in the market is broad, our trading desks are highly specialized, allowing for a deep understanding of unique drivers of each asset class.\n\nIf you're a recruiting agency and want to partner with us, please reach out to recruiting@sig.com. Any resume or referral submitted in the absence of a signed agreement will not be eligible for an agency fee",
+  "job_employment_type" : null,
+  "job_city" : "Bala Cynwyd",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-15T12:06:02Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

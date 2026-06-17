@@ -1,0 +1,17 @@
+{
+  "job_id" : "bH6gvWYxFCIL9dnaAAAAAA==",
+  "employer_name" : "VirtualVocations",
+  "employer_website" : "https://www.virtualvocations.com",
+  "job_title" : "JavaScript Developer",
+  "job_description" : "A company is looking for a JavaScript Developer (Remote). Key Responsibilities Designs, builds, and maintains efficient JavaScript code using React 18 Supports and designs applications with TypeScript and manages deployments using Docker and Kubernetes Monitors and evaluates metrics using Prometheus and Grafana dashboards Required Qualifications 5 years of JavaScript development experience Bachelor's Degree in computer science or a related field Proficiency in TypeScript and React 18 Experience with CI/CD pipeline configurations and tools Ability to obtain/maintain a Federal Civilian Public Trust",
+  "job_employment_type" : "Full-time",
+  "job_city" : null,
+  "job_country" : null,
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-12T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

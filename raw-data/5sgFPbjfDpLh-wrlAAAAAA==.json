@@ -1,0 +1,17 @@
+{
+  "job_id" : "5sgFPbjfDpLh-wrlAAAAAA==",
+  "employer_name" : "Saransh Inc",
+  "employer_website" : "https://saranshinc.com",
+  "job_title" : "Sr Java Fullstack with TypeScript and Playwright Automation",
+  "job_description" : "Role: Sr Java Fullstack with TypeScript and Playwright Automation\n\nLocation: McLean, VA (Onsite from Day 1 - No Exceptions)\n\nJob Type: Contract\n\nSkill Metrics\n\nSpringboot Microservices\n\nPlaywright\n\nSelenium\n\nTypescript Programming\n\nJavascript\n\nSkills Required For This Role\n\n• Spring boot\n• Java\n• Angular\n• Selenium\n• Playwright\n• TypeScript\n\nJob Description/ Responsibilities\n\n• Seeking a highly skilled Playwright Test Automation Engineer with a strong background in TypeScript.\n• The ideal candidate will have experience in building and maintaining test automation frameworks using Playwright, Cucumber, Java, Maven, and Jenkins, along with a deep understanding of database testing with DB2.\n• Front-end technology: Expertise in front-end technologies, including JavaScript, CSS3 and HTML5 and third-party libraries such as React JS, Angular, jQuery\n• Development languages: Knowledge of server-side programming languages including Java, Python\n• Experience in building web based technologies: Spring Boot, Postman, REST APIs.\n• Experience in cloud based platforms: AWS, Azure, GCP\n• Database and cache: Strong expertise in SQL – Mandatory, good knowledge with DBMS technology, including PostGres, DB2, MongoDB and caching mechanisms such as Redis, Memcached and Varnish\n• Basic design ability: Including knowledge of UI/UX and basic prototype design\n• Ability to visualize a proposed system and be able to build it\n• Experience with version control systems such as Git and proficiency in using command-line interfaces.\n• Knowledge of web security and best practices for secure web development.\n• Familiarity with agile methodologies and experience working in agile development teams.\n• Good understanding of software development principles and practices such as testing, debugging, and code optimization.\n• Knowledge of techniques to optimize application performance, such as caching, code optimization, and database indexing.\n• Knowledge of task tracking tools and collaboration platforms (e.g., JIRA & confluence ) to facilitate effective project organization and communication\n• Experience in developing and maintaining automated test scripts using Playwright (TypeScript/ JavaScript).\n• Experience with other automation tools like Selenium, Cypress, JUnit/TestNG, Rest Assured.\n• Integrate automated tests into CI/CD pipelines.",
+  "job_employment_type" : "Contractor",
+  "job_city" : "McLean",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : null,
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

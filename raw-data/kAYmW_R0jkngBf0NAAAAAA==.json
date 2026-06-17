@@ -1,0 +1,17 @@
+{
+  "job_id" : "kAYmW_R0jkngBf0NAAAAAA==",
+  "employer_name" : "BeaconFire Inc.",
+  "employer_website" : "https://beaconfireinc.com",
+  "job_title" : "Entry Level- Fullstack Developer AI Integration",
+  "job_description" : "Java Full Stack Developer with AI Integration\n\nNew York, United States\n\nWe're looking for a talented Java developer to build scalable,\n\nproduction-ready Spring Boot microservices. You'll design and implement high-performance\n\nweb services, develop intelligent tool-using agents, and work confidently with cloud-native\n\narchitectures and databases. You'll own the development lifecycle, including design,\n\nimplementation, testing, and optimization.\n\nJob Responsibilities:\n\nFull Stack Development\n\n● Develop scalable web applications using Java 8/17, Spring Boot, SQL, NoSQL, Kafka,\n\nRabbitMQ, Angular 2+, React.js, HTML5, CSS, JavaScript, and TypeScript.\n\n● Write clean and efficient code, and ensure code maintainability and reusability.\n\n● Conduct Testing to ensure application and reliability.\n\n● Perform code reviews to ensure code quality, consistency, and adherence to best\n\npractices.\n\n● Participate in Agile Scrum team and own the full development lifecycle, including project\n\nplanning, design, implementation, testing, and optimization.\n\n● Create and maintain comprehensive technical documentation for applications, APIs, and\n\ndeployment procedures.\n\n● Ship to production: APIs, monitoring/observability, cost/performance optimization, CI/CD,\n\nand security best practices.\n\n● Stay up to date with the latest technologies for Java development.\n\nAI Integration\n\n● Implement RAG pipelines using Spring AI and LangChain4j with vector database\n\nintegration.\n\n● Stay up to date with the latest RAG technologies and best practices, including chunking\n\nstrategies, embeddings, retrieval optimization, and reranking techniques.\n\nRequirement:\n\n● Experience in the programming languages Java and JavaScript\n\n● Decent understanding of the software development life cycle\n\n● Basic programming skills using object-oriented programming (OOP) languages with\n\nin-depth knowledge of common APIs and data structures like Collections, Maps, lists,\n\nSets, etc.\n\n● Knowledge of relational databases (e.g., MySQL, PostgreSQL), basic SQL query\n\nlanguage skills\n\nPreferred Qualifications:\n\n● Master’s Degree in Computer Science (CS)\n\n● 0-1 year of practical experience in Java coding\n\n● Experience using Spring, Maven, React.js, HTML, CSS\n\n● Knowledge of other contemporary Java technologies (e.g., Weblogic, RabbitMQ,\n\nTomcat, etc.)\n\n● Basic understanding of AI/LLM concepts.\n\n● Spring AI or LangChain4j experience.\n\n● RAG application building or vector database experience.\n\nBeaconFire is an E-verified company and provides equal employment opportunities (visa\n\nsponsorship provided).",
+  "job_employment_type" : "Full-time",
+  "job_city" : "New York",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-06-16T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : 65000,
+  "job_max_salary" : 80000,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

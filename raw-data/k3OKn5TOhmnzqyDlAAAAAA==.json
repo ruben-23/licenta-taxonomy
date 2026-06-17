@@ -1,0 +1,17 @@
+{
+  "job_id" : "k3OKn5TOhmnzqyDlAAAAAA==",
+  "employer_name" : "Resource Consultings Services Inc.",
+  "employer_website" : null,
+  "job_title" : "Go Developer / Golang Developer/ Kubernetes engineer",
+  "job_description" : "Subject: Junior Go Developer / Golang Developer/ Kubernetes engineer\n\nHybrid San Jose, CA 95110,\n\nDuration – 6 Month\n\nHiring strong software developers with solid Go programming experience and practical Kubernetes knowledge.\n\nAlso, just to expand the scope a bit, I’m aiming to hire a developer each in the Cloud team, the Edge team, and a team working on the management plane. So while CAPI/CAPX experience is ideal for the Cloud team, we can also use developers in other areas where the emphasis is more on edge and cloud-native software development.\n• Solid Software Development Background: Proven experience in building enterprise-grade platforms, not just automation or infrastructure.\n• Proficient in Go (Golang): Hands-on, professional experience with Go programming is critical.\n• Practical Kubernetes Experience: Not just theoretical knowledge—candidate should have real-world experience working with Kubernetes in production environments.\n• Cloud-Native Development Experience: Strong understanding of cloud-native architecture and tools, especially for roles on the Cloud and Edge teams.\n• (Bonus/Nice-to-Have) Experience with CAPI/CAPX: Especially relevant for the Cloud team role, but not essential for all teams\n\nRequired Skills\n• Go programming: Proven proficiency in production-grade development.\n• Kubernetes: Solid knowledge of fundamentals; hands-on experience with CAPI/CAPX.\n• Cloud platforms: Experience working with at least one major provider – AWS, Azure, or GCP.\n• Linux/CLI: Strong comfort with Linux environments and command-line tools.\n\nPreferred Qualifications\n• Kubernetes certifications (CKA, CKAD) are a plus.\n• Experience with microservices architecture and\n• Develop and maintain tools and services in Go to support our Kubernetes-based platform.\n• Contribute to the creation and optimization of cluster management components, especially using Cluster API (CAPI) and provider-specific extensions (e.g., CAPX).\n• Work across major cloud platforms (AWS, Azure, GCP) to implement scalable and secure deployments.\n• Troubleshoot complex infrastructure issues using Linux and CLI tools.\n• Collaborate with cross-functional teams to design microservices and APIs as needed.",
+  "job_employment_type" : null,
+  "job_city" : "San Jose",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-16T13:11:20Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

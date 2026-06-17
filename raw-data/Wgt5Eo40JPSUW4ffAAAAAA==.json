@@ -1,0 +1,17 @@
+{
+  "job_id" : "Wgt5Eo40JPSUW4ffAAAAAA==",
+  "employer_name" : "Figure",
+  "employer_website" : null,
+  "job_title" : "Senior/Staff Software Engineer, Developer Tools and Productivity",
+  "job_description" : "Figure is an AI Robotics company developing a general purpose humanoid. Our Humanoid is designed for corporate tasks targeting labor shortages and jobs that are undesirable or unsafe. We are based in Sunnyvale, CA and require 5 days/week in-office collaboration. It's time to build.\n\nWe are looking for a Software Engineer passionate about developer productivity, automation and continuous improvement, to accelerate the development of the first humanoid robot that will be manufactured and deployed at scale.\n\nResponsibilities:\n• Develop tools and infrastructure to scale continuous software integration and deployment systems.\n• Optimize build times, and help scale the execution of automated tests and analysis.\n• Integrate new build toolchains and software components to support the next generations of humanoids.\n• Improve tooling and processes to integrate third-party repositories.\n• Provide developers with an easy-to-set-up development environment aimed at accelerating software development.\n• Collaborate with all engineering teams to prioritize feature development, optimizations, and reliability improvements.\n\nRequirements:\n• Bachelor's or Master's degree in Computer Science or a related field.\n• At least 7 years of industry experience.\n• Mastery of configuration management using Git.\n• Expertise with C++ and Python build and software integration tools (Bazel, CMake, Make, etc.).\n• Proficient with scripting languages, including Python and Bash.\n• Experience with one or more major cloud providers.\n• Comfortable working with a broad range of continuous integration tools (GitHub, Jenkins, TeamCity, etc.) and deployment tools (Ansible, etc.).\n• Experience with infrastructure as code (e.g., Terraform).\n• Strong knowledge of Linux, Docker, and microservices architectures.\n• Excellent verbal and written communication skills.\n• Familiarity with Agile and test-driven development principles.\n\nBonus Qualifications:\n• Familiar with web development languages and tools (HTML, CSS, JavaScripts...)\n• Deep understanding of key and certificate management as well as cryptographic signing and verification.",
+  "job_employment_type" : null,
+  "job_city" : "San Jose",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-15T12:07:25Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

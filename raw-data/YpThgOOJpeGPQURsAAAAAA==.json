@@ -1,0 +1,17 @@
+{
+  "job_id" : "YpThgOOJpeGPQURsAAAAAA==",
+  "employer_name" : "Eliassen Group",
+  "employer_website" : "https://www.eliassen.com",
+  "job_title" : "Junior Software Engineer",
+  "job_description" : "Hybrid 3 days onsite in Rockville, MD\n\nOur client is seeking a Software Engineer (Full Stack) with a passion for building modern applications and an interest in Generative AI to join our team. This is a great opportunity to work on impactful solutions supporting regulatory workflows, data analysis, and reporting.\n\nDue to client requirements, applicants must be willing and able to work on a w2 basis. For our w2 consultants, we offer a great benefits package that includes Medical, Dental, and Vision benefits, 401k with company matching, and life insurance.\n\nRate: $55.00 to $65.00/hr. w2\n\nResponsibilities:\n• Build and enhance full-stack applications using Angular, Java (Spring Boot), and Python (FastAPI)\n• Develop RESTful APIs and responsive, accessible frontends\n• Support applications used for regulatory workflows and data-driven decision-making\n• Contribute to CI/CD pipelines (GitHub Actions, GitLab CI, Jenkins) and automated testing\n• Work with Docker/Kubernetes for containerized deployments\n• Collaborate with cross-functional teams across data, security, and business functions\n\nSkills:\n• 2–4 years of software engineering experience\n• Experience with Java or Python\n• Hands-on experience with Angular and TypeScript\n• Familiarity with AWS, CI/CD pipelines, and Git workflows\n• Experience with SQL/NoSQL databases\n• Understanding of application security fundamentals\n\nNice to Have Skills:\n• Experience in financial services or regulated environments\n• Exposure to AWS services (Lambda, ECS, S3, RDS)\n• Familiarity with event-driven systems (Kafka, SQS, SNS)\n• Basic knowledge of LLMs, AI/ML integrations, or Generative AI concepts\n• Experience with testing frameworks (Jest, JUnit, PyTest)\n\nSkills, experience, and other compensable factors will be considered when determining pay rate. The pay range provided in this posting reflects a W2 hourly rate; other employment options may be available that may result in pay outside of the provided range.\n\nW2 employees of Eliassen Group who are regularly scheduled to work 30 or more hours per week are eligible for the following benefits: medical (choice of 3 plans), dental, vision, pre-tax accounts, other voluntary benefits including life and disability insurance, 401(k) with match, and sick time if required by law in the worked-in state/locality.\n\nPlease be advised- If anyone reaches out to you about an open position connected with Eliassen Group, please confirm that they have an Eliassen.com email address and never provide personal or financial information to anyone who is not clearly associated with Eliassen Group. If you have any indication of fraudulent activity, please contact InfoSec@eliassen.com.",
+  "job_employment_type" : "Contractor",
+  "job_city" : "Rockville",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-14T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

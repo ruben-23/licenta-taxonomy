@@ -1,0 +1,17 @@
+{
+  "job_id" : "v75RUdj_5HVNYJ12AAAAAA==",
+  "employer_name" : "Technology Service Corporation Defense Services",
+  "employer_website" : null,
+  "job_title" : "Entry-Level Software Engineer — Naval Radar & Simulation",
+  "job_description" : "Technology Service Corporation Defense Services in Silver Spring, MD, is looking for an entry-level Software Engineer to support Navy radar and combat systems development. Responsibilities include model and component integration, design contributions, and testing. Candidates should have a degree in Computer Science or Electrical Engineering and skills in C/C++ or Java. The expected salary range is $83,000 - $108,000 annually, with additional bonuses and benefits including stock options and flexible schedules.",
+  "job_employment_type" : "Full-time",
+  "job_city" : "Silver Spring",
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-06-08T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : 83000,
+  "job_max_salary" : 108000,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}

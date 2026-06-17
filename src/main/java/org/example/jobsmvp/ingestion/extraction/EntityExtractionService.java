@@ -146,11 +146,13 @@ public class EntityExtractionService {
             Required JSON schema:
             {
               "companyName":      string | null,
+              "isRecruitmentAgency": boolean,
               "jobTitle":         string | null,
               "experienceLevel":  "junior" | "mid" | "senior" | "lead" | "staff" | "principal" | null,
               "jobType":          "full-time" | "part-time" | "contract" | "internship" | "freelance" | null,
               "contractDuration": string | null,
               "remote":           boolean | null,
+              "location":         string | null,
               "salary":           integer | null,
               "currency":         string | null,
               "technicalSkills":  string[],
@@ -161,6 +163,12 @@ public class EntityExtractionService {
             }
 
             Rules:
+            - Determine if the poster is a Recruitment Agency or Staffing Firm ("isRecruitmentAgency": true/false).
+            - If it IS a recruitment agency AND the actual client company name is mentioned in the text (e.g., "Our client, a leading fintech..."), extract the TRUE client company name into "companyName", NOT the agency's name.
+            - If it IS a recruitment agency but the true client is hidden/confidential, use the agency name.
+            - If it is NOT a recruitment agency, extract the regular employer name.
+            - "location" should be extracted if the job is NOT remote and a specific city, region, or country is mentioned.
+            - "companySize": Must be strictly one of ["startup", "small", "medium", "large", "enterprise"] or null if it cannot be determined.
             - "technicalSkills" must list every programming language, framework, library, tool, platform,
               cloud service, or technical methodology mentioned (e.g. Java, Spring Boot, Docker, AWS,
               Microservices architecture, CI/CD pipelines).

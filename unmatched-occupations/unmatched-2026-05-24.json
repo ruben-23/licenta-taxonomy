@@ -1,0 +1,16 @@
+[ {
+  "name" : "Principal Software Engineer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Software Developer"
+}, {
+  "name" : "AI Software Developer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Machine Learning (ML) Engineer"
+}, {
+  "name" : "Software Reverse Engineer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Security Researcher"
+} ]

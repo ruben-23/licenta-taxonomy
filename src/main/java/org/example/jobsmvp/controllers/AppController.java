@@ -107,7 +107,7 @@ public class AppController {
     public ResponseEntity<Void> startIngestion(){
         System.out.println("Starting ingestion...");
 
-        IngestionPipelineOrchestrator.PipelineResult result = ingestionOrchestrator.run("developer", -1);
+        IngestionPipelineOrchestrator.PipelineResult result = ingestionOrchestrator.run("junior developer jobs", -1);
         System.out.println(result.toString());
 
         return ResponseEntity.ok().build();

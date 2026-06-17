@@ -237,7 +237,7 @@ public class EntityNormalizationService {
             Map<String, Object> parsed = new ObjectMapper().readValue(response, Map.class);
             canonicalName = parsed.getOrDefault("canonicalName", canonicalName).toString();
             skillGroup    = parsed.getOrDefault("skillGroup",    skillGroup).toString();
-
+            Thread.sleep(2000);
         } catch (Exception e) {
             log.warn("LLM skill classification failed for '{}': {}", raw, e.getMessage());
         }

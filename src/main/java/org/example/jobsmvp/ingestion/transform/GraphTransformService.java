@@ -198,6 +198,7 @@ import org.example.jobsmvp.models.nodes.Occupation;
 import org.example.jobsmvp.models.nodes.Skill;
 import org.example.jobsmvp.models.relationships.Posts;
 import org.example.jobsmvp.models.relationships.Requires;
+import org.example.jobsmvp.repositories.CompanyRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -224,15 +225,20 @@ public class GraphTransformService {
     private final EntityNormalizationService     normalizationService;
     private final OccupationNormalizationService occupationNormalizationService;
     private final EmbeddingModel                 embeddingModel;
+    private final CompanyRepository              companyRepository;
+    
+    private static final double EMBEDDING_MATCH_THRESHOLD = 0.88;
 
     public GraphTransformService(
             EntityNormalizationService     normalizationService,
             OccupationNormalizationService occupationNormalizationService,
-            EmbeddingModel                 embeddingModel
+            EmbeddingModel                 embeddingModel,
+            CompanyRepository              companyRepository
     ) {
         this.normalizationService           = normalizationService;
         this.occupationNormalizationService = occupationNormalizationService;
         this.embeddingModel                 = embeddingModel;
+        this.companyRepository              = companyRepository;
     }
 
     /**
@@ -277,18 +283,57 @@ public class GraphTransformService {
                 "Unknown Company"
         );
 
-        Embedding textEmbedding = embeddingModel.embed(name).content();
+        // 1. Check exact match
+        Optional<Company> exactMatch = companyRepository.findByNameIgnoreCase(name);
+        if (exactMatch.isPresent()) {
+            return prepareExistingCompanyForMerge(exactMatch.get(), entities, companyDescription);
+        }
 
+        // 2. Generate embedding and check similarity
+        Embedding textEmbedding = embeddingModel.embed(name).content();
+        double[] vector = textEmbedding.vectorAsList().stream().mapToDouble(Float::doubleValue).toArray();
+        
+        Optional<Company> similarityMatch = companyRepository.findMostSimilarCompany(vector, EMBEDDING_MATCH_THRESHOLD);
+        if (similarityMatch.isPresent()) {
+            return prepareExistingCompanyForMerge(similarityMatch.get(), entities, companyDescription);
+        }
+
+        // 3. Create new Company if no match found
         Company company = new Company();
         company.setCompany_id(UUID.nameUUIDFromBytes(name.toLowerCase().getBytes()).toString());
         company.setName(name);
-        company.setDescription(companyDescription);          // ← new field
+        company.setIsRecruitmentAgency(entities.isRecruitmentAgency());
+        company.setDescription(companyDescription);
         company.setIndustry(entities.industry());
         company.setSize(entities.companySize());
         company.setTextEmbedding(
                 textEmbedding.vectorAsList().stream().map(Float::doubleValue).toList()
         );
         return company;
+    }
+    
+    /**
+     * When an existing company is found, we want to enrich it with any new information 
+     * extracted from the current job posting (if the existing fields are missing).
+     * By setting these fields on the returned object, the downstream GraphIngestionService
+     * will update the node via its ON MATCH SET logic.
+     */
+    private Company prepareExistingCompanyForMerge(Company existing, ExtractedEntities entities, String description) {
+        // We create a container just to pass the new fields to GraphIngestionService's mergeCompany.
+        // We only pass fields that are non-null in the current extracted entities.
+        Company mergePayload = new Company();
+        mergePayload.setCompany_id(existing.getCompany_id());
+        mergePayload.setName(existing.getName()); // Name shouldn't change
+        mergePayload.setIsRecruitmentAgency(entities.isRecruitmentAgency());
+        mergePayload.setIndustry(entities.industry());
+        mergePayload.setSize(entities.companySize());
+        mergePayload.setDescription(description);
+        
+        // Explicitly set the text embedding to null so GraphIngestionService won't overwrite 
+        // the existing embedding in Neo4j with a null or empty list.
+        mergePayload.setTextEmbedding(null);
+        
+        return mergePayload;
     }
 
     // ── Job ───────────────────────────────────────────────────────────────────
@@ -310,6 +355,7 @@ public class GraphTransformService {
         job.setJobType(firstNonNull(entities.jobType(), raw.jobEmploymentType()));
         job.setContractDuration(entities.contractDuration());
         job.setRemote(firstNonNullBool(entities.remote(), raw.jobIsRemote()));
+        job.setLocation(entities.location());
         job.setSalary(firstNonNullInt(entities.salary(), deriveAvgSalary(raw)));
         job.setCurrency(firstNonNull(entities.currency(), raw.jobSalaryCurrency()));
         job.setPostedDate(raw.jobPostedAt());

@@ -1,0 +1,66 @@
+[ {
+  "name" : "Flight Software Engineer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Software Developer"
+}, {
+  "name" : "Security Software Engineer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Software Developer"
+}, {
+  "name" : "System Administrator",
+  "layer" : 2,
+  "type" : "Core Occupation",
+  "parent" : "Infrastructure, Cloud & Security Operations"
+}, {
+  "name" : "Storage Engineer",
+  "layer" : 2,
+  "type" : "Core Occupation",
+  "parent" : "Infrastructure, Cloud & Security Operations"
+}, {
+  "name" : "Robotics Software Engineer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Software Developer"
+}, {
+  "name" : "Mobile Application Developer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Software Developer"
+}, {
+  "name" : "Engineering Manager",
+  "layer" : 1,
+  "type" : "Job Family",
+  "parent" : "root"
+}, {
+  "name" : "Office Assistant",
+  "layer" : 1,
+  "type" : "Job Family",
+  "parent" : null
+}, {
+  "name" : "Revenue Operations Manager",
+  "layer" : 1,
+  "type" : "Job Family",
+  "parent" : null
+}, {
+  "name" : "Sales Representative",
+  "layer" : 1,
+  "type" : "Job Family",
+  "parent" : null
+}, {
+  "name" : "Content Writer",
+  "layer" : 1,
+  "type" : "Job Family",
+  "parent" : null
+}, {
+  "name" : "Customer Support Manager",
+  "layer" : 1,
+  "type" : "Job Family",
+  "parent" : "root"
+}, {
+  "name" : "AI Video Artist",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Machine Learning (ML) Engineer"
+} ]

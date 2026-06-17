@@ -1,0 +1,26 @@
+[ {
+  "name" : "QA Automation Engineer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Software Developer"
+}, {
+  "name" : "Network Engineer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "System Administrator"
+}, {
+  "name" : "Production Support Engineer",
+  "layer" : 2,
+  "type" : "Core Occupation",
+  "parent" : "Infrastructure, Cloud & Security Operations"
+}, {
+  "name" : "AIoT Software Engineer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Software Developer"
+}, {
+  "name" : "API Developer",
+  "layer" : 3,
+  "type" : "Specialized Role",
+  "parent" : "Back-End Developer"
+} ]

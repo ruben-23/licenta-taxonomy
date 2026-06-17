@@ -1,0 +1,17 @@
+{
+  "job_id" : "Mqzo4sGtDIu_H4kNAAAAAA==",
+  "employer_name" : "MANTECH",
+  "employer_website" : null,
+  "job_title" : "Entry Level -Software Developer - Web Development",
+  "job_description" : "MANTECH seeks an experienced and passionate, career and customer-oriented Software Engineer to join our team located in the Ft. Meade, MD area.\n\nResponsibilities include, but are not limited to: Develops, maintains, and enhances complex and diverse software systems (e.g., processing-intensive analytics, novel algorithm development, manipulation of extremely large data sets, real-time systems, and business management information systems) based upon documented requirements. Works individually or as part of a team. Reviews and tests software components for adherence to the design requirements and documents test results.\n\nResolves software problem reports. Utilizes software development and software design methodologies appropriate to the development environment. Provides specific input to the software components of system design to include hardware/software trade-offs, software reuse, use of Commercial Off-the-shelf (COTS)/Government Off-the-shelf (GOTS) in place of new development, and requirements analysis and synthesis from system level to individual software components.\n\nMinimum Requirements: ~14+ years of software development experience in programs and contracts of similar scope, type, and complexity is required. ~ Bachelor’s degree in computer science or related discipline from an accredited college or university is required. Four (4) years of additional SWE experience on projects with similar software processes may be substituted for a bachelors degree. ~ Experience in C/C++ (Rust Programming Language) ~ Experience containerizing applications for creating, managing, and deployments, e.g Rancher/Kubernetes/Docker ~ Proficiency in Linux environments. ~ Familiarity with GitLab CI/CD ~ Experience developing RESTful web applications.\n\nPreferred Qualifications: Experience with Kubernetes NGINX Ingress Controller and Linkerd Strong Python development skills. Front-end experience with React/TypeScript.\n\nExperience working with MongoDB. Some experience with UI development. Basic networking experience.\n\nExperience working with products such as Cisco Nexus Dashboard Orchestrator, Cisco APICs, vSphere, Vmware Horizon View, IPAM, and Keycloak.\n\nExperience with Ansible, running templates (bonus if you can write playbooks).\n\nExperience with system administration tasking (certs, PKI, troubleshooting) Prefer full-stack engineer who can handle both front-end and back-end development.\n\nClearance Requirement: ~ Must have a current/active TS/SCI with Poly Physical Requirements: Must be able to remain in a stationary position at least 50% of the time. Needs to occasionally move about inside the office to access file cabinets, office machinery, etc. Constantly operate a computer and other office productivity machinery, such as, the copy machine/fax machine/computer/printer.",
+  "job_employment_type" : "Full-time",
+  "job_city" : null,
+  "job_country" : "US",
+  "job_is_remote" : false,
+  "job_posted_at_datetime_utc" : "2026-05-13T00:00:00.000Z",
+  "job_offer_expiration_datetime_utc" : null,
+  "job_min_salary" : null,
+  "job_max_salary" : null,
+  "job_salary_currency" : null,
+  "job_required_experience" : null
+}
