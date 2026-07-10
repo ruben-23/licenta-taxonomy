@@ -1,0 +1,31 @@
+Job Name, Job ID, Processing Time (ms)
+"Entry-Level Software Engineer", 3r1iJzxUuf-6cWMnAAAAAA==, 12131
+"Entry Level Software Developer", NAo3fX3oVptEmx7mAAAAAA==, 6727
+"Software Engineer", sL26NrCToL1lp_ebAAAAAA==, 3198
+"Junior Software Developer / IT Support", bCJFXho9Ekdbp197AAAAAA==, 21374
+"Junior Web Developer", uwgQ8yY-5ipzJBu2AAAAAA==, 18926
+"Entry Level Software Developer - Apprentice", qlEsUpDyPMV58ucpAAAAAA==, 3730
+"Software Engineer I Junior Level", ENmA6cD9AHJJo7TNAAAAAA==, 40681
+"Junior Software Engineer", uxW4UTGvUtvgUo25AAAAAA==, 30804
+"Junior Software Engineer with Security Clearance", Zsn6QlOw0xDRXtFbAAAAAA==, 17775
+"Junior Developer", E0PDQ-qpnYiZtnL_AAAAAA==, 5197
+"Junior Software Engineer", GpV4ZRWzVAFuMSA0AAAAAA==, 3427
+"Java/Full Stack Developer", favsKWtmXUnFuG8RAAAAAA==, 8789
+"Full Stack Developer - TS/SCI with Polygraph", tUIzR3bebbtKOgr9AAAAAA==, 10575
+"Software Developer Cyber SWE - Early Career Engineer", gohFUx5gvTFufnFqAAAAAA==, 22250
+"Software Engineer", l1MY7KOh2XGgpH-hAAAAAA==, 4135
+"Software Developer/ Engineer", VXGuT9RfV5D3ufSBAAAAAA==, 7581
+"Software Developer", WoRQlZ0nJsk5E2-rAAAAAA==, 20783
+"Junior Software Engineer", YpThgOOJpeGPQURsAAAAAA==, 16128
+"Web Developer, Entry Level", g7wPAbsYyJz4dt9fAAAAAA==, 21424
+"Software Developer", LuVfHfRiXEEwunGzAAAAAA==, 5714
+"Entry Level Programmer/Developer", EkivwLPoBSlfaro6AAAAAA==, 6460
+"Junior Full Stack Web Developer", Kn7oBN7S9L8z1FP0AAAAAA==, 24605
+"Jr Level Software Developer", hOlqZBGTzG7LJqHgAAAAAA==, 113133
+
+--- RUN SUMMARY ---
+Total Jobs Ingested: 23
+Total Processing Time: 425.55 s
+Minimum Processing Time: 3198 ms
+Maximum Processing Time: 113133 ms
+Average Processing Time: 18502.30 ms

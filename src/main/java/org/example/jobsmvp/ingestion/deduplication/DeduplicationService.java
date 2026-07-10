@@ -1,5 +1,7 @@
 package org.example.jobsmvp.ingestion.deduplication;
 
+import dev.langchain4j.data.embedding.Embedding;
+import dev.langchain4j.model.embedding.EmbeddingModel;
 import org.example.jobsmvp.ingestion.source.RawJobDto;
 import org.example.jobsmvp.repositories.JobRepository;
 import org.slf4j.Logger;
@@ -10,6 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HexFormat;
+import java.util.List;
 
 /**
  * Guards against re-ingesting job postings already present in the graph.
@@ -19,16 +22,20 @@ import java.util.HexFormat;
  * Two checks are performed:
  *  1. Primary: the job_id returned by the API (JSearch uses stable IDs).
  *  2. Fallback: content hash for jobs whose IDs may have changed (re-posted roles).
+ *  3. Fallback: vector similarity search on job title + description embedding.
  */
 @Service
 public class DeduplicationService {
 
     private static final Logger log = LoggerFactory.getLogger(DeduplicationService.class);
+    private static final double SIMILARITY_THRESHOLD = 0.98;
 
     private final JobRepository jobRepository;
+    private final EmbeddingModel embeddingModel;
 
-    public DeduplicationService(JobRepository jobRepository) {
+    public DeduplicationService(JobRepository jobRepository, EmbeddingModel embeddingModel) {
         this.jobRepository = jobRepository;
+        this.embeddingModel = embeddingModel;
     }
 
     /**
@@ -48,13 +55,22 @@ public class DeduplicationService {
             return true;
         }
 
+        // 3. Check by embedding similarity
+        String embedInput = job.jobTitle() + " " + job.jobDescription();
+        Embedding embedding = embeddingModel.embed(embedInput).content();
+        List<Double> embeddingVector = embedding.vectorAsList().stream().map(Float::doubleValue).toList();
+        if (jobRepository.existsSimilarJobByEmbedding(embeddingVector, SIMILARITY_THRESHOLD)) {
+            log.debug("Duplicate by embedding similarity, job_id={}", job.jobId());
+            return true;
+        }
+
         return false;
     }
 
     /**
      * Computes a stable fingerprint for a raw job based on identifying fields.
      */
-    public String contentHash(RawJobDto job) {
+    public static String contentHash(RawJobDto job) {
         String input = String.join("|",
                 nullSafe(job.jobId()),
                 nullSafe(job.jobTitle()).toLowerCase(),

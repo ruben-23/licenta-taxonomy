@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import dev.langchain4j.model.embedding.EmbeddingModel;
 import org.example.jobsmvp.models.nodes.Occupation;
 import org.example.jobsmvp.models.nodes.Skill;
+import org.example.jobsmvp.repositories.GraphRepository;
 import org.example.jobsmvp.repositories.OccupationRepository;
 import org.example.jobsmvp.repositories.SkillRepository;
 import org.slf4j.Logger;
@@ -91,6 +92,8 @@ public class TaxonomySeeder implements ApplicationRunner {
     private final EmbeddingModel       embeddingModel;
     private final Neo4jClient          neo4jClient;
     private final ObjectMapper         objectMapper;
+    private final GraphRepository      graphRepository;
+
 
     private final String skillsTaxonomyPath;
     private final String occupationsTaxonomyPath;
@@ -102,7 +105,7 @@ public class TaxonomySeeder implements ApplicationRunner {
             EmbeddingModel embeddingModel,
             Neo4jClient neo4jClient,
             ObjectMapper objectMapper,
-            @Value("${ingestion.skills-taxonomy-path:taxonomies/skills.json}")
+            GraphRepository graphRepository, @Value("${ingestion.skills-taxonomy-path:taxonomies/skills.json}")
             String skillsTaxonomyPath,
             @Value("${ingestion.occupations-taxonomy-path:taxonomies/occupations.json}")
             String occupationsTaxonomyPath,
@@ -114,6 +117,7 @@ public class TaxonomySeeder implements ApplicationRunner {
         this.embeddingModel          = embeddingModel;
         this.neo4jClient             = neo4jClient;
         this.objectMapper            = objectMapper;
+        this.graphRepository = graphRepository;
         this.skillsTaxonomyPath      = skillsTaxonomyPath;
         this.occupationsTaxonomyPath = occupationsTaxonomyPath;
         this.mappingsTaxonomyPath    = mappingsTaxonomyPath;
@@ -123,6 +127,14 @@ public class TaxonomySeeder implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
+        log.info("=== Creating vector indexes ===");
+        graphRepository.createOldStudentVectorIndex();
+        graphRepository.createOldJobVectorIndex();
+        graphRepository.createStudentGraphSageVectorIndex();
+        graphRepository.createJobGraphSageVectorIndex();
+        graphRepository.createTechnologyVectorIndex();
+        log.info("=== Vector indexes created ===");
+
         log.info("=== Taxonomy seeding starting ===");
 
         int[] skillCounts      = seedSkills();

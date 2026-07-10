@@ -35,4 +35,9 @@ public interface JobRepository extends Neo4jRepository<Job, String> {
     @Query("MATCH (j:Job {content_hash: $hash}) RETURN count(j) > 0")
     boolean existsByContentHash(@Param("hash") String hash);
 
+    @Query("MATCH (j:Job) WHERE j.text_embedding IS NOT NULL " +
+           "WITH j, gds.similarity.cosine($embedding, j.text_embedding) AS score " +
+           "WHERE score >= $threshold " +
+           "RETURN count(j) > 0")
+    boolean existsSimilarJobByEmbedding(@Param("embedding") List<Double> embedding, @Param("threshold") double threshold);
 }

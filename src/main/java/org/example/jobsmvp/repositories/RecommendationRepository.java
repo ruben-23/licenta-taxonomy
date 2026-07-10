@@ -23,7 +23,7 @@ public interface RecommendationRepository extends Neo4jRepository<Job, String> {
     @Query("""
         // --- STAGE 1: VECTOR RECALL ---
         MATCH (j:Job {job_id: $jobId})
-        CALL db.index.vector.queryNodes('student_embeddings', $limit, j.embedding) YIELD node AS s, score AS similarity
+        CALL db.index.vector.queryNodes('student_graphsage_embeddings', $limit, j.graphsage_embedding) YIELD node AS s, score AS similarity
         
         // --- STAGE 2: GRAPH FILTERING (RELAXED CONSTRAINTS) ---
         OPTIONAL MATCH (j)-[req:REQUIRES {importance: 'Mandatory'}]->(req_t:Technology)
@@ -36,7 +36,8 @@ public interface RecommendationRepository extends Neo4jRepository<Job, String> {
         WHERE total_mandatory = 0 OR matched_mandatory >= 1
         
         // --- STAGE 3: CONTEXT & EXPLAINABILITY ---
-        CALL (s, j) {
+        CALL {
+            WITH s, j
             OPTIONAL MATCH (j)-[req_all:REQUIRES]->(t:Technology)
             OPTIONAL MATCH (s)-[k_all:KNOWS]->(t) WHERE k_all.proficiency_level >= req_all.min_proficiency
             
@@ -62,7 +63,7 @@ public interface RecommendationRepository extends Neo4jRepository<Job, String> {
     @Query("""
         // --- STAGE 1: VECTOR RECALL ---
         MATCH (s:Student {student_id: $studentId})
-        CALL db.index.vector.queryNodes('job_embeddings', $limit, s.embedding) YIELD node AS j, score AS similarity
+        CALL db.index.vector.queryNodes('job_graphsage_embeddings', $limit, s.graphsage_embedding) YIELD node AS j, score AS similarity
         
         // --- STAGE 2: GRAPH FILTERING (RELAXED CONSTRAINTS) ---
         OPTIONAL MATCH (j)-[req:REQUIRES {importance: 'Mandatory'}]->(req_t:Technology)
@@ -72,12 +73,13 @@ public interface RecommendationRepository extends Neo4jRepository<Job, String> {
              count(req_t) AS total_mandatory, 
              count(k) AS matched_mandatory
              
-        WHERE total_mandatory = 0 OR matched_mandatory >= 1
+        WHERE total_mandatory = 0 OR matched_mandatory >= 3
         
         // --- STAGE 3: CONTEXT & EXPLAINABILITY ---
         OPTIONAL MATCH (c:Company)-[:POSTS]->(j)
         
-        CALL(s, j) {
+        CALL {
+            WITH s, j
             OPTIONAL MATCH (j)-[req_all:REQUIRES]->(t:Technology)
             OPTIONAL MATCH (s)-[k_all:KNOWS]->(t) WHERE k_all.proficiency_level >= req_all.min_proficiency
             

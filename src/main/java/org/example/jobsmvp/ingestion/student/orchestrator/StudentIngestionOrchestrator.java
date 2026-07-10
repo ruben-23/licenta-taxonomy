@@ -116,9 +116,16 @@ public class StudentIngestionOrchestrator {
      * @return {@code true} on success, {@code false} if an unrecoverable error occurs
      */
     private boolean processStudent(RawStudentDto student) {
+        long startTime = System.currentTimeMillis();
         try {
             StudentGraphBundle bundle = transformService.transform(student);
             ingestionService.ingest(bundle);
+            
+            long endTime = System.currentTimeMillis();
+            long durationMs = endTime - startTime;
+            double durationSec = durationMs / 1000.0;
+            System.out.printf("Processed student '%s' in %d ms (%.2f s)%n", student.name(), durationMs, durationSec);
+
             log.debug("Processed student '{}'", student.name());
             return true;
         } catch (Exception e) {

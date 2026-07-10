@@ -5,6 +5,7 @@ import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.neo4j.repository.query.Query;
 import org.springframework.data.repository.query.Param;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -17,6 +18,9 @@ import java.util.Optional;
  *    indirectly, through the raw {@code Neo4jClient} for MERGE operations.
  */
 public interface StudentRepository extends Neo4jRepository<Student, String> {
+
+    @Query("MATCH (s:Student) RETURN s SKIP $skip LIMIT $limit")
+    List<Student> findAllPaginated(int skip, int limit);
 
     /**
      * Returns {@code true} if a Student node with the given content hash already

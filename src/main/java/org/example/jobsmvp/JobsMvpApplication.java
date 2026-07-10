@@ -22,8 +22,8 @@ public class JobsMvpApplication {
 			// 1. Create vector indices
 			try {
 				System.out.println("Initializing vector indexes...");
-				graphRepository.createStudentVectorIndex();
-				graphRepository.createJobVectorIndex();
+//				graphRepository.createStudentVectorIndex();
+//				graphRepository.createJobVectorIndex();
 				graphRepository.createTechnologyVectorIndex();
 				System.out.println("Vector indexes initialized successfully.");
 			} catch (Exception e) {

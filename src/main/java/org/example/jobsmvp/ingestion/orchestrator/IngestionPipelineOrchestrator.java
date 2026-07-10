@@ -570,6 +570,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -607,7 +608,8 @@ public class IngestionPipelineOrchestrator {
     private final GraphIngestionService          ingestionService;
     private final EntityNormalizationService     normalizationService;
     private final OccupationNormalizationService occupationNormalizationService;
-    private final JSearchApiClient apiClient;
+    private final JSearchApiClient               apiClient;
+    private final PerformanceLogger              performanceLogger;
 
     public IngestionPipelineOrchestrator(
             JobSourceRegistry              sourceRegistry,
@@ -620,7 +622,8 @@ public class IngestionPipelineOrchestrator {
             GraphIngestionService          ingestionService,
             EntityNormalizationService     normalizationService,
             OccupationNormalizationService occupationNormalizationService,
-            JSearchApiClient               apiClient
+            JSearchApiClient               apiClient,
+            PerformanceLogger              performanceLogger
     ) {
         this.sourceRegistry                = sourceRegistry;
         this.storageService                = storageService;
@@ -633,6 +636,7 @@ public class IngestionPipelineOrchestrator {
         this.normalizationService          = normalizationService;
         this.occupationNormalizationService = occupationNormalizationService;
         this.apiClient                     = apiClient;
+        this.performanceLogger             = performanceLogger;
     }
 
     // ── Scheduled run ─────────────────────────────────────────────────────────
@@ -652,6 +656,7 @@ public class IngestionPipelineOrchestrator {
      * @param maxJobs stop after processing this many new jobs total; -1 = no limit
      */
     public PipelineResult run(String query, int maxJobs) {
+        performanceLogger.startRun();
         normalizationService.clearCache();
 
 //        List<RawJobDto> jobs = query != null
@@ -659,7 +664,7 @@ public class IngestionPipelineOrchestrator {
 //                : sourceRegistry.fetchAll();
 
         List<RawJobDto> jobs = query != null
-                ? apiClient.fetchJobsFromRandomFile(200)
+                ? apiClient.fetchJobsFromRandomFile(300)
                 : apiClient.fetchJobsFromFile("jwLMxhYLldcDdFY7AAAAAA==");
 
 
@@ -668,6 +673,7 @@ public class IngestionPipelineOrchestrator {
         int skipped  = 0;
         int ingested = 0;
         int failed   = 0;
+        List<Long> processingTimes = new ArrayList<>();
 
         for (RawJobDto job : jobs) {
             if (maxJobs >= 0 && ingested >= maxJobs) {
@@ -682,11 +688,21 @@ public class IngestionPipelineOrchestrator {
 
             if (storageService.save(job)) stored++;
 
-            if (processJob(job)) ingested++;
-            else                 failed++;
+            long startTime = System.currentTimeMillis();
+            boolean success = processJob(job);
+            if (success) {
+                long endTime = System.currentTimeMillis();
+                long duration = endTime - startTime;
+                ingested++;
+                processingTimes.add(duration);
+                // The logging of individual jobs is now handled inside processJob
+            } else {
+                failed++;
+            }
         }
 
         occupationNormalizationService.flushAndReset();
+        performanceLogger.endRun(processingTimes);
 
         PipelineResult result = new PipelineResult(fetched, stored, skipped, ingested, failed);
         log.info("=== Pipeline complete: {} ===", result);
@@ -712,6 +728,7 @@ public class IngestionPipelineOrchestrator {
      * @return true on success, false if an unrecoverable exception is thrown
      */
     private boolean processJob(RawJobDto job) {
+        long startTime = System.currentTimeMillis();
         try {
             // Step 4 – lightweight text preprocessing (HTML strip, whitespace collapse)
             String preprocessedDesc = preprocessor.cleanDescription(job);
@@ -737,6 +754,12 @@ public class IngestionPipelineOrchestrator {
 
             // Step 8 – persist
             ingestionService.ingest(bundle);
+
+            long endTime = System.currentTimeMillis();
+            long durationMs = endTime - startTime;
+
+            performanceLogger.logJob(bundle.job().getTitle(), bundle.job().getJob_id(), durationMs);
+            System.out.printf("Processed job '%s' in %d ms (%.2f s)%n", bundle.job().getTitle(), durationMs, durationMs / 1000.0);
 
             log.debug("Processed jobId={} title='{}'", job.jobId(), bundle.job().getTitle());
             return true;

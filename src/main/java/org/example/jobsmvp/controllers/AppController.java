@@ -33,15 +33,15 @@ public class AppController {
 
     @GetMapping("/companies/{id}/jobs")
     public ResponseEntity<?> getJobsByCompany(@PathVariable String id) {
-        System.out.println("Getting jobs for company with id: " + id);
+//        System.out.println("Getting jobs for company with id: " + id);
         List<Job> jobs = jobRepository.findJobsByCompany(id);
 //        System.out.println(jobs);
         return ResponseEntity.ok(jobs);
     }
 
     @GetMapping("/students")
-    public ResponseEntity<?> getAllStudents() {
-        return ResponseEntity.ok(studentRepository.findAll());
+    public ResponseEntity<?> getAllStudents(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
+        return ResponseEntity.ok(studentRepository.findAllPaginated(page * size, size));
     }
 
     // Generic details endpoints for the UI modals
@@ -57,8 +57,12 @@ public class AppController {
     // Recommendation Endpoints
     @GetMapping("/jobs/{jobId}/recommend-candidates")
     public ResponseEntity<?> recommendCandidates(@PathVariable String jobId) {
+        long startTime = System.currentTimeMillis();
         try {
-            return ResponseEntity.ok(recommendationService.getRecommendedStudentsForJob(jobId));
+            ResponseEntity<?> response = ResponseEntity.ok(recommendationService.getRecommendedStudentsForJob(jobId));
+            long endTime = System.currentTimeMillis();
+            System.out.println("API Latency for recommendCandidates: " + (endTime - startTime) + " ms");
+            return response;
         } catch (Exception e) {
             String errorMsg = e.getMessage() != null ? e.getMessage() : "Unknown internal error";
             return ResponseEntity.internalServerError().body(Map.of("error", errorMsg));
@@ -67,8 +71,12 @@ public class AppController {
 
     @GetMapping("/students/{studentId}/recommend-jobs")
     public ResponseEntity<?> recommendJobs(@PathVariable String studentId) {
+        long startTime = System.currentTimeMillis();
         try {
-            return ResponseEntity.ok(recommendationService.getRecommendedJobsForStudent(studentId));
+            ResponseEntity<?> response = ResponseEntity.ok(recommendationService.getRecommendedJobsForStudent(studentId));
+            long endTime = System.currentTimeMillis();
+            System.out.println("API Latency for recommendJobs: " + (endTime - startTime) + " ms");
+            return response;
         } catch (Exception e) {
             String errorMsg = e.getMessage() != null ? e.getMessage() : "Unknown internal error";
             return ResponseEntity.internalServerError().body(Map.of("error", errorMsg));
@@ -83,8 +91,12 @@ public class AppController {
     public ResponseEntity<?> recommendCandidatesByEmbedding(
             @PathVariable String jobId,
             @RequestParam(defaultValue = "10") int limit) {
+        long startTime = System.currentTimeMillis();
         try {
-            return ResponseEntity.ok(recommendationService.getStudentMatchesByEmbedding(jobId, limit));
+            ResponseEntity<?> response = ResponseEntity.ok(recommendationService.getStudentMatchesByEmbedding(jobId, limit));
+            long endTime = System.currentTimeMillis();
+            System.out.println("API Latency for recommendCandidatesByEmbedding: " + (endTime - startTime) + " ms");
+            return response;
         } catch (Exception e) {
             String errorMsg = e.getMessage() != null ? e.getMessage() : "Unknown internal error during vector search";
             return ResponseEntity.internalServerError().body(Map.of("error", errorMsg));
@@ -95,8 +107,12 @@ public class AppController {
     public ResponseEntity<?> recommendJobsByEmbedding(
             @PathVariable String studentId,
             @RequestParam(defaultValue = "10") int limit) {
+        long startTime = System.currentTimeMillis();
         try {
-            return ResponseEntity.ok(recommendationService.getJobMatchesByEmbedding(studentId, limit));
+            ResponseEntity<?> response = ResponseEntity.ok(recommendationService.getJobMatchesByEmbedding(studentId, limit));
+            long endTime = System.currentTimeMillis();
+            System.out.println("API Latency for recommendJobsByEmbedding: " + (endTime - startTime) + " ms");
+            return response;
         } catch (Exception e) {
             String errorMsg = e.getMessage() != null ? e.getMessage() : "Unknown internal error during vector search";
             return ResponseEntity.internalServerError().body(Map.of("error", errorMsg));
@@ -108,7 +124,7 @@ public class AppController {
         System.out.println("Starting ingestion...");
 
         IngestionPipelineOrchestrator.PipelineResult result = ingestionOrchestrator.run("junior developer jobs", -1);
-        System.out.println(result.toString());
+//        System.out.println(result.toString());
 
         return ResponseEntity.ok().build();
     }

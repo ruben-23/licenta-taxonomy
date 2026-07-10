@@ -24,12 +24,12 @@ public interface GraphRepository extends Neo4jRepository<Graph, Long> {
     // --- STEP 2: Run the algorithm on the projected graph ---
     @Query("""
         CALL gds.node2vec.write('myNode2VecGraph', {
-            embeddingDimension: 128,
+            embeddingDimension: 64,
             walkLength: 80,
             walksPerNode: 10,
             inOutFactor: 1.0,
             returnFactor: 1.0,
-            writeProperty: 'embedding'
+            writeProperty: 'graphsage_embedding'
         })
         YIELD nodePropertiesWritten
         RETURN nodePropertiesWritten
@@ -54,7 +54,7 @@ public interface GraphRepository extends Neo4jRepository<Graph, Long> {
         }}
     """)
     @Transactional(propagation = Propagation.NOT_SUPPORTED)
-    void createStudentVectorIndex();
+    void createOldStudentVectorIndex();
 
     @Query("""
         CREATE VECTOR INDEX job_embeddings IF NOT EXISTS 
@@ -65,7 +65,29 @@ public interface GraphRepository extends Neo4jRepository<Graph, Long> {
         }}
     """)
     @Transactional(propagation = Propagation.NOT_SUPPORTED)
-    void createJobVectorIndex();
+    void createOldJobVectorIndex();
+
+    @Query("""
+        CREATE VECTOR INDEX student_graphsage_embeddings IF NOT EXISTS
+        FOR (s:Student) ON (s.graphsage_embedding)
+        OPTIONS {indexConfig: {
+            `vector.dimensions`: 64,
+            `vector.similarity_function`: 'cosine'
+        }}
+    """)
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
+    void createStudentGraphSageVectorIndex();
+
+    @Query("""
+        CREATE VECTOR INDEX job_graphsage_embeddings IF NOT EXISTS
+        FOR (j:Job) ON (j.graphsage_embedding)
+        OPTIONS {indexConfig: {
+            `vector.dimensions`: 64,
+            `vector.similarity_function`: 'cosine'
+        }}
+    """)
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
+    void createJobGraphSageVectorIndex();
 
     @Query("""
         CREATE VECTOR INDEX tech_embeddings IF NOT EXISTS 

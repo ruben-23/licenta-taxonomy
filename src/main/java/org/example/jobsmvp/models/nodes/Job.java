@@ -35,6 +35,9 @@ public class Job {
     private Boolean remote;
     private String location;
 
+    @Property("content_hash")
+    private String contentHash;
+
     // Using LocalDate, but can be String if you prefer to parse it manually
     @Property("posted_date")
     private String postedDate;
