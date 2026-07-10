@@ -565,6 +565,7 @@ import org.example.jobsmvp.ingestion.source.RawJobDto;
 import org.example.jobsmvp.ingestion.storage.RawJobStorageService;
 import org.example.jobsmvp.ingestion.transform.GraphTransformService;
 import org.example.jobsmvp.ingestion.transform.JobGraphBundle;
+import org.example.jobsmvp.service.EmbeddingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -610,6 +611,7 @@ public class IngestionPipelineOrchestrator {
     private final OccupationNormalizationService occupationNormalizationService;
     private final JSearchApiClient               apiClient;
     private final PerformanceLogger              performanceLogger;
+    private final EmbeddingService               embeddingService;
 
     public IngestionPipelineOrchestrator(
             JobSourceRegistry              sourceRegistry,
@@ -623,7 +625,8 @@ public class IngestionPipelineOrchestrator {
             EntityNormalizationService     normalizationService,
             OccupationNormalizationService occupationNormalizationService,
             JSearchApiClient               apiClient,
-            PerformanceLogger              performanceLogger
+            PerformanceLogger              performanceLogger,
+            EmbeddingService               embeddingService
     ) {
         this.sourceRegistry                = sourceRegistry;
         this.storageService                = storageService;
@@ -637,6 +640,7 @@ public class IngestionPipelineOrchestrator {
         this.occupationNormalizationService = occupationNormalizationService;
         this.apiClient                     = apiClient;
         this.performanceLogger             = performanceLogger;
+        this.embeddingService              = embeddingService;
     }
 
     public boolean ingestJob(RawJobDto job) {
@@ -765,6 +769,9 @@ public class IngestionPipelineOrchestrator {
 
             // Step 8 – persist
             ingestionService.ingest(bundle);
+            
+            // Step 9 - call Python microservice after the transaction is fully committed
+            embeddingService.processJob(bundle.job().getJob_id());
 
             long endTime = System.currentTimeMillis();
             long durationMs = endTime - startTime;

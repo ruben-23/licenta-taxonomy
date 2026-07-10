@@ -74,7 +74,7 @@ public class GraphIngestionService {
             mergeSkillHierarchy(skill);
         }
 
-        embeddingService.processJob(savedJob.getJob_id());
+//        embeddingService.processJob(savedJob.getJob_id());
         log.info("Ingested job '{}' by '{}'", savedJob.getTitle(), savedCompany.getName());
     }
 
