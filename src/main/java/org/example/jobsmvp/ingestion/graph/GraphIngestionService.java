@@ -9,6 +9,7 @@ import org.example.jobsmvp.models.nodes.Skill;
 import org.example.jobsmvp.repositories.CompanyRepository;
 import org.example.jobsmvp.repositories.JobRepository;
 import org.example.jobsmvp.repositories.OccupationRepository;
+import org.example.jobsmvp.service.EmbeddingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.neo4j.core.Neo4jClient;
@@ -51,6 +52,7 @@ public class GraphIngestionService {
     private final JobRepository        jobRepository;
     private final OccupationRepository occupationRepository;
     private final Neo4jClient          neo4jClient;
+    private final EmbeddingService     embeddingService;
 
     // ── Public entry point ───────────────────────────────────────────────────
 
@@ -72,6 +74,7 @@ public class GraphIngestionService {
             mergeSkillHierarchy(skill);
         }
 
+        embeddingService.processJob(savedJob.getJob_id());
         log.info("Ingested job '{}' by '{}'", savedJob.getTitle(), savedCompany.getName());
     }
 

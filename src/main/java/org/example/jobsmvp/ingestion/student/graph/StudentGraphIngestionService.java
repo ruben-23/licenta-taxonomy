@@ -8,6 +8,7 @@ import org.example.jobsmvp.models.nodes.Project;
 import org.example.jobsmvp.models.nodes.Skill;
 import org.example.jobsmvp.models.nodes.Student;
 import org.example.jobsmvp.models.relationships.Knows;
+import org.example.jobsmvp.service.EmbeddingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.neo4j.core.Neo4jClient;
@@ -46,6 +47,7 @@ public class StudentGraphIngestionService {
     private static final Logger log = LoggerFactory.getLogger(StudentGraphIngestionService.class);
 
     private final Neo4jClient neo4jClient;
+    private final EmbeddingService embeddingService;
 
     // ── Public entry point ────────────────────────────────────────────────────
 
@@ -100,6 +102,7 @@ public class StudentGraphIngestionService {
             }
         }
 
+        embeddingService.processStudent(bundle.student().getStudentId());
         log.info("Ingested student '{}'", bundle.student().getName());
     }
 
