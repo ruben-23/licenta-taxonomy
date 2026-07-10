@@ -639,6 +639,17 @@ public class IngestionPipelineOrchestrator {
         this.performanceLogger             = performanceLogger;
     }
 
+    public boolean ingestJob(RawJobDto job) {
+        if (deduplicationService.isDuplicate(job)) {
+            log.warn("Skipping duplicate job with ID: {}", job.jobId());
+            return false;
+        }
+        if (storageService.save(job)) {
+            log.info("Saved raw job data for job ID: {}", job.jobId());
+        }
+        return processJob(job);
+    }
+
     // ── Scheduled run ─────────────────────────────────────────────────────────
 
     @Scheduled(cron = "${ingestion.cron:0 0 2 * * ?}")
@@ -718,7 +729,7 @@ public class IngestionPipelineOrchestrator {
      * whitespace) that is fed into the LLM steps.
      *
      * Step 5 uses the LLM to:
-     *   - produce {@code cleanDescription} (signal-only, stored as {@code clean_description} on Job)
+     *   - produce {@code cleanDescription} (stored as {@code clean_description} on Job)
      *   - extract {@code companyDescription} (stored as {@code description} on Company)
      *
      * Step 6 runs entity extraction using the same {@code preprocessedDesc} as context

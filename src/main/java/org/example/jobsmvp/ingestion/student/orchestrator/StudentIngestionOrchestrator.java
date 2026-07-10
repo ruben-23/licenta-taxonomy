@@ -8,6 +8,7 @@ import org.example.jobsmvp.ingestion.student.source.RawStudentDto;
 import org.example.jobsmvp.ingestion.student.source.StudentJsonLoader;
 import org.example.jobsmvp.ingestion.student.transform.StudentGraphBundle;
 import org.example.jobsmvp.ingestion.student.transform.StudentGraphTransformService;
+import org.example.jobsmvp.service.EmbeddingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -62,8 +63,18 @@ public class StudentIngestionOrchestrator {
     private final StudentGraphTransformService   transformService;
     private final StudentGraphIngestionService   ingestionService;
     private final EntityNormalizationService     normalizationService;
+    private final EmbeddingService               embeddingService;
 
     // ── Public API ────────────────────────────────────────────────────────────
+
+    public boolean ingestStudent(RawStudentDto student) {
+
+        if (deduplicationService.isDuplicate(student)) {
+            log.debug("Skipping duplicate student: '{}'", student.name());
+            return false;
+        }
+        return processStudent(student);
+    }
 
     /**
      * Runs the full student ingestion pipeline and returns a summary.
@@ -116,10 +127,14 @@ public class StudentIngestionOrchestrator {
      * @return {@code true} on success, {@code false} if an unrecoverable error occurs
      */
     private boolean processStudent(RawStudentDto student) {
+        System.out.println("Processing student... " + student.name());
         long startTime = System.currentTimeMillis();
         try {
             StudentGraphBundle bundle = transformService.transform(student);
             ingestionService.ingest(bundle);
+            
+            // Now that the data is firmly in Neo4j, it's safe to call Python
+            embeddingService.processStudent(bundle.student().getStudentId());
             
             long endTime = System.currentTimeMillis();
             long durationMs = endTime - startTime;

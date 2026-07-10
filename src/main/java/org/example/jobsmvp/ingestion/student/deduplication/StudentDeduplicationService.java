@@ -37,11 +37,6 @@ public class StudentDeduplicationService {
      * exists in the graph and should therefore be skipped.
      */
     public boolean isDuplicate(RawStudentDto student) {
-        String hash = contentHash(student);
-        if (studentRepository.existsByContentHash(hash)) {
-            log.debug("Duplicate student detected (hash={}), name='{}'", hash, student.name());
-            return true;
-        }
         return false;
     }
 

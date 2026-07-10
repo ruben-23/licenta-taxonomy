@@ -283,8 +283,15 @@ async function findJobsByEmbedding(studentId, studentName) {
     `;
 
     try {
+        // Note: Change '/vector' to '/graphsage' if your backend uses a different route!
         const res = await fetch(`/api/students/${studentId}/recommend-jobs/vector`);
-        const jobs = await res.json();
+        let jobs = await res.json();
+        
+        console.log("Raw backend response for jobs:", jobs);
+
+        // If the backend wraps the array in a 'content' or 'matches' object, unwrap it
+        if (jobs && jobs.content) jobs = jobs.content;
+        else if (jobs && jobs.matches) jobs = jobs.matches;
 
         if (!res.ok) throw new Error(jobs.error || 'Backend failed');
 

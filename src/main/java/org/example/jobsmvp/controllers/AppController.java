@@ -84,7 +84,7 @@ public class AppController {
     }
 
     // ========================================================================
-    // Vector Embedding Recommendation Endpoints (Node2Vec Hybrid AI)
+    // Vector Embedding Recommendation Endpoints
     // ========================================================================
 
     @GetMapping("/jobs/{jobId}/recommend-candidates/vector")
@@ -110,6 +110,7 @@ public class AppController {
         long startTime = System.currentTimeMillis();
         try {
             ResponseEntity<?> response = ResponseEntity.ok(recommendationService.getJobMatchesByEmbedding(studentId, limit));
+            System.out.println(response);
             long endTime = System.currentTimeMillis();
             System.out.println("API Latency for recommendJobsByEmbedding: " + (endTime - startTime) + " ms");
             return response;

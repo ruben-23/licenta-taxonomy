@@ -56,6 +56,7 @@ public class StudentGraphTransformService {
      * @return bundle ready for graph persistence
      */
     public StudentGraphBundle transform(RawStudentDto raw) {
+        System.out.println("Transform...");
         String contentHash = deduplicationService.contentHash(raw);
 
         Student        student  = buildStudent(raw, contentHash);
@@ -147,7 +148,7 @@ public class StudentGraphTransformService {
         List<Project> result = new ArrayList<>();
         for (RawProjectDto rp : raw.projects()) {
             Project project = new Project();
-            project.setProject_id(UUID.randomUUID().toString());
+            project.setProjectId(UUID.randomUUID().toString());
             project.setTitle(rp.title());
             project.setDescription(rp.description());
             project.setGithubLink(rp.githubLink());
@@ -165,7 +166,7 @@ public class StudentGraphTransformService {
         List<Course> result = new ArrayList<>();
         for (RawCourseDto rc : raw.courses()) {
             Course course = new Course();
-            course.setCourse_id(UUID.randomUUID().toString());
+            course.setCourseId(UUID.randomUUID().toString());
             course.setTitle(rc.title());
             course.setDescription(rc.description());
             course.setProvider(rc.provider());
@@ -183,7 +184,7 @@ public class StudentGraphTransformService {
         List<Diploma> result = new ArrayList<>();
         for (RawDiplomaDto rd : raw.diplomas()) {
             Diploma diploma = new Diploma();
-            diploma.setDiploma_id(UUID.randomUUID().toString());
+            diploma.setDiplomaId(UUID.randomUUID().toString());
             diploma.setTitle(rd.title());
             diploma.setDescription(rd.description());
             diploma.setIssuer(rd.issuer());

@@ -1,5 +1,6 @@
 package org.example.jobsmvp.models.nodes;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.Node;
@@ -11,7 +12,8 @@ import java.util.List;
 @Data
 public class Course {
     @Id
-    private String course_id;
+//    @JsonProperty("course_id")
+    private String courseId;
 
     private String title;
     private String description;

@@ -19,7 +19,21 @@ import java.util.Optional;
  */
 public interface StudentRepository extends Neo4jRepository<Student, String> {
 
-    @Query("MATCH (s:Student) RETURN s SKIP $skip LIMIT $limit")
+    @Query("MATCH (s:Student) " +
+           "OPTIONAL MATCH (s)-[k:KNOWS]->(t:Skill) " +
+           "OPTIONAL MATCH (s)-[:CREATED]->(p:Project)-[:BUILT_WITH]->(ps:Skill) " +
+           "OPTIONAL MATCH (s)-[:COMPLETED]->(c:Course)-[:COVERS]->(cs:Skill) " +
+           "OPTIONAL MATCH (s)-[:EARNED]->(d:Diploma)-[:CERTIFIES]->(ds:Skill) " +
+           "RETURN s, " +
+           "collect(k) as knownTechnologies, " +
+           "collect(t) as skills, " +
+           "collect(p) as projects, " +
+           "collect(ps) as projectSkills, " +
+           "collect(c) as courses, " +
+           "collect(cs) as courseSkills, " +
+           "collect(d) as diplomas, " +
+           "collect(ds) as diplomaSkills " +
+           "SKIP $skip LIMIT $limit")
     List<Student> findAllPaginated(int skip, int limit);
 
     /**

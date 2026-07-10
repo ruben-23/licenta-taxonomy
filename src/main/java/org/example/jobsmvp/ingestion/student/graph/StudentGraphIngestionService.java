@@ -72,37 +72,37 @@ public class StudentGraphIngestionService {
         // CREATED → Project → BUILT_WITH → Skill
         for (Project project : nullSafe(bundle.projects())) {
             mergeProject(project);
-            mergeCreatedRelationship(bundle.student().getStudentId(), project.getProject_id());
+            mergeCreatedRelationship(bundle.student().getStudentId(), project.getProjectId());
             for (Skill skill : nullSafe(project.getBuiltWith())) {
                 mergeSkill(skill);
                 mergeSkillHierarchy(skill);
-                mergeBuiltWithRelationship(project.getProject_id(), skill.getSkillId());
+                mergeBuiltWithRelationship(project.getProjectId(), skill.getSkillId());
             }
         }
 
         // COMPLETED → Course → COVERS → Skill
         for (Course course : nullSafe(bundle.courses())) {
             mergeCourse(course);
-            mergeCompletedRelationship(bundle.student().getStudentId(), course.getCourse_id());
+            mergeCompletedRelationship(bundle.student().getStudentId(), course.getCourseId());
             for (Skill skill : nullSafe(course.getCovers())) {
                 mergeSkill(skill);
                 mergeSkillHierarchy(skill);
-                mergeCoverRelationship(course.getCourse_id(), skill.getSkillId());
+                mergeCoverRelationship(course.getCourseId(), skill.getSkillId());
             }
         }
 
         // EARNED → Diploma → CERTIFIES → Skill
         for (Diploma diploma : nullSafe(bundle.diplomas())) {
             mergeDiploma(diploma);
-            mergeEarnedRelationship(bundle.student().getStudentId(), diploma.getDiploma_id());
+            mergeEarnedRelationship(bundle.student().getStudentId(), diploma.getDiplomaId());
             for (Skill skill : nullSafe(diploma.getCertifies())) {
                 mergeSkill(skill);
                 mergeSkillHierarchy(skill);
-                mergeCertifiesRelationship(diploma.getDiploma_id(), skill.getSkillId());
+                mergeCertifiesRelationship(diploma.getDiplomaId(), skill.getSkillId());
             }
         }
-
-        embeddingService.processStudent(bundle.student().getStudentId());
+        System.out.println("Student graph ingestion complete for studentId: " + bundle.student().getStudentId());
+//        embeddingService.processStudent(bundle.student().getStudentId());
         log.info("Ingested student '{}'", bundle.student().getName());
     }
 
@@ -153,14 +153,14 @@ public class StudentGraphIngestionService {
 
     private void mergeProject(Project project) {
         neo4jClient.query("""
-                MERGE (p:Project {project_id: $projectId})
+                MERGE (p:Project {ProjectId: $projectId})
                 ON CREATE SET
                     p.title       = $title,
                     p.description = $description,
                     p.github_link = $githubLink
                 """)
                 .bindAll(Map.of(
-                        "projectId",   project.getProject_id(),
+                        "projectId",   project.getProjectId(),
                         "title",       nullSafe(project.getTitle()),
                         "description", nullSafe(project.getDescription()),
                         "githubLink",  nullSafe(project.getGithubLink())
@@ -177,7 +177,7 @@ public class StudentGraphIngestionService {
                     c.provider    = $provider
                 """)
                 .bindAll(Map.of(
-                        "courseId",    course.getCourse_id(),
+                        "courseId",    course.getCourseId(),
                         "title",       nullSafe(course.getTitle()),
                         "description", nullSafe(course.getDescription()),
                         "provider",    nullSafe(course.getProvider())
@@ -194,7 +194,7 @@ public class StudentGraphIngestionService {
                     d.issuer      = $issuer
                 """)
                 .bindAll(Map.of(
-                        "diplomaId",   diploma.getDiploma_id(),
+                        "diplomaId",   diploma.getDiplomaId(),
                         "title",       nullSafe(diploma.getTitle()),
                         "description", nullSafe(diploma.getDescription()),
                         "issuer",      nullSafe(diploma.getIssuer())
