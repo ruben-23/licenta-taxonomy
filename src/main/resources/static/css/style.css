@@ -1,4 +1,4 @@
-/* Core Layout & Reset */
+
 * { box-sizing: border-box; }
 body { margin: 0; font-family: system-ui, -apple-system, sans-serif; display: flex; flex-direction: column; height: 100vh; background-color: #f9fafb; color: #333; }
 
@@ -144,4 +144,109 @@ pre { background: #f8fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; 
     font-weight: bold;
     font-size: 0.85rem;
     margin-left: 0.5rem;
+}
+
+/* --- New Student / New Job Form Styling --- */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+}
+.form-hint {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin: 0 0 1.25rem 0;
+    line-height: 1.5;
+}
+.form-hint code {
+    background: #f1f5f9;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #334155;
+}
+.form-section-heading {
+    margin: 0 0 1rem 0;
+    color: #0f172a;
+    font-size: 1.1rem;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+.form-group label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.form-group input,
+.form-group textarea {
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #1e293b;
+}
+.form-group input:read-only,
+.form-group textarea:read-only {
+    background: #f8fafc;
+    color: #334155;
+    cursor: not-allowed;
+}
+.form-group input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    align-self: flex-start;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+    line-height: 1.5;
+}
+.sub-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+.sub-card:last-child {
+    margin-bottom: 0;
+}
+.form-status-success {
+    border-left: 5px solid #059669;
+    background-color: #f0fdf4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.form-status-success p {
+    color: #047857;
+    margin: 0;
+    font-weight: 500;
+}
+.form-status-error {
+    border-left: 5px solid #dc2626;
+    background-color: #fef2f2;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.form-status-error p {
+    color: #b91c1c;
+    margin: 0;
+    font-weight: 500;
 }
